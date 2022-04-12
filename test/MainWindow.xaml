@@ -1,0 +1,317 @@
+﻿<Window x:Class="test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        Icon="img/иконка.ico"
+        mc:Ignorable="d"
+        Title="Testbook" Height="900" Width="1350" ResizeMode="NoResize">
+    <Grid>
+        <Image Source="img/фон.jpg"></Image>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Button Width="300" Height="70" Margin="0,10,20,0" Content="Пропустить обучение" FontSize="25" Click="Button_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF6F2E9" Offset="1"/>
+                        <GradientStop Color="#FFC9BD9C"/>
+                        <GradientStop Color="#FFE6DCC1" Offset="0.564"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Image Source="img/голос.png" HorizontalAlignment="Right" VerticalAlignment="Top" Width="70" Height="70" Margin="0,20,20,0" MouseDown="Image_MouseDown"></Image>
+        </StackPanel>
+        <Image Source="img/доска.png" HorizontalAlignment="Center" Width="700" Margin="100,0,0,0"/>
+        <TextBlock
+                    x:Name="MyWipedText"
+                    Width="0" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="515,200,0,0" Height="16">
+                    При ознакомлении с демонстрационным вариантом следует иметь в виду, что
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName="MyWipedText" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="460" Duration="0:0:3"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+                    x:Name="MyWipedText2"
+                    Width="0" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,220,0,0" Height="16">
+                    задания, включённые в него, не отражают всех планируемых результатов, достижение
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText2" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:3"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText3"
+          Width="0" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,240,0,0" Height="16">
+            которых может  проверяться итоговой работой. Полный перечень умений, которые
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText3" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:6"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText4"
+          Width="0" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,260,0,0" Height="16">
+             могут контролироваться, приведён в кодификаторе планируемых результатов
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText4" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:9"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText5"
+          Width="0" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,280,0,0" Height="16">
+            освоения основной образовательной программы начального общего
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText5" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:12"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText6"
+          Width="0" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,300,0,0" Height="16">
+            образования по английскому языку для проведения процедур оценки учебных
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText6" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:15"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText7"
+          Width="0" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,320,0,0" Height="16">
+            достижений обучающихся.
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText7" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:18"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText8"
+          Width="0" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,360,0,0" Height="16">
+            Для начала выполнения тренировочных заданий, щелкни на нужный вариант:
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText8" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:19"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText9"
+          Width="0" FontSize="14" FontWeight="Bold"  Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,380,0,0" Height="16" MouseDown="MyWipedText9_MouseDown">
+            Вариант 1
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText9" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:21.5"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText10"
+          Width="0" FontSize="14" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="685,380,0,0" Height="16" MouseDown="MyWipedText10_MouseDown">
+            Вариант 2
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText10" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:22"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText11"
+          Width="0" FontSize="14" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="880,380,0,0" Height="16" TextDecorations="Underline" MouseDown="MyWipedText11_MouseDown">
+            Вариант 3
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText11" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:22.5"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText12"
+          Width="0" FontSize="14" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,400,0,0" Height="16" MouseDown="MyWipedText12_MouseDown">
+            Вариант 4
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText12" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:23"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <TextBlock
+          x:Name="MyWipedText13"
+          Width="0" FontSize="14" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="685,400,0,0" Height="16" MouseDown="MyWipedText13_MouseDown">
+            Вариант 5
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName ="MyWipedText13" 
+                                Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                To="482" Duration="0:0:3" BeginTime="0:0:23.5"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+
+
+
+        <TextBlock
+                    x:Name="text"
+                    Width="482" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="515,200,0,0" Height="16" Visibility="Hidden">
+                    При ознакомлении с демонстрационным вариантом следует иметь в виду, что
+        </TextBlock>
+        <TextBlock
+                    x:Name="text2"
+                    Width="482" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,220,0,0" Height="16" Visibility="Hidden">
+                    задания, включённые в него, не отражают всех планируемых результатов, достижение
+        </TextBlock>
+        <TextBlock
+          x:Name="text3"
+          Width="482" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,240,0,0" Height="16" Visibility="Hidden">
+            которых может  проверяться итоговой работой. Полный перечень умений, которые
+        </TextBlock>
+        <TextBlock
+          x:Name="text4"
+          Width="482" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,260,0,0" Height="16" Visibility="Hidden">
+             могут контролироваться, приведён в кодификаторе планируемых результатов
+        </TextBlock>
+        <TextBlock
+          x:Name="text5"
+          Width="482" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,280,0,0" Height="16" Visibility="Hidden"> 
+            освоения основной образовательной программы начального общего
+        </TextBlock>
+        <TextBlock
+          x:Name="text6"
+          Width="482" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,300,0,0" Height="16" Visibility="Hidden">
+            образования по английскому языку для проведения процедур оценки учебных
+        </TextBlock>
+        <TextBlock
+          x:Name="text7"
+          Width="482" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,320,0,0" Height="16" Visibility="Hidden">
+            достижений обучающихся.
+        </TextBlock>
+        <TextBlock
+          x:Name="text8"
+          Width="482" FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,360,0,0" Height="16" Visibility="Hidden">
+            Для начала выполнения тренировочных заданий, щелкни на нужный вариант:
+        </TextBlock>
+        <TextBlock
+          x:Name="var1"
+          Width="482" Visibility="Hidden" FontSize="14" FontWeight="Bold"  Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,380,0,0" Height="16" MouseDown="MyWipedText9_MouseDown">
+            Вариант 1
+        </TextBlock>
+        <TextBlock
+          x:Name="var2"
+          Width="482" Visibility="Hidden" FontSize="14" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="685,380,0,0" Height="16" MouseDown="MyWipedText10_MouseDown">
+            Вариант 2
+        </TextBlock>
+        <TextBlock
+          x:Name="var3"
+          Width="482" Visibility="Hidden" FontSize="14" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="880,380,0,0" Height="16" TextDecorations="Underline" MouseDown="MyWipedText11_MouseDown">
+            Вариант 3
+        </TextBlock>
+        <TextBlock
+          x:Name="var4"
+          Width="482" Visibility="Hidden" FontSize="14" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="480,400,0,0" Height="16" MouseDown="MyWipedText12_MouseDown">
+            Вариант 4
+        </TextBlock>
+        <TextBlock
+          x:Name="var5"
+          Width="482" Visibility="Hidden" FontSize="14" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="685,400,0,0" Height="16" MouseDown="MyWipedText13_MouseDown">
+            Вариант 5
+        </TextBlock>
+        <Image HorizontalAlignment="Left" Margin="170,19,0,24" Source="img/учитель.png" Grid.RowSpan="2" Width="354"/>
+    </Grid>
+</Window>
