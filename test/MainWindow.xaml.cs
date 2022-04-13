@@ -28,7 +28,10 @@ namespace test
         private MediaPlayer player = new MediaPlayer();
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            player.Open(new Uri("C:\\Users\\eliza\\Desktop\\НГК\\8 семестр\\пп\\test\\test\\voice\\введение.mp3", UriKind.Relative));
+            string path = @".\voice";
+            string s = System.IO.Path.GetFullPath(path) + @"\введение.mp3";
+            s = s.Replace(@"\bin\Debug", "");
+            player.Open(new Uri(s, UriKind.Relative));
             player.Play();
         }
 
@@ -74,6 +77,8 @@ namespace test
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            player.Stop();
+
             MyWipedText.Visibility = Visibility.Collapsed;
             MyWipedText2.Visibility = Visibility.Collapsed;
             MyWipedText3.Visibility = Visibility.Collapsed;

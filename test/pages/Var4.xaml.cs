@@ -56,9 +56,12 @@ namespace test.pages
         private MediaPlayer player = new MediaPlayer();
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            player.Open(new Uri("", UriKind.Relative));
+            string path = @".\voice";
+            string s = System.IO.Path.GetFullPath(path) + @"\вариант 4.mp3";
+            s = s.Replace(@"\bin\Debug", "");
+            player.Open(new Uri(s, UriKind.Relative));
             player.Play();
-        }
+    }
 public string[] otv = new string[20];
         private void Chack_Click(object sender, RoutedEventArgs e)
         {

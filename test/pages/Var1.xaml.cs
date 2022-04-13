@@ -58,19 +58,24 @@ namespace test
         private MediaPlayer player = new MediaPlayer();
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            player.Open(new Uri("", UriKind.Relative));
+            string path = @".\voice";
+            string s = System.IO.Path.GetFullPath(path) + @"\вариант 1 задание 1.mp3";
+            s = s.Replace(@"\bin\Debug", "");
+            player.Open(new Uri(s, UriKind.Relative));
             player.Play();
         }
 
         private void Image_MouseDown_1(object sender, MouseButtonEventArgs e)
         {
-            player.Open(new Uri("", UriKind.Relative));
+            string path = @".\voice";
+            string s = System.IO.Path.GetFullPath(path) + @"\вариант 1 задания 2-4.mp3";
+            s = s.Replace(@"\bin\Debug", "");
+            player.Open(new Uri(s, UriKind.Relative));
             player.Play();
         }
- public string[] otv = new string[17];
+        public string[] otv = new string[17];
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
-           
             int prov = 0;
             try
             {
