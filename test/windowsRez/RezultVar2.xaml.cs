@@ -220,6 +220,28 @@ namespace test
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl13"));
                     mark += 1;
                 }
+                if (z14.Text != z14otv.Text)
+                {
+                    Cl14 = "#FFE06868";
+                    PropertyChanged(this, new PropertyChangedEventArgs("Cl14"));
+                }
+                else
+                {
+                    Cl14 = "#FFB1E664";
+                    PropertyChanged(this, new PropertyChangedEventArgs("Cl14"));
+                    mark += 1;
+                }
+                if (z13.Text != z13otv.Text)
+                {
+                    Cl15 = "#FFE06868";
+                    PropertyChanged(this, new PropertyChangedEventArgs("Cl15"));
+                }
+                else
+                {
+                    Cl15 = "#FFB1E664";
+                    PropertyChanged(this, new PropertyChangedEventArgs("Cl15"));
+                    mark += 1;
+                }
             }
             else
             {
@@ -322,6 +344,20 @@ namespace test
                     mark += 1;
                 }
                 if (z13.Text != z13otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z14.Text != z14otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z15.Text != z15otv.Text)
                 {
                 }
                 else

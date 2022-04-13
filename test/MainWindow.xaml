@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:test"
         Icon="img/иконка.ico"
         mc:Ignorable="d"
-        Title="Testbook" Height="900" Width="1350" ResizeMode="NoResize">
+        Title="Testbook" 
+        Height="900" Width="1350" ResizeMode="NoResize">
+        
     <Grid>
         <Image Source="img/фон.jpg"></Image>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">

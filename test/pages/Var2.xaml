@@ -10,9 +10,9 @@
 
     <Grid>
         <ScrollViewer Margin="0,0,0,10">
-            <StackPanel Orientation="Vertical" Background="{Binding bg}">
+            <WrapPanel Orientation="Vertical" Background="{Binding bg}">
                 <StackPanel Margin="20,10,20,0">
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">Закончить попытку</Button>
                             <Button x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
                             <Button x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
@@ -22,19 +22,19 @@
                             <TextBlock Margin="50,0,5,0" Text="До окончания времени работы осталось:" FontSize="{Binding s}" Foreground="{Binding fg}"/>
                             <TextBlock Text="{Binding StringCountdown}" FontSize="{Binding s}" Foreground="{Binding fg}"/>
                             <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" >На главную</Button>
-                        </StackPanel>
+                        </WrapPanel>
                     <TextBlock FontWeight="Bold" FontSize="{Binding s}" HorizontalAlignment="Center" Margin="0,30,0,30" Foreground="{Binding fg}">Раздел 1. АУДИРОВАНИЕ</TextBlock>
                 <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,0,0,10">
-                    <StackPanel Orientation="Horizontal">
+                        <WrapPanel Orientation="Horizontal">
                             <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Width="1160" Text="Вы услышите 4 коротких рассказа, обозначенных буквами A, B, C, D. Определите  профессию говорящего в каждом тексте. Ты услышишь запись дважды."></TextBlock>
                         <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown" Margin="5,0,0,0"></Image>
-                    </StackPanel>
+                    </WrapPanel>
                 </Border>
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                             <TextBlock Foreground="{Binding fg}" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding s}"/>
                     </Border>
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBox x:Name="z1v1"  Width="50" Margin="0,0,5,0" FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}">a football player</TextBlock>
                             <TextBox x:Name="z1v2"  Width="50" Margin="50,0,5,0" FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
@@ -43,77 +43,77 @@
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}">a housewife</TextBlock>
                             <TextBox x:Name="z1v4"  Width="50" Margin="50,0,5,0" FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}">a musician</TextBlock>
-                    </StackPanel>
-                </StackPanel>
+                    </WrapPanel>
+                </WrapPanel>
 
 
 
                 <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,30,0,10">
-                    <StackPanel Orientation="Horizontal">
+                        <WrapPanel Orientation="Horizontal">
                             <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Width="1160" Text="Прослушай текст. Закончи предложения 2–6, выбрав из предложенных вариантов тот, который соответствует содержанию текста. Ты услышишь запись дважды."></TextBlock>
                         <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown_1" Margin="5,0,0,0"></Image>
-                    </StackPanel>
+                    </WrapPanel>
                 </Border>
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                             <TextBlock Foreground="{Binding fg}" Text="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="{Binding s}" Margin="16,0,15,4"/>
                     </Border>
-                    <StackPanel Orientation="Vertical">
+                        <WrapPanel Orientation="Vertical">
                             <TextBlock Foreground="{Binding fg}" Text="How old is Helen Brown?" FontSize="{Binding s}"></TextBlock>
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <RadioButton Foreground="{Binding fg}" x:Name="z2v1" FontSize="{Binding s}" Content="ten"/>
                                 <RadioButton Foreground="{Binding fg}" x:Name="z2v2" FontSize="{Binding s}" Content="ten " Margin="50,0,0,0"/>
-                        </StackPanel>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
+                        </WrapPanel>
+                    </WrapPanel>
+                </WrapPanel>
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                             <TextBlock Foreground="{Binding fg}" Text="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding s}"/>
                     </Border>
-                    <StackPanel Orientation="Vertical">
+                        <WrapPanel Orientation="Vertical">
                             <TextBlock Foreground="{Binding fg}" Text="When is her birthday?" FontSize="{Binding s}"></TextBlock>
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <RadioButton Foreground="{Binding fg}" x:Name="z3v1" FontSize="{Binding s}" Content="on Mondays"/>
                                 <RadioButton Foreground="{Binding fg}" x:Name="z3v2" FontSize="{Binding s}" Content="on Sunday" Margin="50,0,0,0"/>
-                        </StackPanel>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
+                        </WrapPanel>
+                    </WrapPanel>
+                </WrapPanel>
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                             <TextBlock Foreground="{Binding fg}" Text="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding s}"/>
                     </Border>
-                    <StackPanel Orientation="Vertical">
+                        <WrapPanel Orientation="Vertical">
                             <TextBlock Foreground="{Binding fg}" Text="When does her birthday party start?" FontSize="{Binding s}"></TextBlock>
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <RadioButton Foreground="{Binding fg}" x:Name="z4v1" FontSize="{Binding s}" Content="at 1 o'clock"/>
                                 <RadioButton Foreground="{Binding fg}" x:Name="z4v2" FontSize="{Binding s}" Content="at 2 o'clock" Margin="50,0,0,0"/>
-                        </StackPanel>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
+                        </WrapPanel>
+                    </WrapPanel>
+                </WrapPanel>
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                             <TextBlock Foreground="{Binding fg}" Text="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding s}"/>
                     </Border>
-                    <StackPanel Orientation="Vertical">
+                        <WrapPanel Orientation="Vertical">
                             <TextBlock Foreground="{Binding fg}" Text="What present did she get from her Parents? " FontSize="{Binding s}"></TextBlock>
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <RadioButton Foreground="{Binding fg}" x:Name="z5v1" FontSize="{Binding s}" Content="a CD player"/>
                                 <RadioButton Foreground="{Binding fg}" x:Name="z5v2" FontSize="{Binding s}" Content="a bicycle" Margin="50,0,0,0"/>
-                        </StackPanel>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        </WrapPanel>
+                    </WrapPanel>
+                </WrapPanel>
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                             <TextBlock Foreground="{Binding fg}" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding s}"/>
                     </Border>
-                    <StackPanel Orientation="Vertical">
+                        <WrapPanel Orientation="Vertical">
                             <TextBlock Foreground="{Binding fg}" Text="What present will she get from her school Friends?" FontSize="{Binding s}"></TextBlock>
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <RadioButton Foreground="{Binding fg}" x:Name="z6v1" FontSize="{Binding s}" Content="books "/>
                                 <RadioButton Foreground="{Binding fg}" x:Name="z6v2" FontSize="{Binding s}" Content="videos" Margin="50,0,0,0"/>
-                        </StackPanel>
-                    </StackPanel>
-                </StackPanel>
+                        </WrapPanel>
+                    </WrapPanel>
+                </WrapPanel>
 
 
                     <TextBlock Foreground="{Binding fg}" FontWeight="Bold" FontSize="{Binding s}" HorizontalAlignment="Center" Margin="0,30,0,30">Раздел 2. ЛЕКСИКА И ГРАММАТИКА</TextBlock>
@@ -121,37 +121,37 @@
                         <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Text="Переведите слова и запишите их. Каждый ответ начинайте записывать с заглавной буквы."></TextBlock>
                 </Border>
 
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                             <TextBlock Foreground="{Binding fg}" Text="7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding s}"/>
                     </Border>
-                    <StackPanel Orientation="Vertical">
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <WrapPanel Orientation="Vertical">
+                            <WrapPanel Orientation="Horizontal">
+                                <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                                     <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}">Почтальон</TextBlock>
                                     <TextBox x:Name="z7v1" Width="150" FontSize="{Binding s}" Margin="10,0,30,0" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            </WrapPanel>
+                                <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                                     <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}">Второй</TextBlock>
                                     <TextBox x:Name="z7v2" Width="150" FontSize="{Binding s}" Margin="10,0,30,0" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            </WrapPanel>
+                                <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                                     <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}">Злой</TextBlock>
                                     <TextBox x:Name="z7v3" Width="150" FontSize="{Binding s}" Margin="10,0,30,0" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
-                            </StackPanel>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" Margin ="0,10,0,0">
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            </WrapPanel>
+                        </WrapPanel>
+                            <WrapPanel Orientation="Horizontal" Margin ="0,10,0,0">
+                                <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                                     <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}">Смешнее</TextBlock>
                                     <TextBox x:Name="z7v4" Width="150" FontSize="{Binding s}" Margin="10,0,30,0" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            </WrapPanel>
+                                <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                                     <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}">Кататься на коньках</TextBlock>
                                     <TextBox x:Name="z7v5" Width="150" FontSize="{Binding s}" Margin="10,0,30,0" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
-                            </StackPanel>
-                        </StackPanel>
-                    </StackPanel>
-                </StackPanel>
+                            </WrapPanel>
+                        </WrapPanel>
+                    </WrapPanel>
+                </WrapPanel>
                 
                 
 
@@ -280,7 +280,7 @@ Two girls see the birds. One girl says, 'Oh! Look! What have the birds got? Isn'
                     </StackPanel>
                 </StackPanel>
                         </StackPanel>
-            </StackPanel>
+            </WrapPanel>
         </ScrollViewer>
     </Grid>
 </Page>
