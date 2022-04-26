@@ -56,6 +56,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="classes\ChangePages.cs" />
+    <Compile Include="Memo.xaml.cs">
+      <DependentUpon>Memo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="pages\Var2.xaml.cs">
       <DependentUpon>Var2.xaml</DependentUpon>
     </Compile>
@@ -67,6 +70,9 @@
     </Compile>
     <Compile Include="pages\Var5.xaml.cs">
       <DependentUpon>Var5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsRez\RezultVar1.xaml.cs">
       <DependentUpon>RezultVar1.xaml</DependentUpon>
@@ -89,6 +95,63 @@
     <Compile Include="windowsRez\RezultVar5.xaml.cs">
       <DependentUpon>RezultVar5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTeor\Article.xaml.cs">
+      <DependentUpon>Article.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\BeGoingTo.xaml.cs">
+      <DependentUpon>BeGoingTo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\Chisl.xaml.cs">
+      <DependentUpon>Chisl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\Guestion.xaml.cs">
+      <DependentUpon>Guestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\HaveGot.xaml.cs">
+      <DependentUpon>HaveGot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\HaveTo.xaml.cs">
+      <DependentUpon>HaveTo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\Lecsica.xaml.cs">
+      <DependentUpon>Lecsica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\Mnozh.xaml.cs">
+      <DependentUpon>Mnozh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\MuchMany.xaml.cs">
+      <DependentUpon>MuchMany.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\Must.xaml.cs">
+      <DependentUpon>Must.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\Predlog.xaml.cs">
+      <DependentUpon>Predlog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\PritMest.xaml.cs">
+      <DependentUpon>PritMest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\PritPadezh.xaml.cs">
+      <DependentUpon>PritPadezh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\SomeAny.xaml.cs">
+      <DependentUpon>SomeAny.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\SravPrev.xaml.cs">
+      <DependentUpon>SravPrev.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\ThereIsThereAre.xaml.cs">
+      <DependentUpon>ThereIsThereAre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\ThisThat.xaml.cs">
+      <DependentUpon>ThisThat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\Times.xaml.cs">
+      <DependentUpon>Times.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\ToBe.xaml.cs">
+      <DependentUpon>ToBe.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -101,6 +164,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Memo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="pages\Var2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -114,6 +181,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="pages\Var5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Start.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -142,6 +213,82 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windowsRez\RezultVar5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\Article.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\BeGoingTo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\Chisl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\Guestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\HaveGot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\HaveTo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\Lecsica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\Mnozh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\MuchMany.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\Must.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\Predlog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\PritMest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\PritPadezh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\SomeAny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\SravPrev.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\ThereIsThereAre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\ThisThat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\Times.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\ToBe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

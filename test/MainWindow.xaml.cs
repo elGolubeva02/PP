@@ -37,6 +37,7 @@ namespace test
 
         private void MyWipedText9_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            new Memo().Show();
             int ind = 1;
             player.Stop();
             new Tests(ind).Show();
@@ -45,6 +46,7 @@ namespace test
 
         private void MyWipedText10_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            new Memo().Show();
             int ind = 2;
             player.Stop();
             new Tests(ind).Show();
@@ -53,6 +55,7 @@ namespace test
 
         private void MyWipedText11_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            new Memo().Show();
             int ind = 3;
             player.Stop();
             new Tests(ind).Show();
@@ -61,6 +64,7 @@ namespace test
 
         private void MyWipedText12_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            new Memo().Show();
             int ind = 4;
             player.Stop();
             new Tests(ind).Show();
@@ -69,6 +73,7 @@ namespace test
 
         private void MyWipedText13_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            new Memo().Show();
             int ind = 5;
             player.Stop();
             new Tests(ind).Show();
