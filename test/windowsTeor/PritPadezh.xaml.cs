@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class PritPadezh : Window
     {
-        public PritPadezh()
+        public PritPadezh(int fon)
         {
             InitializeComponent();
         }

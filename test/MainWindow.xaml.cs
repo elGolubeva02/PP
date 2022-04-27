@@ -112,5 +112,11 @@ namespace test
             var4.Visibility = Visibility.Visible;
             var5.Visibility = Visibility.Visible;
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            new Start().Show();
+            this.Close();
+        }
     }
 }

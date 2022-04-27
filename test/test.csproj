@@ -95,11 +95,11 @@
     <Compile Include="windowsRez\RezultVar5.xaml.cs">
       <DependentUpon>RezultVar5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTask\PredlogTask.xaml.cs">
+      <DependentUpon>PredlogTask.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTeor\Article.xaml.cs">
       <DependentUpon>Article.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="windowsTeor\BeGoingTo.xaml.cs">
-      <DependentUpon>BeGoingTo.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\Chisl.xaml.cs">
       <DependentUpon>Chisl.xaml</DependentUpon>
@@ -121,9 +121,6 @@
     </Compile>
     <Compile Include="windowsTeor\MuchMany.xaml.cs">
       <DependentUpon>MuchMany.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="windowsTeor\Must.xaml.cs">
-      <DependentUpon>Must.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\Predlog.xaml.cs">
       <DependentUpon>Predlog.xaml</DependentUpon>
@@ -216,11 +213,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="windowsTeor\Article.xaml">
+    <Page Include="windowsTask\PredlogTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="windowsTeor\BeGoingTo.xaml">
+    <Page Include="windowsTeor\Article.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -249,10 +246,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windowsTeor\MuchMany.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="windowsTeor\Must.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -335,15 +328,59 @@
   <ItemGroup>
     <Resource Include="img\голос.png" />
     <Resource Include="img\голос белый.png" />
-    <Resource Include="img\виноград.jpg" />
-    <Resource Include="img\груши.jpg" />
-    <Resource Include="img\томаты.jpg" />
-    <Resource Include="img\яблоки.jpg" />
     <Resource Include="img\голос желтый.png" />
     <Resource Include="img\голос синий.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\7pld.gif" />
+    <Resource Include="img\виноград.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\груши.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\томаты.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\яблоки.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\behind.png" />
+    <Resource Include="img\between.png" />
+    <Resource Include="img\in front of.png" />
+    <Resource Include="img\in.png" />
+    <Resource Include="img\next to.png" />
+    <Resource Include="img\on.png" />
+    <Resource Include="img\opposite.png" />
+    <Resource Include="img\under.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\behindЖ.png" />
+    <Resource Include="img\behindС.png" />
+    <Resource Include="img\betweenЖ.png" />
+    <Resource Include="img\betweenС.png" />
+    <Resource Include="img\in front ofЖ.png" />
+    <Resource Include="img\in front ofС.png" />
+    <Resource Include="img\inЖ.png" />
+    <Resource Include="img\inС.png" />
+    <Resource Include="img\next toЖ.png" />
+    <Resource Include="img\next toС.png" />
+    <Resource Include="img\onЖ.png" />
+    <Resource Include="img\onС.png" />
+    <Resource Include="img\oppositeЖ.png" />
+    <Resource Include="img\oppositeС.png" />
+    <Resource Include="img\underЖ.png" />
+    <Resource Include="img\underС.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\behindcat.png" />
+    <Resource Include="img\incat.png" />
+    <Resource Include="img\infrontofcat.png" />
+    <Resource Include="img\oncat.png" />
+    <Resource Include="img\oppositecat.png" />
+    <Resource Include="img\undercat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Рисунок1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

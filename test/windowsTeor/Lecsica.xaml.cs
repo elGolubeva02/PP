@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class Lecsica : Window
     {
-        public Lecsica()
+        public Lecsica(int fon)
         {
             InitializeComponent();
         }

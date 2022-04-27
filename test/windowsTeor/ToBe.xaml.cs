@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class ToBe : Window
     {
-        public ToBe()
+        public ToBe(int fon)
         {
             InitializeComponent();
         }

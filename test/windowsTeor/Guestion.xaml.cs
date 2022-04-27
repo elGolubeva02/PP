@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class Guestion : Window
     {
-        public Guestion()
+        public Guestion(int fon)
         {
             InitializeComponent();
         }

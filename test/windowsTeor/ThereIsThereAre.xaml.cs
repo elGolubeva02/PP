@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class ThereIsThereAre : Window
     {
-        public ThereIsThereAre()
+        public ThereIsThereAre(int fon)
         {
             InitializeComponent();
         }

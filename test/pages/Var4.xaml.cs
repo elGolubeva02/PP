@@ -410,7 +410,7 @@ public string[] otv = new string[20];
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new MainWindow().Show();
+            new Start().Show();
             foreach (Window window in App.Current.Windows)
             {
                 if (window.Title == "YourTask")
@@ -519,6 +519,16 @@ public string[] otv = new string[20];
         {
             _startCountdown = sDate;
             _timer.Start();
+        }
+
+        private void var_Click(object sender, RoutedEventArgs e)
+        {
+            new MainWindow().Show();
+            foreach (Window window in App.Current.Windows)
+            {
+                if (window.Title == "YourTask")
+                    window.Close();
+            }
         }
     }
 }

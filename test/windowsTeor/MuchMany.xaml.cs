@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class MuchMany : Window
     {
-        public MuchMany()
+        public MuchMany(int fon)
         {
             InitializeComponent();
         }

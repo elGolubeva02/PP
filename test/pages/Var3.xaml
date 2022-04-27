@@ -21,6 +21,7 @@
                         <TextBlock Margin="50,0,5,0" Text="До окончания времени работы осталось:" FontSize="{Binding s}" Foreground="{Binding fg}"/>
                         <TextBlock Text="{Binding StringCountdown}" FontSize="{Binding s}" Foreground="{Binding fg}"/>
                         <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" >На главную</Button>
+                        <Button  x:Name="var" Click="var_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" Margin="10,0,0,0">К выбору варианта</Button>
                     </WrapPanel>
                     <TextBlock FontWeight="Bold" FontSize="{Binding s}" HorizontalAlignment="Center" Margin="0,30,0,30" Foreground="{Binding fg}">Раздел 1. АУДИРОВАНИЕ</TextBlock>
                 <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,0,0,10">
@@ -246,7 +247,7 @@ watch performances there. I (11) to the Green Theatre last June. The performance
                     </Border>
                     <WrapPanel Orientation="Horizontal" Margin="0,0,50,0">
                         <WrapPanel Orientation="Vertical">
-                            <Image Height="200" Width="200" Source="/img/груши.jpg"></Image>
+                            <Image Height="200" Width="200" Source="/img/груши.png"></Image>
                                 <TextBox FontSize="{Binding s}" Width="200" Margin="10,0,10,0" x:Name="z16v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
                     </WrapPanel>
@@ -255,7 +256,7 @@ watch performances there. I (11) to the Green Theatre last June. The performance
                     </Border>
                     <WrapPanel Orientation="Horizontal">
                         <WrapPanel Orientation="Vertical">
-                            <Image Height="200" Width="200" Source="/img/виноград.jpg"></Image>
+                            <Image Height="200" Width="200" Source="/img/виноград.png"></Image>
                                 <TextBox FontSize="{Binding s}" Width="200" Margin="10,0,10,0" x:Name="z17v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
                     </WrapPanel>
@@ -264,7 +265,7 @@ watch performances there. I (11) to the Green Theatre last June. The performance
                     </Border>
                     <WrapPanel Orientation="Horizontal" Margin="50,0,50,0">
                         <WrapPanel Orientation="Vertical">
-                            <Image Height="200" Width="200" Source="/img/томаты.jpg"></Image>
+                            <Image Height="200" Width="200" Source="/img/томаты.png"></Image>
                                 <TextBox FontSize="{Binding s}" Width="200" Margin="10,0,10,0" x:Name="z18v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
                     </WrapPanel>
@@ -273,7 +274,7 @@ watch performances there. I (11) to the Green Theatre last June. The performance
                     </Border>
                     <WrapPanel Orientation="Horizontal">
                         <WrapPanel Orientation="Vertical">
-                            <Image Height="200" Width="200" Source="/img/яблоки.jpg"></Image>
+                            <Image Height="200" Width="200" Source="/img/яблоки.png"></Image>
                                 <TextBox FontSize="{Binding s}" Width="200" Margin="10,0,10,0" x:Name="z19v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
                     </WrapPanel>

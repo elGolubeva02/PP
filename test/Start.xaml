@@ -7,21 +7,18 @@
         Icon="img/иконка.ico"
         mc:Ignorable="d"
         Title="Testbook" 
-        Height="900" Width="1350" ResizeMode="NoResize" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}">
+        DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}">
     <Grid>
         <ScrollViewer>
             <WrapPanel Orientation="Vertical" Background="{Binding bg}">
-                <StackPanel Margin="20,10,20,0">
-                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">Закончить попытку</Button>
+                <StackPanel Margin="20,10,20,0" HorizontalAlignment="Center" >
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,15">
                         <Button x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
                         <Button x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
                         <Button x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A-</Button>
                         <Button x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A+</Button>
                         <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">R</Button>
-                        <TextBlock Margin="50,0,5,0" Text="До окончания времени работы осталось:" FontSize="{Binding s}" Foreground="{Binding fg}"/>
-                        <TextBlock Text="{Binding StringCountdown}" FontSize="{Binding s}" Foreground="{Binding fg}"/>
-                        <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" >На главную</Button>
+                        <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" >Подготовка к диагностической работе</Button>
                     </WrapPanel>
                     <WrapPanel Orientation="Vertical">
                         <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
@@ -164,31 +161,13 @@
                                 <TextBlock Text="16" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding s}" Foreground="{Binding fg}"/>
                             </Border>
                             <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
-                                <TextBlock x:Name="tem16" Text="Глагол 'have to'" FontSize="{Binding s}" Foreground="{Binding fg}" MouseDown="tem16_MouseDown"></TextBlock>
+                                <TextBlock x:Name="tem16" Text="Модальные глаголы" FontSize="{Binding s}" Foreground="{Binding fg}" MouseDown="tem16_MouseDown"></TextBlock>
                             </WrapPanel>
                         </WrapPanel>
 
                         <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
                             <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                                 <TextBlock Text="17" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding s}" Foreground="{Binding fg}"/>
-                            </Border>
-                            <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
-                                <TextBlock x:Name="tem17" Text="Must/Mustn't" FontSize="{Binding s}" Foreground="{Binding fg}" MouseDown="tem17_MouseDown"></TextBlock>
-                            </WrapPanel>
-                        </WrapPanel>
-
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
-                            <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
-                                <TextBlock Text="18" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding s}" Foreground="{Binding fg}"/>
-                            </Border>
-                            <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
-                                <TextBlock x:Name="tem18" Text="Be going to" FontSize="{Binding s}" Foreground="{Binding fg}" MouseDown="tem18_MouseDown"></TextBlock>
-                            </WrapPanel>
-                        </WrapPanel>
-
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
-                            <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
-                                <TextBlock Text="19" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding s}" Foreground="{Binding fg}"/>
                             </Border>
                             <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
                                 <TextBlock x:Name="tem19" Text="Вопросительные слова" FontSize="{Binding s}" Foreground="{Binding fg}" MouseDown="tem19_MouseDown"></TextBlock>

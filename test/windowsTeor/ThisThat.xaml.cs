@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class ThisThat : Window
     {
-        public ThisThat()
+        public ThisThat(int fon)
         {
             InitializeComponent();
         }

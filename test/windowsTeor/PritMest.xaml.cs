@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class PritMest : Window
     {
-        public PritMest()
+        public PritMest(int fon)
         {
             InitializeComponent();
         }

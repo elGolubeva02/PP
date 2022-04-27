@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class SravPrev : Window
     {
-        public SravPrev()
+        public SravPrev(int fon)
         {
             InitializeComponent();
         }

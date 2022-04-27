@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class Times : Window
     {
-        public Times()
+        public Times(int fon)
         {
             InitializeComponent();
         }

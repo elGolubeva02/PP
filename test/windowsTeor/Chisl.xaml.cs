@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class Chisl : Window
     {
-        public Chisl()
+        public Chisl(int fon)
         {
             InitializeComponent();
         }

@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class Mnozh : Window
     {
-        public Mnozh()
+        public Mnozh(int fon)
         {
             InitializeComponent();
         }

@@ -19,7 +19,7 @@ namespace test.windowsTeor
     /// </summary>
     public partial class SomeAny : Window
     {
-        public SomeAny()
+        public SomeAny(int fon)
         {
             InitializeComponent();
         }

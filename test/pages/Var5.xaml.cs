@@ -369,7 +369,7 @@ public string[] otv = new string[26];
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new MainWindow().Show();
+            new Start().Show();
             foreach (Window window in App.Current.Windows)
             {
                 if (window.Title == "YourTask")
@@ -419,6 +419,16 @@ public string[] otv = new string[26];
             PropertyChanged(this, new PropertyChangedEventArgs("img"));
 
             fon = 2;
+        }
+
+        private void var_Click(object sender, RoutedEventArgs e)
+        {
+            new MainWindow().Show();
+            foreach (Window window in App.Current.Windows)
+            {
+                if (window.Title == "YourTask")
+                    window.Close();
+            }
         }
     }
 }
