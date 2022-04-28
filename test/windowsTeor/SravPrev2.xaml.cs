@@ -17,24 +17,45 @@ using test.windowsTask;
 namespace test.windowsTeor
 {
     /// <summary>
-    /// Логика взаимодействия для SravPrev.xaml
+    /// Логика взаимодействия для SravPrev2.xaml
     /// </summary>
-    public partial class SravPrev : Window, INotifyPropertyChanged
+    public partial class SravPrev2 : Window, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public string vs1 { get; set; }
         public string vs2 { get; set; }
         public string vs3 { get; set; }
+        public string bg { get; set; }
+        public string fg { get; set; }
+        public string bb { get; set; }
         public int s { get; set; }
-        int f;
-        public SravPrev(int fon, int sz)
+        int fon;
+        public SravPrev2(int f, int sz)
         {
             InitializeComponent();
+            fon = f;
             s = sz;
-            f = fon;
             PropertyChanged(this, new PropertyChangedEventArgs("s"));
             vib.SelectedIndex = 0;
-           
+            if (fon == 1)
+            {
+                bb = "#ffff00";
+                PropertyChanged(this, new PropertyChangedEventArgs("bb"));
+                bg = "#000000";
+                PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+                fg = "#ffff00";
+                PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            }
+            else if (fon == 2)
+            {
+                bg = "#99ccff";
+                PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+                fg = "#0f6cbf";
+                PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+                bb = "#0f6cbf";
+                PropertyChanged(this, new PropertyChangedEventArgs("bb"));
+            }
+
         }
 
         private void Chack_Click(object sender, RoutedEventArgs e)
@@ -45,16 +66,24 @@ namespace test.windowsTeor
 
         private void newbg_Click(object sender, RoutedEventArgs e)
         {
-            f = 1;
-            new SravPrev2(f, s).Show();
-            this.Close();
+            bg = "#000000";
+            PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+            bb = "#ffff00";
+            PropertyChanged(this, new PropertyChangedEventArgs("bb"));
+            fg = "#ffff00";
+            PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            fon = 1;
         }
 
         private void newbg2_Click(object sender, RoutedEventArgs e)
         {
-            f = 2;
-            new SravPrev2(f, s).Show();
-            this.Close();
+            bg = "#99ccff";
+            PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+            bb = "#0f6cbf";
+            PropertyChanged(this, new PropertyChangedEventArgs("bb"));
+            fg = "#0f6cbf";
+            PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            fon = 2;
         }
 
         private void newsz_Click(object sender, RoutedEventArgs e)
@@ -71,12 +100,14 @@ namespace test.windowsTeor
 
         private void oldbg_Click(object sender, RoutedEventArgs e)
         {
-            f = 0;
+            fon = 0;
+            new SravPrev(fon, s).Show();
+            this.Close();
         }
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new SravPrevTask(f, s).Show();
+            new SravPrevTask(fon, s).Show();
             this.Close();
         }
 

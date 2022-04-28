@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using test.windowsCheck;
 using test.windowsTeor;
 
 namespace test.windowsTask
@@ -126,7 +127,7 @@ namespace test.windowsTask
             {
                 if(z1v1.Text != "in" || z1v2.Text != "in front of" || z1v3.Text != "opposite" || z1v4.Text != "on" || z1v5.Text != "behind" || z1v6.Text != "under")
                 {
-                    throw new Exception("Не верно! Попробуй еще раз");
+                    new PredMest(1,f,s).ShowDialog();
                 }
             }
             catch(Exception ex)
@@ -141,7 +142,7 @@ namespace test.windowsTask
             {
                 if (z2v1.IsChecked == false || z2v3.IsChecked == false || z2v5.IsChecked == false || z2v8.IsChecked == false || z2v9.IsChecked == false || z2v11.IsChecked == false || z2v13.IsChecked == false || z2v16.IsChecked == false || z2v18.IsChecked == false)
                 {
-                    throw new Exception("Не верно! Попробуй еще раз");
+                    new PredMest(1,f,s).ShowDialog();
                 }
             }
             catch (Exception ex)
@@ -156,7 +157,7 @@ namespace test.windowsTask
             {
                 if (z3v2.IsChecked == false || z3v3.IsChecked == false || z3v5.IsChecked == false || z3v8.IsChecked == false || z3v9.IsChecked == false)
                 {
-                    throw new Exception("Не верно! Попробуй еще раз");
+                    new PredMest(1,f,s).ShowDialog();
                 }
             }
             catch (Exception ex)
@@ -171,7 +172,7 @@ namespace test.windowsTask
             {
                 if (z4v2.IsChecked == false || z4v4.IsChecked == false || z4v5.IsChecked == false || z4v7.IsChecked == false || z4v10.IsChecked == false || z4v12.IsChecked == false)
                 {
-                    throw new Exception("Не верно! Попробуй еще раз");
+                    new PredMest(1,f,s).ShowDialog();
                 }
             }
             catch (Exception ex)
@@ -186,7 +187,7 @@ namespace test.windowsTask
             {
                 if (vib1.SelectedIndex != 3 || vib2.SelectedIndex != 4 || vib3.SelectedIndex != 1 || vib4.SelectedIndex != 0|| vib5.SelectedIndex !=2)
                 {
-                    throw new Exception("Не верно! Попробуй еще раз");
+                    new PredMest(1,f,s).ShowDialog();
                 }
             }
             catch (Exception ex) 
@@ -201,7 +202,7 @@ namespace test.windowsTask
             {
                 if (vib21.SelectedIndex != 0 || vib22.SelectedIndex != 2 || vib222.SelectedIndex != 0 || vib23.SelectedIndex != 2 || (vib24.SelectedIndex != 2 && vib24.SelectedIndex != 1) || vib25.SelectedIndex != 1 || vib26.SelectedIndex != 0 || vib27.SelectedIndex != 0 || vib28.SelectedIndex != 1)
                 {
-                    throw new Exception("Не верно! Попробуй еще раз");
+                    new PredMest(2,f,s).ShowDialog();
                 }
             }
             catch (Exception ex)

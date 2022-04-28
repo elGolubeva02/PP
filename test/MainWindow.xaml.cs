@@ -80,40 +80,7 @@ namespace test
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            player.Stop();
-
-            MyWipedText.Visibility = Visibility.Collapsed;
-            MyWipedText2.Visibility = Visibility.Collapsed;
-            MyWipedText3.Visibility = Visibility.Collapsed;
-            MyWipedText4.Visibility = Visibility.Collapsed;
-            MyWipedText5.Visibility = Visibility.Collapsed;
-            MyWipedText6.Visibility = Visibility.Collapsed;
-            MyWipedText7.Visibility = Visibility.Collapsed;
-            MyWipedText8.Visibility = Visibility.Collapsed;
-            MyWipedText9.Visibility = Visibility.Collapsed;
-            MyWipedText10.Visibility = Visibility.Collapsed;
-            MyWipedText11.Visibility = Visibility.Collapsed;
-            MyWipedText12.Visibility = Visibility.Collapsed;
-            MyWipedText13.Visibility = Visibility.Collapsed;
-
-            text.Visibility = Visibility.Visible;
-            text2.Visibility = Visibility.Visible;
-            text3.Visibility = Visibility.Visible;
-            text4.Visibility = Visibility.Visible;
-            text5.Visibility = Visibility.Visible;
-            text6.Visibility = Visibility.Visible;
-            text7.Visibility = Visibility.Visible;
-            text8.Visibility = Visibility.Visible;
-            var1.Visibility = Visibility.Visible;
-            var2.Visibility = Visibility.Visible;
-            var3.Visibility = Visibility.Visible;
-            var4.Visibility = Visibility.Visible;
-            var5.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
             new Start().Show();
             this.Close();

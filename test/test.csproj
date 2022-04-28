@@ -74,6 +74,15 @@
     <Compile Include="Start.xaml.cs">
       <DependentUpon>Start.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Start2.xaml.cs">
+      <DependentUpon>Start2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\PredMest.xaml.cs">
+      <DependentUpon>PredMest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\Right.xaml.cs">
+      <DependentUpon>Right.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsRez\RezultVar1.xaml.cs">
       <DependentUpon>RezultVar1.xaml</DependentUpon>
     </Compile>
@@ -97,6 +106,9 @@
     </Compile>
     <Compile Include="windowsTask\PredlogTask.xaml.cs">
       <DependentUpon>PredlogTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTask\SravPrevTask.xaml.cs">
+      <DependentUpon>SravPrevTask.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\Article.xaml.cs">
       <DependentUpon>Article.xaml</DependentUpon>
@@ -125,6 +137,9 @@
     <Compile Include="windowsTeor\Predlog.xaml.cs">
       <DependentUpon>Predlog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTeor\Predlog2.xaml.cs">
+      <DependentUpon>Predlog2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTeor\PritMest.xaml.cs">
       <DependentUpon>PritMest.xaml</DependentUpon>
     </Compile>
@@ -136,6 +151,9 @@
     </Compile>
     <Compile Include="windowsTeor\SravPrev.xaml.cs">
       <DependentUpon>SravPrev.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\SravPrev2.xaml.cs">
+      <DependentUpon>SravPrev2.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\ThereIsThereAre.xaml.cs">
       <DependentUpon>ThereIsThereAre.xaml</DependentUpon>
@@ -185,6 +203,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Start2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\PredMest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\Right.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsRez\RezultVar1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -214,6 +244,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windowsTask\PredlogTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTask\SravPrevTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -253,6 +287,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTeor\Predlog2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTeor\PritMest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -266,6 +304,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windowsTeor\SravPrev.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\SravPrev2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -308,6 +350,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="yjdsqajy" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -381,6 +424,23 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\Рисунок1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\преобразованный.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="преобразованный.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ddfdfdf 2.png" />
+    <Resource Include="img\ddfdfdf 3.png" />
+    <Resource Include="img\te.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

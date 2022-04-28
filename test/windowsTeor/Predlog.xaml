@@ -6,88 +6,98 @@
         xmlns:local="clr-namespace:test.windowsTeor"
         mc:Ignorable="d"
         Icon="/img/иконка.ico"
-        Title="Prepositions" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}">
-    <Grid>
+        Title="Prepositions" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}"  WindowState="Maximized" ResizeMode="NoResize">
+    <Grid Background="#9CD7BB">
         <ScrollViewer>
-            <WrapPanel Orientation="Vertical" Background="{Binding bg}">
+            <WrapPanel Orientation="Vertical"  HorizontalAlignment="Center">
                 <StackPanel Margin="20,10,20,0">
-                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,15">
-                        <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">На главную</Button>
-                        <Button x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
-                        <Button x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
-                        <Button x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A-</Button>
-                        <Button x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A+</Button>
-                        <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">R</Button>
-                        <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">Перейти к упражнениям</Button>
+                    <WrapPanel Orientation="Horizontal" Margin="0,0,0,35" HorizontalAlignment="Center" Background="White" >
+                        <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="White">На главную</Button>
+                            <Button x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
+                            <Button x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
+                            <Button x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="White">A-</Button>
+                        <Button x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="White">A+</Button>
+                        <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="White">R</Button>
+                        <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="White">Перейти к упражнениям</Button>
                     </WrapPanel>
-                    <ComboBox x:Name="vib" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}">
-                        <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Предлоги</ComboBoxItem>
-                        <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Предлоги места</ComboBoxItem>
-                        <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Предлоги времени</ComboBoxItem>
-                    </ComboBox>
-                    <WrapPanel x:Name="mesto" Margin="0,0,0,15" Orientation="Vertical">
-                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Prepositions of ptace (предлоги места) помогают определить местонахождение предмета/ лица. "></TextBlock>
-                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <Image Width="50" Height="50" Source="{Binding img1}"></Image>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="in" HorizontalAlignment="Center"></TextBlock>
-                        </WrapPanel>
-                        <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,0,30,0">
-                                <Image Width="50" Height="50"  Source="{Binding img2}"></Image>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="on" HorizontalAlignment="Center"></TextBlock>
-                        </WrapPanel>
-                        <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <Image Width="50" Height="50"  Source="{Binding img3}"></Image>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="under" HorizontalAlignment="Center"></TextBlock>
-                        </WrapPanel>
-                        <WrapPanel Margin="30,0,0,0" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <Image Width="50" Height="50"  Source="{Binding img4}"></Image>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="next to" HorizontalAlignment="Center"></TextBlock>
-                        </WrapPanel>
-                    </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,30,0">
-                                <Image Width="50" Height="50" Source="{Binding img5}" ></Image>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="in front of" HorizontalAlignment="Center"></TextBlock>
+                    <WrapPanel Orientation="Vertical" Background="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,70,0,70" Width="1200" Height="730">
+                        <WrapPanel.Effect>
+                            <DropShadowEffect Opacity="0.6"/>
+                        </WrapPanel.Effect>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/img/Line.png" Width="130" Margin="-30,-20,0,0" RenderTransformOrigin="0.5,0.5"/>
+                            <ComboBox Margin="300,-65,0,0" x:Name="vib" FontSize="{Binding s}" Width="500" Height="40" SelectionChanged="vib_SelectionChanged">
+                                <ComboBoxItem  FontSize="{Binding s}" Content="Предлоги"/>
+                                <ComboBoxItem  FontSize="{Binding s}" Content="Предлоги места"/>
+                                <ComboBoxItem  FontSize="{Binding s}" Content="Предлоги времени"/>
+                            </ComboBox>
+                        </StackPanel>
+                        <WrapPanel x:Name="mesto" Margin="70,0,0,15" Orientation="Vertical" Visibility="{Binding vs1}" HorizontalAlignment="Center">
+                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="Prepositions of ptace (предлоги места) помогают определить местонахождение предмета/ лица. "/>
+                            <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <Image Width="50" Height="50" Source="/img/in.png"/>
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="in" HorizontalAlignment="Center"/>
+                                </WrapPanel>
+                                <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,0,30,0">
+                                    <Image Width="50" Height="50"  Source="/img/on.png"/>
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="on" HorizontalAlignment="Center"/>
+                                </WrapPanel>
+                                <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <Image Width="50" Height="50"  Source="/img/under.png"/>
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="under" HorizontalAlignment="Center"/>
+                                </WrapPanel>
+                                <WrapPanel Margin="30,0,0,0" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <Image Width="50" Height="50"  Source="/img/next to.png"/>
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="next to" HorizontalAlignment="Center"/>
+                                </WrapPanel>
                             </WrapPanel>
-                            <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <Image Width="50" Height="50" Source="{Binding img6}"></Image>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="behind" HorizontalAlignment="Center"></TextBlock>
-                            </WrapPanel>
-                            <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,0,30,0">
-                                <Image Width="50" Height="50" Source="{Binding img7}"></Image>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="opposite" HorizontalAlignment="Center"></TextBlock>
-                            </WrapPanel>
-                            <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <Image Width="50" Height="50" Source="{Binding img8}"></Image>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="between" HorizontalAlignment="Center"></TextBlock>
+                            <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,30,0">
+                                    <Image Width="50" Height="50" Source="/img/in front of.png" />
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="in front of" HorizontalAlignment="Center"/>
+                                </WrapPanel>
+                                <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <Image Width="50" Height="50" Source="/img/behind.png"/>
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="behind" HorizontalAlignment="Center"/>
+                                </WrapPanel>
+                                <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,0,30,0">
+                                    <Image Width="50" Height="50" Source="/img/opposite.png"/>
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="opposite" HorizontalAlignment="Center"/>
+                                </WrapPanel>
+                                <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <Image Width="50" Height="50" Source="/img/between.png"/>
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="between" HorizontalAlignment="Center"/>
+                                </WrapPanel>
                             </WrapPanel>
                         </WrapPanel>
-                    </WrapPanel>
-                    <WrapPanel x:Name="vrem" Margin="0,0,0,15" Orientation="Vertical">
-                        <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Prepositions of time (предлоги времени)"></TextBlock>
-                        <Border BorderBrush="{Binding fg}" BorderThickness="1" >
-                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="At" HorizontalAlignment="Center"></TextBlock>
-                        </Border>
-                        <Border  BorderBrush="{Binding fg}" BorderThickness="1,0,1,1" >
-                            <WrapPanel Orientation="Vertical">
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="время: at 4 o'clock"></TextBlock>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="праздники: at Christmas"></TextBlock>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="выражения: at noon, at night, at the weekend"></TextBlock>
+                        <WrapPanel x:Name="vrem" Margin="270,0,0,15" Orientation="Vertical" Visibility="{Binding vs2}" HorizontalAlignment="Center">
+                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="Prepositions of time (предлоги времени)"/>
+                            <WrapPanel  Orientation="Vertical" HorizontalAlignment="Center" >
+                                <Border BorderBrush="#FFFF8000" BorderThickness="1">
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="At" HorizontalAlignment="Center"/>
+                                </Border>
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1">
+                                    <WrapPanel Orientation="Vertical">
+                                        <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="время: at 4 o'clock"/>
+                                        <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="праздники: at Christmas"/>
+                                        <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="выражения: at noon, at night, at the weekend"/>
+                                    </WrapPanel>
+                                </Border>
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1">
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="In" HorizontalAlignment="Center"/>
+                                </Border>
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1">
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="выражения: in the morning, in the afternoon, in the evening"/>
+                                </Border>
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1">
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="On" HorizontalAlignment="Center"/>
+                                </Border>
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1">
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="дни недели: on Monday"/>
+                                </Border>
                             </WrapPanel>
-                        </Border>
-                        <Border  BorderBrush="{Binding fg}" BorderThickness="1,0,1,1">
-                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="In" HorizontalAlignment="Center"></TextBlock>
-                        </Border>
-                        <Border  BorderBrush="{Binding fg}" BorderThickness="1,0,1,1">
-                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="выражения: in the morning, in the afternoon, in the evening"></TextBlock>
-                        </Border>
-                        <Border  BorderBrush="{Binding fg}" BorderThickness="1,0,1,1">
-                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="On" HorizontalAlignment="Center"></TextBlock>
-                        </Border>
-                        <Border  BorderBrush="{Binding fg}" BorderThickness="1,0,1,1">
-                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="дни недели: on Monday"></TextBlock>
-                        </Border>
+                        </WrapPanel>
                     </WrapPanel>
                 </StackPanel>
             </WrapPanel>

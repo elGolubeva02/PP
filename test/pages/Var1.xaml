@@ -10,16 +10,16 @@
         <ScrollViewer>
             <WrapPanel Orientation="Vertical" Background="{Binding bg}">
                 <StackPanel Margin="20,10,20,0">
-                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Stretch" >
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" >
                     <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">Закончить попытку</Button>
-                    <Button x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" >A</Button>
+                        <Button x:Name="newbg"  Margin="50,0,10,0" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" >A</Button>
                     <Button x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
-                    <Button x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}"  Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A-</Button>
-                    <Button x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}"  Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A+</Button>
+                        <Button x:Name="newsz" Margin="10,0,10,0" Click="newsz_Click" FontSize="{Binding s}"  Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A-</Button>
+                        <Button x:Name="newsz2" Margin="0,0,10,0" Click="newsz2_Click" FontSize="{Binding s}"  Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A+</Button>
                     <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">R</Button>
-                        <TextBlock  Text="До окончания времени работы осталось:" FontSize="{Binding s}" Foreground="{Binding fg}"/>
+                        <TextBlock Margin="50,0,5,0" Text="До окончания времени работы осталось:" FontSize="{Binding s}" Foreground="{Binding fg}"/>
                         <TextBlock Text="{Binding StringCountdown}" FontSize="{Binding s}" Foreground="{Binding fg}"/>
-                        <Button  x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" >На главную</Button>
+                        <Button  x:Name="home" Margin="50,0,0,0" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" >На главную</Button>
                         <Button  x:Name="var" Click="var_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" Margin="10,0,0,0" >К выбору варианта</Button>
                     </WrapPanel>
                 <TextBlock FontWeight="Bold" FontSize="{Binding s}" HorizontalAlignment="Center" Margin="0,30,0,30" Foreground="{Binding fg}">Раздел 1. АУДИРОВАНИЕ</TextBlock>

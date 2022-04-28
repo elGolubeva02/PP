@@ -17,18 +17,87 @@ using test.windowsTeor;
 namespace test
 {
     /// <summary>
-    /// Логика взаимодействия для Start.xaml
+    /// Логика взаимодействия для Start2.xaml
     /// </summary>
-    public partial class Start : Window, INotifyPropertyChanged
+    public partial class Start2 : Window, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+        public string bg { get; set; }
+        public string bb { get; set; }
+        public string fg { get; set; }
         public int s { get; set; }
         int fon = 0;
-        public Start()
+        public Start2(int f, int sz)
         {
             InitializeComponent();
-                s = 24;
-                PropertyChanged(this, new PropertyChangedEventArgs("s"));
+            fon = f;
+            s = sz;
+            PropertyChanged(this, new PropertyChangedEventArgs("s"));
+            if (f==1)
+            {
+                bg = "#000000";
+                PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+                bb = "#ffff00";
+                PropertyChanged(this, new PropertyChangedEventArgs("bb"));
+                fg = "#ffff00";
+                PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            }
+            else if(f==2)
+            {
+                bg = "#99ccff";
+                PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+                bb = "#0f6cbf";
+                PropertyChanged(this, new PropertyChangedEventArgs("bb"));
+                fg = "#0f6cbf";
+                PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            }
+        }
+
+        private void newbg_Click(object sender, RoutedEventArgs e)
+        {
+            bg = "#000000";
+            PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+            bb = "#ffff00";
+            PropertyChanged(this, new PropertyChangedEventArgs("bb"));
+            fg = "#ffff00";
+            PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            fon = 1;
+        }
+
+        private void newbg2_Click(object sender, RoutedEventArgs e)
+        {
+            bg = "#99ccff";
+            PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+            bb = "#0f6cbf";
+            PropertyChanged(this, new PropertyChangedEventArgs("bb"));
+            fg = "#0f6cbf";
+            PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            fon = 2;
+        }
+
+        private void newsz_Click(object sender, RoutedEventArgs e)
+        {
+            s -= 2;
+            PropertyChanged(this, new PropertyChangedEventArgs("s"));
+        }
+
+        private void newsz2_Click(object sender, RoutedEventArgs e)
+        {
+            s += 2;
+            PropertyChanged(this, new PropertyChangedEventArgs("s"));
+        }
+
+        private void oldbg_Click(object sender, RoutedEventArgs e)
+        {
+            fon = 0;
+            new Start().Show();
+            this.Close();
+        }
+
+        private void home_Click(object sender, RoutedEventArgs e)
+        {
+            new MainWindow().Show();
+            this.Close();
         }
 
         private void tem1_MouseDown(object sender, MouseButtonEventArgs e)
@@ -39,8 +108,16 @@ namespace test
 
         private void tem2_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            new Predlog(fon, s).Show();
-            this.Close();
+            if (fon != 0)
+            {
+                new Predlog2(fon, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new Predlog(fon, s).Show();
+                this.Close();
+            }
         }
 
         private void tem3_MouseDown(object sender, MouseButtonEventArgs e)
@@ -57,8 +134,16 @@ namespace test
 
         private void tem5_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            new SravPrev(fon, s).Show();
-            this.Close();
+            if (fon != 0)
+            {
+                new SravPrev2(fon, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new SravPrev(fon, s).Show();
+                this.Close();
+            }
         }
 
         private void tem6_MouseDown(object sender, MouseButtonEventArgs e)
@@ -131,43 +216,6 @@ namespace test
         {
             //new Guestion(fon, s).Show();
             //this.Close();
-        }
-
-        private void newbg_Click(object sender, RoutedEventArgs e)
-        {
-            fon = 1;
-            new Start2(fon,s).Show();
-            this.Close();
-        }
-
-        private void newbg2_Click(object sender, RoutedEventArgs e)
-        {
-            fon = 2;
-            new Start2(fon,s).Show();
-            this.Close();
-        }
-
-        private void newsz_Click(object sender, RoutedEventArgs e)
-        {
-            s -= 2;
-            PropertyChanged(this, new PropertyChangedEventArgs("s"));
-        }
-
-        private void newsz2_Click(object sender, RoutedEventArgs e)
-        {
-            s += 2;
-            PropertyChanged(this, new PropertyChangedEventArgs("s"));
-        }
-
-        private void oldbg_Click(object sender, RoutedEventArgs e)
-        {
-            fon = 0;
-        }
-
-        private void home_Click(object sender, RoutedEventArgs e)
-        {
-            new MainWindow().Show();
-            this.Close();
         }
     }
 }
