@@ -17,20 +17,37 @@ using test.windowsTask;
 namespace test.windowsTeor
 {
     /// <summary>
-    /// Логика взаимодействия для SomeAny.xaml
+    /// Логика взаимодействия для ThereIsThereAre2.xaml
     /// </summary>
-    public partial class SomeAny : Window, INotifyPropertyChanged
+    public partial class ThereIsThereAre2 : Window, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+        public string bg { get; set; }
+        public string fg { get; set; }
         public int s { get; set; }
-        int f;
-        public SomeAny(int fon, int sz)
+        int fon;
+        public ThereIsThereAre2(int f, int sz)
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            fon = f;
             s = sz;
-            f = fon;
             PropertyChanged(this, new PropertyChangedEventArgs("s"));
+            if (fon == 1)
+            {
+                bg = "#000000";
+                PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+                fg = "#ffff00";
+                PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            }
+            else if (fon == 2)
+            {
+                bg = "#99ccff";
+                PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+                fg = "#0f6cbf";
+                PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            }
         }
+
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
             new Start().Show();
@@ -39,16 +56,20 @@ namespace test.windowsTeor
 
         private void newbg_Click(object sender, RoutedEventArgs e)
         {
-            f = 1;
-            new SomeAny2(f, s).Show();
-            this.Close();
+            bg = "#000000";
+            PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+            fg = "#ffff00";
+            PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            fon = 1;
         }
 
         private void newbg2_Click(object sender, RoutedEventArgs e)
         {
-            f = 2;
-            new SomeAny2(f, s).Show();
-            this.Close();
+            bg = "#99ccff";
+            PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+            fg = "#0f6cbf";
+            PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            fon = 2;
         }
 
         private void newsz_Click(object sender, RoutedEventArgs e)
@@ -65,12 +86,14 @@ namespace test.windowsTeor
 
         private void oldbg_Click(object sender, RoutedEventArgs e)
         {
-            f = 0;
+            fon = 0;
+            new PritPadezh(fon, s).Show();
+            this.Close();
         }
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new SomeAnyTask(f, s).Show();
+            new PritPadezhTask(fon, s).Show();
             this.Close();
         }
     }

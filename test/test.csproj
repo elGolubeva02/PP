@@ -104,17 +104,41 @@
     <Compile Include="windowsRez\RezultVar5.xaml.cs">
       <DependentUpon>RezultVar5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTask\ChislTask.xaml.cs">
+      <DependentUpon>ChislTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTask\MnozhTask.xaml.cs">
+      <DependentUpon>MnozhTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTask\MuchManyTask.xaml.cs">
+      <DependentUpon>MuchManyTask.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTask\PredlogTask.xaml.cs">
       <DependentUpon>PredlogTask.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTask\PritMestTask.xaml.cs">
+      <DependentUpon>PritMestTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTask\PritPadezhTask.xaml.cs">
+      <DependentUpon>PritPadezhTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTask\SomeAnyTask.xaml.cs">
+      <DependentUpon>SomeAnyTask.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTask\SravPrevTask.xaml.cs">
       <DependentUpon>SravPrevTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTask\ThereIsThereAreTask.xaml.cs">
+      <DependentUpon>ThereIsThereAreTask.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\Article.xaml.cs">
       <DependentUpon>Article.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\Chisl.xaml.cs">
       <DependentUpon>Chisl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\Chisl2.xaml.cs">
+      <DependentUpon>Chisl2.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\Guestion.xaml.cs">
       <DependentUpon>Guestion.xaml</DependentUpon>
@@ -131,8 +155,14 @@
     <Compile Include="windowsTeor\Mnozh.xaml.cs">
       <DependentUpon>Mnozh.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTeor\Mnozh2.xaml.cs">
+      <DependentUpon>Mnozh2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTeor\MuchMany.xaml.cs">
       <DependentUpon>MuchMany.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\MuchMany2.xaml.cs">
+      <DependentUpon>MuchMany2.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\Predlog.xaml.cs">
       <DependentUpon>Predlog.xaml</DependentUpon>
@@ -143,11 +173,20 @@
     <Compile Include="windowsTeor\PritMest.xaml.cs">
       <DependentUpon>PritMest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTeor\PritMest2.xaml.cs">
+      <DependentUpon>PritMest2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTeor\PritPadezh.xaml.cs">
       <DependentUpon>PritPadezh.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTeor\PritPadezh2.xaml.cs">
+      <DependentUpon>PritPadezh2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTeor\SomeAny.xaml.cs">
       <DependentUpon>SomeAny.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\SomeAny2.xaml.cs">
+      <DependentUpon>SomeAny2.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\SravPrev.xaml.cs">
       <DependentUpon>SravPrev.xaml</DependentUpon>
@@ -157,6 +196,9 @@
     </Compile>
     <Compile Include="windowsTeor\ThereIsThereAre.xaml.cs">
       <DependentUpon>ThereIsThereAre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\ThereIsThereAre2.xaml.cs">
+      <DependentUpon>ThereIsThereAre2.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\ThisThat.xaml.cs">
       <DependentUpon>ThisThat.xaml</DependentUpon>
@@ -243,11 +285,39 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTask\ChislTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTask\MnozhTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTask\MuchManyTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTask\PredlogTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTask\PritMestTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTask\PritPadezhTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTask\SomeAnyTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTask\SravPrevTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTask\ThereIsThereAreTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -256,6 +326,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windowsTeor\Chisl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\Chisl2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -279,7 +353,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTeor\Mnozh2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTeor\MuchMany.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\MuchMany2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -295,11 +377,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTeor\PritMest2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTeor\PritPadezh.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTeor\PritPadezh2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTeor\SomeAny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\SomeAny2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -312,6 +406,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windowsTeor\ThereIsThereAre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\ThereIsThereAre2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

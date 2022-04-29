@@ -24,11 +24,11 @@
                     </StackPanel.Effect>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/img/Line.png" Width="130" Margin="-30,-20,0,0" RenderTransformOrigin="0.5,0.5"/>
-                        <ComboBox Margin="300,-65,0,0" x:Name="vib" FontSize="{Binding s}" Width="500" Height="40" BorderBrush="{Binding bg}" SelectionChanged="vib_SelectionChanged">
-                            <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Степени сравнения</ComboBoxItem>
-                            <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Сравнительная степень прилагательных</ComboBoxItem>
-                            <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Превосходная степень прилагательных</ComboBoxItem>
-                            <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Исключения</ComboBoxItem>
+                        <ComboBox Margin="300,-65,0,0" x:Name="vib" FontSize="{Binding s}" Width="500" Height="40" SelectionChanged="vib_SelectionChanged">
+                            <ComboBoxItem  FontSize="{Binding s}">Степени сравнения</ComboBoxItem>
+                            <ComboBoxItem  FontSize="{Binding s}">Сравнительная степень прилагательных</ComboBoxItem>
+                            <ComboBoxItem  FontSize="{Binding s}">Превосходная степень прилагательных</ComboBoxItem>
+                            <ComboBoxItem  FontSize="{Binding s}">Исключения</ComboBoxItem>
                         </ComboBox>
                     </StackPanel>
                     <ScrollViewer CanContentScroll="True" Visibility="{Binding vs1}">
@@ -47,7 +47,7 @@
                                 <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="tall"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="tallest"></TextBlock>
                                 </Border>
                             </StackPanel>
@@ -55,7 +55,7 @@
                                 <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="tasty"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="tastiest"></TextBlock>
                                 </Border>
                             </StackPanel>
@@ -63,7 +63,7 @@
                                 <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="fat"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="fattest"></TextBlock>
                                 </Border>
                             </StackPanel>
@@ -71,7 +71,7 @@
                                 <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="interesting"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="most interesting"></TextBlock>
                                 </Border>
                             </StackPanel>
@@ -99,7 +99,7 @@
                                 <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="small"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="smaller"></TextBlock>
                                 </Border>
                             </StackPanel>
@@ -107,7 +107,7 @@
                                 <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="big"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="bigger"></TextBlock>
                                 </Border>
                             </StackPanel>
@@ -115,7 +115,7 @@
                                 <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="busy"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="busier"></TextBlock>
                                 </Border>
                             </StackPanel>
@@ -123,7 +123,7 @@
                                 <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="popular"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="more popular"></TextBlock>
                                 </Border>
                             </StackPanel>
@@ -152,10 +152,10 @@
                                 <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="good"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="better"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="best"></TextBlock>
                                 </Border>
                             </StackPanel>
@@ -163,10 +163,10 @@
                                 <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="bad"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="worse"></TextBlock>
                                 </Border>
-                                <Border  BorderBrush="#FFFF8000" BorderThickness="1,0,1,1" Width="250">
+                                <Border  BorderBrush="#FFFF8000" BorderThickness="0,0,1,1" Width="250">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="worst"></TextBlock>
                                 </Border>
                             </StackPanel>
