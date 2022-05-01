@@ -104,8 +104,20 @@
     <Compile Include="windowsRez\RezultVar5.xaml.cs">
       <DependentUpon>RezultVar5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTask\ArticleTask.xaml.cs">
+      <DependentUpon>ArticleTask.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTask\ChislTask.xaml.cs">
       <DependentUpon>ChislTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTask\GuestionTask.xaml.cs">
+      <DependentUpon>GuestionTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTask\HaveGotTask.xaml.cs">
+      <DependentUpon>HaveGotTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTask\HaveToTask.xaml.cs">
+      <DependentUpon>HaveToTask.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTask\MnozhTask.xaml.cs">
       <DependentUpon>MnozhTask.xaml</DependentUpon>
@@ -131,8 +143,17 @@
     <Compile Include="windowsTask\ThereIsThereAreTask.xaml.cs">
       <DependentUpon>ThereIsThereAreTask.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTask\ThisThatTask.xaml.cs">
+      <DependentUpon>ThisThatTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTask\ToBeTask.xaml.cs">
+      <DependentUpon>ToBeTask.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTeor\Article.xaml.cs">
       <DependentUpon>Article.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\Article2.xaml.cs">
+      <DependentUpon>Article2.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\Chisl.xaml.cs">
       <DependentUpon>Chisl.xaml</DependentUpon>
@@ -143,11 +164,20 @@
     <Compile Include="windowsTeor\Guestion.xaml.cs">
       <DependentUpon>Guestion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTeor\Guestion2.xaml.cs">
+      <DependentUpon>Guestion2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTeor\HaveGot.xaml.cs">
       <DependentUpon>HaveGot.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTeor\HaveGot2.xaml.cs">
+      <DependentUpon>HaveGot2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTeor\HaveTo.xaml.cs">
       <DependentUpon>HaveTo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\HaveTo2.xaml.cs">
+      <DependentUpon>HaveTo2.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\Lecsica.xaml.cs">
       <DependentUpon>Lecsica.xaml</DependentUpon>
@@ -203,11 +233,17 @@
     <Compile Include="windowsTeor\ThisThat.xaml.cs">
       <DependentUpon>ThisThat.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsTeor\ThisThat2.xaml.cs">
+      <DependentUpon>ThisThat2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsTeor\Times.xaml.cs">
       <DependentUpon>Times.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\ToBe.xaml.cs">
       <DependentUpon>ToBe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsTeor\ToBe2.xaml.cs">
+      <DependentUpon>ToBe2.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -285,7 +321,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTask\ArticleTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTask\ChislTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTask\GuestionTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTask\HaveGotTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTask\HaveToTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -321,7 +373,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTask\ThisThatTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTask\ToBeTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTeor\Article.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\Article2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -337,11 +401,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTeor\Guestion2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTeor\HaveGot.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTeor\HaveGot2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTeor\HaveTo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\HaveTo2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -417,11 +493,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsTeor\ThisThat2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsTeor\Times.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windowsTeor\ToBe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsTeor\ToBe2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

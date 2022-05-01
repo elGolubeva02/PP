@@ -19,10 +19,10 @@
                         <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">R</Button>
                         <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">Перейти к упражнениям</Button>
                     </WrapPanel>
-                    <ComboBox x:Name="vib" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" SelectionChanged="vib_SelectionChanged">
-                        <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Предлоги</ComboBoxItem>
-                        <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Предлоги места</ComboBoxItem>
-                        <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Предлоги времени</ComboBoxItem>
+                    <ComboBox x:Name="vib" FontSize="{Binding s}"  Foreground="{Binding bb}" SelectionChanged="vib_SelectionChanged">
+                        <ComboBoxItem  FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}">Предлоги</ComboBoxItem>
+                        <ComboBoxItem  FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}">Предлоги места</ComboBoxItem>
+                        <ComboBoxItem  FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}">Предлоги времени</ComboBoxItem>
                     </ComboBox>
                     <WrapPanel x:Name="mesto" Margin="0,200,0,15" Orientation="Vertical" Visibility="{Binding vs1}" HorizontalAlignment="Center">
                         <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Prepositions of ptace (предлоги места) помогают определить местонахождение предмета/ лица. "></TextBlock>
@@ -63,7 +63,7 @@
                             </WrapPanel>
                         </WrapPanel>
                     </WrapPanel>
-                    <WrapPanel x:Name="vrem" Margin="0,200,0,15" Orientation="Vertical" Visibility="{Binding vs2}" HorizontalAlignment="Center">
+                    <WrapPanel x:Name="vrem" Margin="0,50,0,15" Orientation="Vertical" Visibility="{Binding vs2}" HorizontalAlignment="Center">
                         <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Prepositions of time (предлоги времени)"></TextBlock>
                         <WrapPanel  Orientation="Vertical" HorizontalAlignment="Center" >
                             <Border BorderBrush="{Binding fg}" BorderThickness="1">

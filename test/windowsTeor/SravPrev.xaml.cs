@@ -34,7 +34,6 @@ namespace test.windowsTeor
             f = fon;
             PropertyChanged(this, new PropertyChangedEventArgs("s"));
             vib.SelectedIndex = 0;
-           
         }
 
         private void Chack_Click(object sender, RoutedEventArgs e)

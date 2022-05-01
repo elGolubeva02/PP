@@ -128,8 +128,16 @@ namespace test
 
         private void tem4_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //new Article(fon, s).Show();
-            //this.Close();
+            if (fon != 0)
+            {
+                new Article2(fon, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new Article(fon, s).Show();
+                this.Close();
+            }
         }
 
         private void tem5_MouseDown(object sender, MouseButtonEventArgs e)
@@ -204,20 +212,44 @@ namespace test
 
         private void tem10_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //new ThisThat(fon, s).Show();
-            //this.Close();
+            if (fon != 0)
+            {
+                new ThisThat2(fon, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new ThisThat(fon, s).Show();
+                this.Close();
+            }
         }
 
         private void tem11_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //new ToBe(fon, s).Show();
-            //this.Close();
+            if (fon != 0)
+            {
+                new ToBe2(fon, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new ToBe(fon, s).Show();
+                this.Close();
+            }
         }
 
         private void tem12_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //new PritMest(fon, s).Show();
-            //this.Close();
+            if (fon != 0)
+            {
+                new PritMest2(fon, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new PritMest(fon, s).Show();
+                this.Close();
+            }
         }
 
         private void tem13_MouseDown(object sender, MouseButtonEventArgs e)
@@ -236,8 +268,16 @@ namespace test
 
         private void tem14_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //new HaveGot(fon, s).Show();
-            //this.Close();
+            if (fon != 0)
+            {
+                new HaveGot2(fon, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new HaveGot(fon, s).Show();
+                this.Close();
+            }
         }
 
         private void tem15_MouseDown(object sender, MouseButtonEventArgs e)
@@ -256,14 +296,30 @@ namespace test
 
         private void tem16_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //new HaveTo(fon, s).Show();
-            //this.Close();
+            if (fon != 0)
+            {
+                new HaveTo2(fon, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new HaveTo(fon, s).Show();
+                this.Close();
+            }
         }
 
         private void tem19_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //new Guestion(fon, s).Show();
-            //this.Close();
+            if (fon != 0)
+            {
+                new Guestion2(fon, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new Guestion(fon, s).Show();
+                this.Close();
+            }
         }
     }
 }

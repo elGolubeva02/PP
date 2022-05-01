@@ -25,7 +25,7 @@
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/img/Line.png" Width="130" Margin="-30,-20,0,0" RenderTransformOrigin="0.5,0.5"/>
                         <Border Background="#FFECECEC" BorderBrush="#FFACACAC" BorderThickness="0.6" Margin="300,-65,0,0" Width="500" Height="40"  >
-                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Much/Many/A lot of" Margin="0,2,0,0" TextAlignment="Center"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="Much/Many/A lot of" Margin="0,2,0,0" TextAlignment="Center"></TextBlock>
                         </Border>
                     </StackPanel>
                     <ScrollViewer CanContentScroll="True">

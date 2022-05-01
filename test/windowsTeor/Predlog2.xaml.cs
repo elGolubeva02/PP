@@ -25,6 +25,7 @@ namespace test.windowsTeor
         public string vs1 { get; set; }
         public string vs2 { get; set; }
         public string bg { get; set; }
+        public string bb { get; set; }
         public string fg { get; set; }
         public string img1 { get; set; }
         public string img2 { get; set; }
@@ -47,6 +48,8 @@ namespace test.windowsTeor
             {
                 bg = "#000000";
                 PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+                bb = "#000000";
+                PropertyChanged(this, new PropertyChangedEventArgs("bb"));
                 fg = "#ffff00";
                 PropertyChanged(this, new PropertyChangedEventArgs("fg"));
                 img1 = "/img/inЖ.png";
@@ -72,6 +75,8 @@ namespace test.windowsTeor
                 PropertyChanged(this, new PropertyChangedEventArgs("bg"));
                 fg = "#0f6cbf";
                 PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+                bb = "#0f6cbf";
+                PropertyChanged(this, new PropertyChangedEventArgs("bb"));
                 img1 = "/img/inС.png";
                 PropertyChanged(this, new PropertyChangedEventArgs("img1"));
                 img2 = "/img/onС.png";
@@ -119,11 +124,15 @@ namespace test.windowsTeor
             PropertyChanged(this, new PropertyChangedEventArgs("img7"));
             img8 = "/img/betweenЖ.png";
             PropertyChanged(this, new PropertyChangedEventArgs("img8"));
+            bb = "#000000";
+            PropertyChanged(this, new PropertyChangedEventArgs("bb"));
             fon = 1;
         }
 
         private void newbg2_Click(object sender, RoutedEventArgs e)
         {
+            bb = "#0f6cbf";
+            PropertyChanged(this, new PropertyChangedEventArgs("bb"));
             bg = "#99ccff";
             PropertyChanged(this, new PropertyChangedEventArgs("bg"));
             fg = "#0f6cbf";

@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test.windowsTeor"
         mc:Ignorable="d"
-        Title="Article" Height="450" Width="800">
-    <Grid>
-        
+        Title="Article" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized" ResizeMode="NoResize">
+    <Grid Background="#9CD7BB">
+        <WrapPanel Orientation="Vertical"  HorizontalAlignment="Center">
+            <StackPanel Margin="20,10,20,0">
+                <WrapPanel Orientation="Horizontal" Margin="0,0,0,35" HorizontalAlignment="Center" Background="White" >
+                    <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="White">На главную</Button>
+                    <Button x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
+                    <Button x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
+                    <Button x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="White">A-</Button>
+                    <Button x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="White">A+</Button>
+                    <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="White">R</Button>
+                    <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="White">Перейти к упражнениям</Button>
+                </WrapPanel>
+                <StackPanel Orientation="Vertical" Background="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,70,0,0" Width="1200" Height="730">
+                    <StackPanel.Effect>
+                        <DropShadowEffect Opacity="0.6"/>
+                    </StackPanel.Effect>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/img/Line.png" Width="130" Margin="-30,-20,0,0" RenderTransformOrigin="0.5,0.5"/>
+                        <Border Background="#FFECECEC" BorderBrush="#FFACACAC" BorderThickness="0.6" Margin="300,-65,0,0" Width="500" Height="40"  >
+                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="Неопределенный артикль A/An" Margin="0,2,0,0" TextAlignment="Center"></TextBlock>
+                        </Border>
+                    </StackPanel>
+                    <ScrollViewer CanContentScroll="True">
+                        <StackPanel Height="650" Margin="50,0,0,0" Orientation="Vertical">
+                            <TextBlock Text="Неопределенный артикль a/an употребляется перед исчисляемыми существительными в единсвенном числе." TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Margin="0,5,0,10"></TextBlock>
+                            <TextBlock Text="a употребляется перед существительными, начинающимися с согласных" TextWrapping="Wrap" FontSize="{Binding s}"></TextBlock>
+                            <TextBlock Text="a ball; a pencil case" TextWrapping="Wrap" FontSize="{Binding s}" Margin="0,0,0,10" FontStyle="Italic"></TextBlock>
+                            <TextBlock Text="an употребляется перед существительными, начинающимися с гласных" TextWrapping="Wrap" FontSize="{Binding s}"></TextBlock>
+                            <TextBlock Text="an aeroplane; an elephant" TextWrapping="Wrap" FontSize="{Binding s}" Margin="0,0,0,10" FontStyle="Italic"></TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </StackPanel>
+            </StackPanel>
+        </WrapPanel>
     </Grid>
 </Window>
+

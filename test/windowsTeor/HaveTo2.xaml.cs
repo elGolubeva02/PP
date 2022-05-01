@@ -17,20 +17,21 @@ using test.windowsTask;
 namespace test.windowsTeor
 {
     /// <summary>
-    /// Логика взаимодействия для SravPrev2.xaml
+    /// Логика взаимодействия для HaveTo2.xaml
     /// </summary>
-    public partial class SravPrev2 : Window, INotifyPropertyChanged
+    public partial class HaveTo2 : Window, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public string vs1 { get; set; }
         public string vs2 { get; set; }
         public string vs3 { get; set; }
+        public string vs4 { get; set; }
         public string bg { get; set; }
         public string fg { get; set; }
         public string bb { get; set; }
         public int s { get; set; }
         int fon;
-        public SravPrev2(int f, int sz)
+        public HaveTo2(int f, int sz)
         {
             InitializeComponent();
             fon = f;
@@ -39,10 +40,10 @@ namespace test.windowsTeor
             vib.SelectedIndex = 0;
             if (fon == 1)
             {
-                bb = "#000000";
-                PropertyChanged(this, new PropertyChangedEventArgs("bb"));
                 bg = "#000000";
                 PropertyChanged(this, new PropertyChangedEventArgs("bg"));
+                bb = "#000000";
+                PropertyChanged(this, new PropertyChangedEventArgs("bb"));
                 fg = "#ffff00";
                 PropertyChanged(this, new PropertyChangedEventArgs("fg"));
             }
@@ -50,10 +51,10 @@ namespace test.windowsTeor
             {
                 bg = "#99ccff";
                 PropertyChanged(this, new PropertyChangedEventArgs("bg"));
-                fg = "#0f6cbf";
-                PropertyChanged(this, new PropertyChangedEventArgs("fg"));
                 bb = "#0f6cbf";
                 PropertyChanged(this, new PropertyChangedEventArgs("bb"));
+                fg = "#0f6cbf";
+                PropertyChanged(this, new PropertyChangedEventArgs("fg"));
             }
 
         }
@@ -68,10 +69,10 @@ namespace test.windowsTeor
         {
             bg = "#000000";
             PropertyChanged(this, new PropertyChangedEventArgs("bg"));
-            bb = "#000000";
-            PropertyChanged(this, new PropertyChangedEventArgs("bb"));
             fg = "#ffff00";
             PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            bb = "#000000";
+            PropertyChanged(this, new PropertyChangedEventArgs("bb"));
             fon = 1;
         }
 
@@ -79,10 +80,10 @@ namespace test.windowsTeor
         {
             bg = "#99ccff";
             PropertyChanged(this, new PropertyChangedEventArgs("bg"));
-            bb = "#0f6cbf";
-            PropertyChanged(this, new PropertyChangedEventArgs("bb"));
             fg = "#0f6cbf";
             PropertyChanged(this, new PropertyChangedEventArgs("fg"));
+            bb = "#0f6cbf";
+            PropertyChanged(this, new PropertyChangedEventArgs("bb"));
             fon = 2;
         }
 
@@ -107,7 +108,7 @@ namespace test.windowsTeor
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new SravPrevTask(fon, s).Show();
+            new HaveToTask(fon, s).Show();
             this.Close();
         }
 
@@ -122,6 +123,8 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs2"));
                     vs3 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
+                    vs4 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
                     break;
                 case 1:
                     vs1 = "Visible";
@@ -130,6 +133,8 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs2"));
                     vs3 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
+                    vs4 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
                     break;
                 case 2:
                     vs2 = "Visible";
@@ -138,12 +143,26 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs1"));
                     vs3 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
+                    vs4 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
                     break;
                 case 3:
                     vs3 = "Visible";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
                     vs1 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs1"));
+                    vs2 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs2"));
+                    vs4 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
+                    break;
+                case 4:
+                    vs4 = "Visible";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
+                    vs1 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs1"));
+                    vs3 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
                     vs2 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs2"));
                     break;

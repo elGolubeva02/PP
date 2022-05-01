@@ -22,9 +22,6 @@ namespace test.windowsTeor
     public partial class MuchMany : Window, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        public string vs1 { get; set; }
-        public string vs2 { get; set; }
-        public string vs3 { get; set; }
         public int s { get; set; }
         int f;
         public MuchMany(int fon, int sz)

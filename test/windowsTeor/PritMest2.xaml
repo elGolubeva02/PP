@@ -19,21 +19,18 @@
                         <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">R</Button>
                         <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">Перейти к упражнениям</Button>
                     </WrapPanel>
-                    <ComboBox x:Name="vib" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" SelectionChanged="vib_SelectionChanged">
-                        <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Степени сравнения</ComboBoxItem>
-                        <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Сравнительная степень прилогательных</ComboBoxItem>
-                        <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Превосходная степень прилогательных</ComboBoxItem>
-                        <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">Исключения</ComboBoxItem>
-                    </ComboBox>
+                    <Border  Height="40" Background="{Binding bg}" BorderBrush="{Binding fg}" BorderThickness="0.6" >
+                        <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Притяжательные местоимения" Margin="0,2,0,0" TextAlignment="Center"></TextBlock>
+                    </Border>
                     <WrapPanel x:Name="srav" Margin="0,0,0,15" Orientation="Vertical" Visibility="{Binding vs1}">
                         <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontSize="{Binding s}"  Text="Притяжательные местоимения показывают: принадлежность, отношщения между людьми."></TextBlock>
                         <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontSize="{Binding s}"  Text="Притяжательные местоимения употребляются перед существительными."></TextBlock>
                         <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontSize="{Binding s}" Text="Look at my schoolbag! This is my mother." FontStyle="Italic"></TextBlock>
                         <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding bb}" Background="#FFFF8000" BorderThickness="1" Width="250">
+                            <Border  BorderBrush="{Binding bb}" Background="{Binding bg}" BorderThickness="1" Width="250">
                                 <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Личные местоимения" HorizontalAlignment="Center"></TextBlock>
                             </Border>
-                            <Border  BorderBrush="{Binding bb}" Background="#FFFF8000" BorderThickness="0,1,1,1" Width="250">
+                            <Border  BorderBrush="{Binding bb}" Background="{Binding bg}" BorderThickness="0,1,1,1" Width="250">
                                 <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Притяжательные местоимения" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                         </StackPanel>
@@ -95,7 +92,7 @@
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="they"></TextBlock>
+                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="they"></TextBlock>
                             </Border>
                             <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
                                 <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="their"></TextBlock>
