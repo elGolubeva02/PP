@@ -19,7 +19,7 @@ namespace test.windowsCheck
     /// </summary>
     public partial class Right : Window
     {
-        public Right()
+        public Right(int fon, int sz)
         {
             InitializeComponent();
         }

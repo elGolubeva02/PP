@@ -26,6 +26,7 @@ namespace test.windowsTeor
         public string vs2 { get; set; }
         public string vs3 { get; set; }
         public string vs4 { get; set; }
+        public string vs5 { get; set; }
         public int s { get; set; }
         int f;
         public HaveTo(int fon, int sz)
@@ -87,6 +88,8 @@ namespace test.windowsTeor
             switch (vib.SelectedIndex)
             {
                 case 0:
+                    vs5 = "Visible";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs5"));
                     vs1 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs1"));
                     vs2 = "Collapsed";
@@ -105,6 +108,8 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
                     vs4 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
+                    vs5 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs5"));
                     break;
                 case 2:
                     vs2 = "Visible";
@@ -115,6 +120,8 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
                     vs4 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
+                    vs5 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs5"));
                     break;
                 case 3:
                     vs3 = "Visible";
@@ -125,6 +132,8 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs2"));
                     vs4 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
+                    vs5 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs5"));
                     break;
                 case 4:
                     vs4 = "Visible";
@@ -135,6 +144,8 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
                     vs2 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs2"));
+                    vs5 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs5"));
                     break;
             }
         }

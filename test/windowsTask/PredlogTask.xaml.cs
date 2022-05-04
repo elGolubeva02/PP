@@ -23,7 +23,6 @@ namespace test.windowsTask
     public partial class PredlogTask : Window, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        public string vs { get; set; }
         public string bg { get; set; }
         public string bb { get; set; }
         public string fg { get; set; }

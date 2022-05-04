@@ -216,11 +216,14 @@
                             <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="Mast употребляется, тогда, когда говорят, что действие должно быть обязательно выполнено."></TextBlock>
                             <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="I must put my rubbish in the bin." FontStyle="Italic"></TextBlock>
                             <TextBlock Margin="0,10,0,0" TextWrapping="Wrap" FontSize="{Binding s}" Text="Must not употребляется, когда запрещают что-то делать."></TextBlock>
-                                <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="You must not run." FontStyle="Italic"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="You must not run." FontStyle="Italic"></TextBlock>
                         </WrapPanel>
                     </ScrollViewer>
+                    <WrapPanel Margin="50,0,0,0" Orientation="Vertical" Visibility="{Binding vs5}">
+                        <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="Модальные глаголы в английском языке — это небольшая группа особых глаголов. От обычных они отличаются тем, что не могут выражать конкретные действия или состояния, а лишь отражают некое отношение говорящего к этим действиям: оценку, возможность, долженствование, предположительность, разрешение. Английские модальные глаголы не живут самостоятельно: им обязательно нужен обычный глагол в инфинитиве без частички to, чтобы показать что конкретно может или должно быть, случиться, сделать. Вместе модальный глагол и инфинитив образуют составное модальное сказуемое (compound modal predicate).Смысловой глагол мы всегда ставим после модального в форме инфинитива. При этом глаголы «be to», «ought to», «have to», «have got to» сохраняют частичку «to», а остальные глаголы используются без нее."></TextBlock>
+                    </WrapPanel>
                 </StackPanel>
-            </StackPanel>
+                </StackPanel>
         </WrapPanel>
     </Grid>
 </Window>

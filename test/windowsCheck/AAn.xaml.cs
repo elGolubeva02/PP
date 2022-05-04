@@ -16,27 +16,23 @@ using System.Windows.Shapes;
 namespace test.windowsCheck
 {
     /// <summary>
-    /// Логика взаимодействия для PredMest.xaml
+    /// Логика взаимодействия для AAn.xaml
     /// </summary>
-    public partial class PredMest : Window, INotifyPropertyChanged
+    public partial class AAn : Window, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public string vsmest { get; set; }
-        public string vsvrem { get; set; }
         public string bg { get; set; }
         public string fg { get; set; }
         public int s { get; set; }
-        int f, nom;
-        public PredMest(int n, int fon, int sz)
+        int f;
+        public AAn(int fon, int sz)
         {
             InitializeComponent();
             vsmest = "Collapsed";
             PropertyChanged(this, new PropertyChangedEventArgs("vsmest"));
-            vsvrem = "Collapsed";
-            PropertyChanged(this, new PropertyChangedEventArgs("vsvrem"));
             s = sz;
             f = fon;
-            nom = n;
             PropertyChanged(this, new PropertyChangedEventArgs("s"));
             if (fon == 0)
             {
@@ -58,23 +54,10 @@ namespace test.windowsCheck
                 PropertyChanged(this, new PropertyChangedEventArgs("fg"));
             }
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(nom == 1)
-            {
-                vsmest = "Visible";
-                PropertyChanged(this, new PropertyChangedEventArgs("vsmest"));
-                vsvrem = "Collapsed";
-                PropertyChanged(this, new PropertyChangedEventArgs("vsvrem"));
-            }
-            else
-            {
-                vsvrem = "Visible";
-                PropertyChanged(this, new PropertyChangedEventArgs("vsvrem"));
-                vsmest = "Collapsed";
-                PropertyChanged(this, new PropertyChangedEventArgs("vsmest"));
-            }
+            vsmest = "Visible";
+            PropertyChanged(this, new PropertyChangedEventArgs("vsmest"));
         }
     }
 }
