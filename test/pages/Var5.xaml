@@ -26,7 +26,7 @@
                     <TextBlock FontWeight="Bold" FontSize="{Binding s}" HorizontalAlignment="Center" Margin="0,30,0,30" Foreground="{Binding fg}">Раздел 1. АУДИРОВАНИЕ</TextBlock>
                     <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,0,0,10">
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Width="1160" Foreground="{Binding fg}" Text="Прослушай текст и прочитай восемь высказываний. Выбери пять высказываний, которые соответствуют прослушанному тексту. Ты услышишь запись дважды."></TextBlock>
+                            <TextBlock TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Прослушай текст и прочитай восемь высказываний. Выбери пять высказываний, которые соответствуют прослушанному тексту. Ты услышишь запись дважды."></TextBlock>
                             <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown" Margin="5,0,0,0"></Image>
                         </WrapPanel>
                     </Border>

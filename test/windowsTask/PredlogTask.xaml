@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test.windowsTask"
         mc:Ignorable="d"
-        Title="PredlogTask" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}">
+        Title="PredlogTask" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized">
     <Grid Background="{Binding bg}">
         <ScrollViewer>
             <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">

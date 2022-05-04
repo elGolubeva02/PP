@@ -25,8 +25,8 @@
                     <TextBlock FontWeight="Bold" FontSize="{Binding s}" HorizontalAlignment="Center" Margin="0,30,0,30" Foreground="{Binding fg}">Раздел 1. АУДИРОВАНИЕ</TextBlock>
                 <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,0,0,10">
                     <WrapPanel Orientation="Horizontal">
-                            <TextBlock TextWrapping="Wrap" VerticalAlignment="Center"  FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Width="1160" Foreground="{Binding fg}" Text="Прослушайте текст и выбрерите правильное утверждение. Ты услышишь запись дважды."></TextBlock>
-                        <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown" Margin="5,0,0,0"></Image>
+                            <TextBlock TextWrapping="Wrap" VerticalAlignment="Center"  FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Прослушайте текст и выбрерите правильное утверждение. Ты услышишь запись дважды."></TextBlock>
+                        <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown" Margin="50,0,0,0"></Image>
                     </WrapPanel>
                 </Border>
                 <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0">
@@ -260,7 +260,7 @@
                         Saturdays and Sundays I like to play
                     </TextBlock>
                 </WrapPanel>
-                <WrapPanel Orientation="Horizontal">
+                <WrapPanel Orientation="Horizontal" Margin="0,0,0,10">
                         <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" TextWrapping="Wrap">
                         very much. It was very
                     </TextBlock>

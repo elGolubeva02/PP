@@ -8,7 +8,7 @@
         Title="Right" Height="450" Width="800">
     <Grid>
         <ScrollViewer>
-            <WrapPanel Orientation="Vertical" Background="{Binding bg}" HorizontalAlignment="Center">
+            <WrapPanel Orientation="Vertical" Background="{Binding bg}" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Margin="20,10,20,0">
                     <WrapPanel Orientation="Horizontal">
                         <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="You're right"></TextBlock>

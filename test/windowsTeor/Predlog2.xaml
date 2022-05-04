@@ -90,6 +90,9 @@
                             </Border>
                         </WrapPanel>
                     </WrapPanel>
+                    <WrapPanel Margin="0,200,0,15" Orientation="Vertical" Visibility="{Binding vs3}" HorizontalAlignment="Center">
+                        <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Предлог — это часть речи, которая показывает отношение местоимения или существительного к другим словам в предложении. Это отношение может быть пространственным, временным, причинным или выражать направление движения. Аналог в русском языке — падеж. Поскольку предлог — это служебная часть речи, он не может употребляться самостоятельно и менять свою формулировку. "/>
+                    </WrapPanel>
                 </StackPanel>
             </WrapPanel>
         </ScrollViewer>

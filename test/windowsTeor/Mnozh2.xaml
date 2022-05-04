@@ -33,7 +33,10 @@
                     <TextBlock Text="У существительных, оканчивающихся на -f или -fe, во множественном числе заменяются на -v и добавляется -es." TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}"></TextBlock>
                     <TextBlock Text="shetf - shetves " TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Margin="0,0,0,10" FontStyle="Italic"></TextBlock>
                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="Исключения" Foreground="{Binding fg}" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
-                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                    <WrapPanel x:Name="prev" Margin="0,0,0,15" Orientation="Vertical" HorizontalAlignment="Center">
+                    <ScrollViewer VerticalScrollBarVisibility="Disabled" CanContentScroll="True" HorizontalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
                         <Border  BorderBrush="{Binding bb}" BorderThickness="1" Width="250">
                             <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Единственное число" HorizontalAlignment="Center"></TextBlock>
                         </Border>
@@ -97,14 +100,17 @@
                             <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="fish"></TextBlock>
                         </Border>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Center">
-                        <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
-                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="sheep"></TextBlock>
-                        </Border>
-                        <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
-                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="sheep"></TextBlock>
-                        </Border>
-                    </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Center">
+                                <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="sheep"></TextBlock>
+                                </Border>
+                                <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
+                                    <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="sheep"></TextBlock>
+                                </Border>
+                            </StackPanel>
+                        </StackPanel>
+                        </ScrollViewer>
+                        </WrapPanel>
                 </StackPanel>
             </WrapPanel>
         </ScrollViewer>

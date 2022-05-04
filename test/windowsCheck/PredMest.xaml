@@ -17,7 +17,7 @@
                         </WrapPanel>
                     </WrapPanel>
                     <WrapPanel x:Name="mest"  Orientation="Vertical" Visibility="{Binding vsmest}">
-                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="behind - за; in - в: on - на; opposite - напротив; under - под; in front of = перед; next to - рядом; between - между."></TextBlock>
+                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="behind - за; in - в: on - на; opposite - напротив; under - под; in front of - перед; next to - рядом; between - между."></TextBlock>
                     </WrapPanel>
                     <WrapPanel x:Name="vrem"  Orientation="Vertical" Visibility="{Binding vsvrem}">
                         <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="at - время, праздники, выражения: at noon, at night, at the weekend; in - выражения: in the morning/afternoon/evening; on - дни недели."></TextBlock>

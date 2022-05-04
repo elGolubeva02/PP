@@ -25,6 +25,7 @@ namespace test.windowsTeor
         public string vs1 { get; set; }
         public string vs2 { get; set; }
         public string vs3 { get; set; }
+        public string vs4 { get; set; }
         public int s { get; set; }
         int f;
         public SravPrev(int fon, int sz)
@@ -70,6 +71,8 @@ namespace test.windowsTeor
 
         private void oldbg_Click(object sender, RoutedEventArgs e)
         {
+            s = 24;
+            PropertyChanged(this, new PropertyChangedEventArgs("s"));
             f = 0;
         }
 
@@ -84,6 +87,8 @@ namespace test.windowsTeor
             switch (vib.SelectedIndex)
             {
                 case 0:
+                    vs4 = "Visible";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
                     vs1 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs1"));
                     vs2 = "Collapsed";
@@ -98,6 +103,8 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs2"));
                     vs3 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
+                    vs4 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
                     break;
                 case 2:
                     vs2 = "Visible";
@@ -106,6 +113,8 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs1"));
                     vs3 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
+                    vs4 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
                     break;
                 case 3:
                     vs3 = "Visible";
@@ -114,6 +123,8 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs1"));
                     vs2 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs2"));
+                    vs4 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs4"));
                     break;
             }
         }

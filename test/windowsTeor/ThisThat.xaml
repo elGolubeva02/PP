@@ -24,7 +24,7 @@
                     </StackPanel.Effect>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/img/Line.png" Width="130" Margin="-30,-20,0,0" RenderTransformOrigin="0.5,0.5"/>
-                        <Border Background="#FFECECEC" BorderBrush="#FFACACAC" BorderThickness="0.6" Margin="300,-65,0,0" Width="500" Height="40"  >
+                        <Border Background="#FFECECEC" BorderBrush="#FFACACAC" BorderThickness="0.6" Margin="150,-65,0,0" Width="800" Height="40">
                             <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Указательные местоимения This/That/These/Those - Этот/Тот/Эти/Те" Margin="0,2,0,0" TextAlignment="Center"></TextBlock>
                         </Border>
                     </StackPanel>

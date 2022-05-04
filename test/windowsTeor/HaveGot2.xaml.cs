@@ -87,6 +87,7 @@ namespace test.windowsTeor
         private void oldbg_Click(object sender, RoutedEventArgs e)
         {
             fon = 0;
+            s = 24;
             new HaveGot(fon, s).Show();
             this.Close();
         }

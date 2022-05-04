@@ -71,6 +71,8 @@ namespace test.windowsTeor
 
         private void oldbg_Click(object sender, RoutedEventArgs e)
         {
+            s = 24;
+            PropertyChanged(this, new PropertyChangedEventArgs("s"));
             f = 0;
         }
 

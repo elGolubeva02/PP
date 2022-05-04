@@ -26,7 +26,7 @@
                 <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,0,0,10">
                         <WrapPanel Orientation="Horizontal">
                         <TextBlock TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Прослушай разговор Элис и ее мамы. Выбери верный ответ на вопрос. Ты услышишь запись дважды." ></TextBlock>
-                        <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown" Margin="5,0,0,0"></Image>
+                        <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown" Margin="50,0,0,0"></Image>
                     </WrapPanel>
                 </Border>
                     <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
@@ -48,7 +48,7 @@
                 <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,30,0,10">
                     <WrapPanel Orientation="Horizontal">
                         <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Text="Прослушай текст. Закончи предложения 2–4, выбрав из предложенных вариантов тот, который соответствует содержанию текста. Ты услышишь запись дважды."></TextBlock>
-                        <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown_1" Margin="5,0,0,0"></Image>
+                        <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown_1"></Image>
                     </WrapPanel>
                 </Border>
                     <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">

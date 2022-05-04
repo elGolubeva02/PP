@@ -23,6 +23,8 @@
                         <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}"  Text="Глагол 'to be' (быть, находиться, являться)" Margin="0,2,0,0" TextAlignment="Center"></TextBlock>
                         </Border>
                     <WrapPanel Margin="0,0,0,15" Orientation="Vertical">
+                        <ScrollViewer VerticalScrollBarVisibility="Disabled" CanContentScroll="True" HorizontalScrollBarVisibility="Auto">
+                            <StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
                             <Border  BorderBrush="{Binding fg}" Background="{Binding bg}" BorderThickness="1" Width="500">
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Foreground="{Binding fg}"  Text="Утверждение" HorizontalAlignment="Center"></TextBlock>
@@ -208,7 +210,8 @@
                                     <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Foreground="{Binding fg}" Text="They aren't"></TextBlock>
                                 </Border>
                             </StackPanel>
-                            
+                            </StackPanel>
+                            </ScrollViewer>
                             <TextBlock Margin="0,20,0,0" TextWrapping="Wrap" FontSize="{Binding s}"  Foreground="{Binding fg}" Text="Краткие ответы" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
                             <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Foreground="{Binding fg}" Text="В кратких ответах используется Yes или No. В кратких ответах мы не повторяем весь вопрос, а используем только Yes или No, личное местоимение (I, you, he, etc) и глагол am ('m not), is (isn't)/are(aren't)."></TextBlock>
 

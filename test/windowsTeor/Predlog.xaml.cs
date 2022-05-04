@@ -24,6 +24,7 @@ namespace test.windowsTeor
         public event PropertyChangedEventHandler PropertyChanged;
         public string vs1 { get; set; }
         public string vs2 { get; set; }
+        public string vs3 { get; set; }
         public string img1 { get; set; }
         public string img2 { get; set; }
         public string img3 { get; set; }
@@ -79,6 +80,8 @@ namespace test.windowsTeor
 
         private void oldbg_Click(object sender, RoutedEventArgs e)
         {
+            s = 24;
+            PropertyChanged(this, new PropertyChangedEventArgs("s"));
             f = 0;
         }
 
@@ -93,6 +96,8 @@ namespace test.windowsTeor
             switch (vib.SelectedIndex)
             {
                 case 0:
+                    vs3 = "Visible";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
                     vs1 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs1"));
                     vs2 = "Collapsed";
@@ -103,8 +108,12 @@ namespace test.windowsTeor
                     PropertyChanged(this, new PropertyChangedEventArgs("vs1"));
                     vs2 = "Collapsed";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs2"));
+                    vs3 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
                     break;
                 case 2:
+                    vs3 = "Collapsed";
+                    PropertyChanged(this, new PropertyChangedEventArgs("vs3"));
                     vs2 = "Visible";
                     PropertyChanged(this, new PropertyChangedEventArgs("vs2"));
                     vs1 = "Collapsed";

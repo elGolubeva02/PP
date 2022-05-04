@@ -82,7 +82,7 @@
                             <TextBlock Margin="0,0,0,10" TextWrapping="Wrap" FontSize="{Binding s}" Text="У односложных прилагательных, оканчивающихся на краткую гласную + согласная, эта согласная удваивается и добавляется -est. Например, big - biggest"></TextBlock>
                             <TextBlock Margin="0,0,0,20" TextWrapping="Wrap" FontSize="{Binding s}" Text="В прилагательных, оканчивающихся на согласную + y, y заменяется на i и добавляется -est. Например, happy - happiest"></TextBlock>
                         </StackPanel>
-                       </ScrollViewer>
+                    </ScrollViewer>
                     <ScrollViewer CanContentScroll="True" Visibility="{Binding vs2}">
                         <StackPanel x:Name="srav" Margin="50,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" Height="650">
                             <TextBlock TextWrapping="Wrap" FontSize="{Binding s}"  Text="Comparatives (сравнительная степень прилагательных) + than используется для сравнения людей/предметов/объектов."></TextBlock>
@@ -134,7 +134,7 @@
                             <TextBlock Margin="0,0,0,10" TextWrapping="Wrap" FontSize="{Binding s}" Text="У односложных прилагательных, оканчивающихся на гласную + согласная, эта согласная удваивается и добавляется -er. Например, thin - thinner (than)"></TextBlock>
                             <TextBlock Margin="0,0,0,20" TextWrapping="Wrap" FontSize="{Binding s}" Text="В прилагательных, оканчивающихся на согласную + y, y заменяется на i и добавляется -er. Например, funny-funnier (than)"></TextBlock>
                         </StackPanel>
-                        </ScrollViewer>
+                    </ScrollViewer>
                     <ScrollViewer CanContentScroll="True" Visibility="{Binding vs3}">
                         <WrapPanel x:Name="iscl" Margin="50,0,0,0" Orientation="Vertical" HorizontalAlignment="Center">
                             <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
@@ -172,8 +172,13 @@
                             </StackPanel>
                         </WrapPanel>
                     </ScrollViewer>
+                    <ScrollViewer CanContentScroll="True" Visibility="{Binding vs4}">
+                        <StackPanel Height="650" Margin="50,0,0,0" Orientation="Vertical">
+                            <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Text="Есть три степени сравнения прилагательных в английском языке: положительная (positive degree), сравнительная (comparative degree) и превосходная (superlative degree). Положительная степень прилагательного в английском языке — это форма, в которой слово записано в словаре, например, big (большой), small (маленький) или pretty (симпатичный). Положительная степень используется, чтобы сказать, что предмет или человек обладает определенным признаком или качеством. Все прилагательные английский делит на два типа: качественные (qualitative) и относительные (relative). Качественные описывают признак, который может быть более или менее выраженным. Например, «высокий – выше – самый высокий», «хороший – лучше – лучший», «умный – умнее – самый умный». Относительные описывают принадлежность чему либо (французский, библейский), материал, из которого сделан наш предмет (пластмассовый, березовый, куриный); его назначение (бытовой, бальный), места, где объект расположен (настольный, домашний, горный). Они также обозначают признак объекта через отношение ко времени (вечерний, апрельский, поздний). Звучит немного академически, но на самом деле все интуитивно понятно. Сравнительная и превосходная степень прилагательных в английском языке образуется только для качественных прилагательных."></TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
         </WrapPanel>
     </Grid>
 </Window>

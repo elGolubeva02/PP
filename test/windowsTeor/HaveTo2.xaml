@@ -29,156 +29,160 @@
                     <WrapPanel Margin="0,0,0,15" Orientation="Vertical" Visibility="{Binding vs1}">
                         <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"   Text="Глагол can выражает способность/умение."></TextBlock>
                         <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="A bird can fly." FontStyle="Italic"></TextBlock>
-                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
-                            <Border BorderBrush="{Binding fg}" BorderThickness="1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Утверждение" HorizontalAlignment="Center"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}" BorderThickness="0,1,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Вопрос" HorizontalAlignment="Center"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="I can walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can I walk?"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You can walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can you walk?"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="He can walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can he walk?"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="She can walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can she walk?"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="It can walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can it walk?"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="We can walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can we walk?"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You can walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can you walk?"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="They can walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can they walk?"></TextBlock>
-                            </Border>
-                        </StackPanel>
+                        <ScrollViewer VerticalScrollBarVisibility="Disabled" CanContentScroll="True" HorizontalScrollBarVisibility="Auto">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                                    <Border BorderBrush="{Binding fg}" BorderThickness="1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Утверждение" HorizontalAlignment="Center"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}" BorderThickness="0,1,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Вопрос" HorizontalAlignment="Center"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="I can walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can I walk?"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You can walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can you walk?"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="He can walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can he walk?"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="She can walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can she walk?"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="It can walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can it walk?"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="We can walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can we walk?"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You can walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can you walk?"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="They can walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can they walk?"></TextBlock>
+                                    </Border>
+                                </StackPanel>
 
-                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}" BorderThickness="1" Width="500">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Отрицание" HorizontalAlignment="Center"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Полная форма"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Краткая форма"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="I cannot walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="I can't walk"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You cannot walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You can't walk"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="He cannot walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="He can't walk"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="She cannot walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="She can't walk"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="It cannot walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="It can't walk"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="We cannot walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="We can't walk"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You cannot walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You can't walk"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="They cannot walk"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="They can't walk"></TextBlock>
-                            </Border>
-                        </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}" BorderThickness="1" Width="500">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Отрицание" HorizontalAlignment="Center"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Полная форма"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Краткая форма"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="I cannot walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="I can't walk"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You cannot walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You can't walk"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="He cannot walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="He can't walk"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="She cannot walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="She can't walk"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="It cannot walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="It can't walk"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="We cannot walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="We can't walk"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You cannot walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="You can't walk"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="They cannot walk"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding fg}"   BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="They can't walk"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                            </StackPanel>
+                        </ScrollViewer>
                         <TextBlock  Margin="0,20,0,0" TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Краткие ответы" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
                         <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="В кратких ответах употребляется только Yes или No, личное местоимение в именительном падеже (I, you, he, etc) и глагол can/can't."></TextBlock>
                         <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}"  FontSize="{Binding s}"  Text="Can you he/she etc sing? Yes, I/he/she/etc can; No, I/he/she/etc can't." FontStyle="Italic"></TextBlock>

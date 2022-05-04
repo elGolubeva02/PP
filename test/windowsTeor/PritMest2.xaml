@@ -22,82 +22,86 @@
                     <Border  Height="40" Background="{Binding bg}" BorderBrush="{Binding fg}" BorderThickness="0.6" >
                         <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Притяжательные местоимения" Margin="0,2,0,0" TextAlignment="Center"></TextBlock>
                     </Border>
-                    <WrapPanel x:Name="srav" Margin="0,0,0,15" Orientation="Vertical" Visibility="{Binding vs1}">
+                    <WrapPanel x:Name="srav" Margin="0,0,0,15" Orientation="Vertical">
                         <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontSize="{Binding s}"  Text="Притяжательные местоимения показывают: принадлежность, отношщения между людьми."></TextBlock>
                         <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontSize="{Binding s}"  Text="Притяжательные местоимения употребляются перед существительными."></TextBlock>
                         <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontSize="{Binding s}" Text="Look at my schoolbag! This is my mother." FontStyle="Italic"></TextBlock>
-                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding bb}" Background="{Binding bg}" BorderThickness="1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Личные местоимения" HorizontalAlignment="Center"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding bb}" Background="{Binding bg}" BorderThickness="0,1,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Притяжательные местоимения" HorizontalAlignment="Center"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="I"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="my"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="you"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="your"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="he"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="his"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="she"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="her"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="it"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="its"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="we"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="our"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="you"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="your"></TextBlock>
-                            </Border>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="they"></TextBlock>
-                            </Border>
-                            <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
-                                <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="their"></TextBlock>
-                            </Border>
-                        </StackPanel>
+                        <ScrollViewer VerticalScrollBarVisibility="Disabled" CanContentScroll="True" HorizontalScrollBarVisibility="Auto">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding bb}" Background="{Binding bg}" BorderThickness="1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Личные местоимения" HorizontalAlignment="Center"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding bb}" Background="{Binding bg}" BorderThickness="0,1,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Притяжательные местоимения" HorizontalAlignment="Center"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="I"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="my"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="you"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="your"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="he"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="his"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="she"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="her"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="it"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="its"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="we"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="our"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="you"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="your"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="1,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="they"></TextBlock>
+                                    </Border>
+                                    <Border  BorderBrush="{Binding bb}" BorderThickness="0,0,1,1" Width="250">
+                                        <TextBlock TextWrapping="Wrap" Foreground="{Binding fg}" FontSize="{Binding s}" Text="their"></TextBlock>
+                                    </Border>
+                                </StackPanel>
+                            </StackPanel>
+                        </ScrollViewer>
                     </WrapPanel>
                 </StackPanel>
             </WrapPanel>

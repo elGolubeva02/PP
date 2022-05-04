@@ -27,7 +27,7 @@
                     <TextBlock FontWeight="Bold" FontSize="{Binding s}" HorizontalAlignment="Center" Margin="0,30,0,30" Foreground="{Binding fg}">Раздел 1. АУДИРОВАНИЕ</TextBlock>
                 <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,0,0,10">
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Width="1160" Text="Вы услышите 4 коротких рассказа, обозначенных буквами A, B, C, D. Определите  профессию говорящего в каждом тексте. Ты услышишь запись дважды."></TextBlock>
+                            <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Text="Вы услышите 4 коротких рассказа, обозначенных буквами A, B, C, D. Определите  профессию говорящего в каждом тексте. Ты услышишь запись дважды."></TextBlock>
                         <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown" Margin="5,0,0,0"></Image>
                     </WrapPanel>
                 </Border>
@@ -51,8 +51,8 @@
 
                 <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,30,0,10">
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Width="1160" Text="Прослушай текст. Закончи предложения 2–6, выбрав из предложенных вариантов тот, который соответствует содержанию текста. Ты услышишь запись дважды."></TextBlock>
-                        <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown_1" Margin="5,0,0,0"></Image>
+                            <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="{Binding s}" Text="Прослушай текст. Закончи предложения 2–6, выбрав из предложенных вариантов тот, который соответствует содержанию текста. Ты услышишь запись дважды."></TextBlock>
+                        <Image Source="{Binding img}" Width="70" Height="70" MouseDown="Image_MouseDown_1" Margin="50,0,0,0"></Image>
                     </WrapPanel>
                 </Border>
                     <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
@@ -153,14 +153,12 @@
                         </WrapPanel>
                     </WrapPanel>
                 </WrapPanel>
-                
-                
 
-                <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,30,0,10">
-                    <StackPanel Orientation="Horizontal">
+
+
+                    <Border BorderBrush="{Binding fg}" BorderThickness="1" Padding="5,5,5,5" Margin="0,30,0,10">
                         <TextBlock Foreground="{Binding fg}" TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold" FontSize="24" Text="Прочитайте каждое предложение. Выберите правильный вариант"></TextBlock>
-                    </StackPanel>
-                </Border>
+                    </Border>
 
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
@@ -251,35 +249,35 @@ One day her friends say that they are going to fly to a warm country because it'
 Two girls see the birds. One girl says, 'Oh! Look! What have the birds got? Isn't it a chicken?'
 'No, I'm not a chicken! I am a frog,' says Lily and falls down."></TextBlock>
 
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10,0,10">
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10,0,10">
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                         <TextBlock Foreground="{Binding fg}" Text="13" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
                     </Border>
-                    <StackPanel Orientation="Horizontal"  VerticalAlignment="Center">
+                        <WrapPanel Orientation="Horizontal"  VerticalAlignment="Center">
                         <TextBlock Foreground="{Binding fg}" Text="Where does the frog live?" VerticalAlignment="Center" FontSize="24"></TextBlock>
                         <TextBox FontSize="24" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"  VerticalAlignment="Center"  Width="200" Margin="10,0,10,0" x:Name="z13v1"></TextBox>
-                    </StackPanel>
-                </StackPanel>
+                    </WrapPanel>
+                </WrapPanel>
 
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10" >
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10" >
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                         <TextBlock Foreground="{Binding fg}" Text="14" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
                     </Border>
-                    <StackPanel Orientation="Horizontal">
+                        <WrapPanel Orientation="Horizontal">
                         <TextBlock  VerticalAlignment="Center" Foreground="{Binding fg}" Text="What does Lily like most of all?" FontSize="24"></TextBlock>
                         <TextBox  VerticalAlignment="Center" FontSize="24" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"  Width="200" Margin="10,0,10,0" x:Name="z14v1"></TextBox>
-                    </StackPanel>
-                </StackPanel>
+                    </WrapPanel>
+                </WrapPanel>
 
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
+                <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
                     <Border BorderBrush="{Binding bb}" BorderThickness="0,1,3,2" CornerRadius="50,50,50,50" Margin="10,3" Width="50" Height="50">
                         <TextBlock Foreground="{Binding fg}" Text="15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
                     </Border>
-                    <StackPanel Orientation="Horizontal">
+                        <WrapPanel Orientation="Horizontal">
                         <TextBlock  VerticalAlignment="Center" Foreground="{Binding fg}" Text="How many friends has Lily got? What are their names?" FontSize="24"></TextBlock>
                         <TextBox  VerticalAlignment="Center" FontSize="24" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"  Width="200" Margin="10,0,10,0" x:Name="z15v1"></TextBox>
-                    </StackPanel>
-                </StackPanel>
+                    </WrapPanel>
+                </WrapPanel>
                         </StackPanel>
             </WrapPanel>
         </ScrollViewer>
