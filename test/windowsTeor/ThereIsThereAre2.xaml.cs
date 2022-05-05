@@ -88,13 +88,13 @@ namespace test.windowsTeor
         {
             fon = 0;
             s = 24;
-            new PritPadezh(fon, s).Show();
+            new ThereIsThereAre(fon, s).Show();
             this.Close();
         }
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new PritPadezhTask(fon, s).Show();
+            new ThereIsThereAreTask(fon, s).Show();
             this.Close();
         }
     }

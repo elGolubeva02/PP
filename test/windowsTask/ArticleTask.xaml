@@ -87,7 +87,7 @@
                             </WrapPanel>
                         </WrapPanel>
                     </WrapPanel>
-                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <WrapPanel Orientation="Vertical">
                             <Image Height="200" Width="200" Source="/img/мяч.png"></Image>
                             <ComboBox x:Name="vib1" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">

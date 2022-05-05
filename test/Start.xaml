@@ -7,7 +7,8 @@
         Icon="img/иконка.ico"
         mc:Ignorable="d"
         Title="Testbook" 
-        DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized" ResizeMode="NoResize">
+        DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowStartupLocation="CenterScreen"
+WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" ResizeMode="NoResize">
     <Window.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="FontFamily" Value="Bryndan Write"></Setter>

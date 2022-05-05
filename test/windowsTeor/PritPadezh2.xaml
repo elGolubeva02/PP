@@ -17,7 +17,6 @@
                         <Button x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A-</Button>
                         <Button x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A+</Button>
                         <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">R</Button>
-                        <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">Перейти к упражнениям</Button>
                     </WrapPanel>
                     <Border  Height="40" Background="{Binding bg}" BorderBrush="{Binding fg}" BorderThickness="0.6" >
                         <TextBlock TextWrapping="Wrap" FontSize="{Binding s}" Foreground="{Binding fg}" Text="Местоимения Some/Any" Margin="0,2,0,0" TextAlignment="Center"></TextBlock>

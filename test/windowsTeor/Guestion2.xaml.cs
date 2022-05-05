@@ -91,11 +91,5 @@ namespace test.windowsTeor
             new Guestion(fon, s).Show();
             this.Close();
         }
-
-        private void home_Click(object sender, RoutedEventArgs e)
-        {
-            new GuestionTask(fon, s).Show();
-            this.Close();
-        }
     }
 }

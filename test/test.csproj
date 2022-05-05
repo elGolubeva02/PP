@@ -80,11 +80,44 @@
     <Compile Include="windowsCheck\AAn.xaml.cs">
       <DependentUpon>AAn.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowsCheck\Be.xaml.cs">
+      <DependentUpon>Be.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\CChisl.xaml.cs">
+      <DependentUpon>CChisl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\HGot.xaml.cs">
+      <DependentUpon>HGot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\MMany.xaml.cs">
+      <DependentUpon>MMany.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\MnCh.xaml.cs">
+      <DependentUpon>MnCh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\ModGlag.xaml.cs">
+      <DependentUpon>ModGlag.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\PMest.xaml.cs">
+      <DependentUpon>PMest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowsCheck\PredMest.xaml.cs">
       <DependentUpon>PredMest.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsCheck\Right.xaml.cs">
       <DependentUpon>Right.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\SAny.xaml.cs">
+      <DependentUpon>SAny.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\Srav.xaml.cs">
+      <DependentUpon>Srav.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\TITA.xaml.cs">
+      <DependentUpon>TITA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowsCheck\TTTT.xaml.cs">
+      <DependentUpon>TTTT.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsRez\RezultVar1.xaml.cs">
       <DependentUpon>RezultVar1.xaml</DependentUpon>
@@ -113,9 +146,6 @@
     <Compile Include="windowsTask\ChislTask.xaml.cs">
       <DependentUpon>ChislTask.xaml</DependentUpon>
     </Compile>
-    <Compile Include="windowsTask\GuestionTask.xaml.cs">
-      <DependentUpon>GuestionTask.xaml</DependentUpon>
-    </Compile>
     <Compile Include="windowsTask\HaveGotTask.xaml.cs">
       <DependentUpon>HaveGotTask.xaml</DependentUpon>
     </Compile>
@@ -133,9 +163,6 @@
     </Compile>
     <Compile Include="windowsTask\PritMestTask.xaml.cs">
       <DependentUpon>PritMestTask.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="windowsTask\PritPadezhTask.xaml.cs">
-      <DependentUpon>PritPadezhTask.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTask\SomeAnyTask.xaml.cs">
       <DependentUpon>SomeAnyTask.xaml</DependentUpon>
@@ -292,11 +319,55 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="windowsCheck\Be.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\CChisl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\HGot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\MMany.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\MnCh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\ModGlag.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\PMest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="windowsCheck\PredMest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windowsCheck\Right.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\SAny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\Srav.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\TITA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowsCheck\TTTT.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -336,10 +407,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="windowsTask\GuestionTask.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="windowsTask\HaveGotTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -361,10 +428,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windowsTask\PritMestTask.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="windowsTask\PritPadezhTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -630,6 +693,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\11.png" />
+    <Resource Include="img\16.png" />
+    <Resource Include="img\20.png" />
+    <Resource Include="img\3.png" />
+    <Resource Include="img\31.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

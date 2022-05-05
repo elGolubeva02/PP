@@ -76,7 +76,8 @@ namespace test
         }
 
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
-        {
+        { 
+            player.Stop();
             new Start().Show();
             this.Close();
         }

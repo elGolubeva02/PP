@@ -16,7 +16,6 @@
                     <Button x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="White">A-</Button>
                     <Button x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="White">A+</Button>
                     <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="White">R</Button>
-                    <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="White">Перейти к упражнениям</Button>
                 </WrapPanel>
                 <StackPanel Orientation="Vertical" Background="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,70,0,0" Width="1200" Height="730">
                     <StackPanel.Effect>

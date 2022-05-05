@@ -23,7 +23,6 @@ namespace test.windowsTask
     public partial class ArticleTask : Window, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        public string vs { get; set; }
         public string bg { get; set; }
         public string bb { get; set; }
         public string fg { get; set; }
@@ -163,7 +162,7 @@ namespace test.windowsTask
         {
             try
             {
-                if (z3v1.Text == "This is a radio" && z3v2.Text == "This is a sofa" && z3v3.Text == "This is a dask" && z3v4.Text == "This is a musical box" && z3v5.Text == "This is an aeroplane")
+                if (z3v1.Text == "This is a radio." && z3v2.Text == "This is a sofa." && z3v3.Text == "This is a dask." && z3v4.Text == "This is a musical box." && z3v5.Text == "This is an aeroplane.")
                 {
                     new Right(f, s).ShowDialog();
                 }

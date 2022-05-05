@@ -69,11 +69,5 @@ namespace test.windowsTeor
             PropertyChanged(this, new PropertyChangedEventArgs("s"));
             f = 0;
         }
-
-        private void home_Click(object sender, RoutedEventArgs e)
-        {
-            new PritPadezhTask(f, s).Show();
-            this.Close();
-        }
     }
 }

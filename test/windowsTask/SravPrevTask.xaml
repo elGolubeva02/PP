@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="SravPrevTask" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized">
     <Grid Background="{Binding bg}">
-        <!--<ScrollViewer>
+        <ScrollViewer>
             <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
                 <StackPanel Margin="20,10,20,0">
                     <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,15">
@@ -70,12 +70,12 @@
                         </Border>
                         <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
                             <WrapPanel>
-                                <TextBlock TextWrapping="Wrap" Text="Form a sentence." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                                <TextBlock TextWrapping="Wrap" Text="Make sentences" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                                 <Button Content="Сheck" Margin="50,0,0,0" Click="Button_Click_4" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" Width="100"></Button>
                             </WrapPanel>
                         </WrapPanel>
                     </WrapPanel>
-                    <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
                         <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock Foreground="{Binding fg}" Width="70" FontSize="{Binding s}" Text="Mary is"></TextBlock>
                             <TextBox FontSize="{Binding s}" Width="200" Margin="10,0,10,0" x:Name="z12v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
@@ -110,7 +110,7 @@
                         <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
                             <WrapPanel>
                                 <TextBlock TextWrapping="Wrap" Text="Form a sentence." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                                <Button Content="Сheck" Margin="50,0,0,0" Click="Button_Click_4" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" Width="100"></Button>
+                                <Button Content="Сheck" Margin="50,0,0,0" Click="Button_Click_5" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" Width="100"></Button>
                             </WrapPanel>
                         </WrapPanel>
                     </WrapPanel>
@@ -149,47 +149,44 @@
                         <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
                             <WrapPanel>
                                 <TextBlock TextWrapping="Wrap" Text="Read and choose" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                                <Button Content="Сheck " Margin="50,0,0,0" Click="Button_Click_1" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" Width="100"></Button>
+                                <Button Content="Сheck " Margin="50,0,0,0" Click="Button_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}" Width="100"></Button>
                             </WrapPanel>
                         </WrapPanel>
                     </WrapPanel>
                     <WrapPanel Orientation="Vertical">
-                        <WrapPanel Orientation="Horizontal" Margin="0,0,0,5" VerticalAlignment="Center">
-                            <TextBlock Width="100" TextWrapping="Wrap" Text="He is the" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
-                            <RadioButton Width="100" x:Name="z4v1" FontSize="{Binding s}" Content="most oldest" Foreground="{Binding fg}"/>
-                            <RadioButton Width="90" x:Name="z4v2" FontSize="{Binding s}" Content="oldest" Foreground="{Binding fg}"/>
-                            <TextBlock TextWrapping="Wrap" Text="elephant." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock Width="150" TextWrapping="Wrap" Text="The Volga is" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
+                            <RadioButton Width="100" x:Name="z4v1" FontSize="{Binding s}" Content="longer" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z4v2" FontSize="{Binding s}" Content="the longest" Foreground="{Binding fg}"/>
+                            <TextBlock TextWrapping="Wrap" Text="river in Europe." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="100" TextWrapping="Wrap" Text="You are taller" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="100" x:Name="z4v3" FontSize="{Binding s}" Content="then" Foreground="{Binding fg}"/>
-                            <RadioButton Width="90" x:Name="z4v4" FontSize="{Binding s}" Content="than " Foreground="{Binding fg}"/>
-                            <TextBlock TextWrapping="Wrap" Text="me." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                        <WrapPanel Orientation="Horizontal">
+                            <TextBlock Width="150" TextWrapping="Wrap" Text="Life in the country is" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="100" x:Name="z4v3" FontSize="{Binding s}" Content="more relaxing" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z4v4" FontSize="{Binding s}" Content="the most relaxing " Foreground="{Binding fg}"/>
+                            <TextBlock TextWrapping="Wrap" Text="than in the city." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="100" TextWrapping="Wrap" Text="My car is" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="100" x:Name="z4v5" FontSize="{Binding s}" Content="beter" Foreground="{Binding fg}"/>
-                            <RadioButton Width="90" x:Name="z4v6" FontSize="{Binding s}" Content="better" Foreground="{Binding fg}"/>
-                            <TextBlock TextWrapping="Wrap" Text="than his." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                        <WrapPanel Orientation="Horizontal">
+                            <TextBlock Width="150" TextWrapping="Wrap" Text="He is one of" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="100" x:Name="z4v5" FontSize="{Binding s}" Content="richer" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z4v6" FontSize="{Binding s}" Content="the richest" Foreground="{Binding fg}"/>
+                            <TextBlock TextWrapping="Wrap" Text="people in the world." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="100" TextWrapping="Wrap" Text="It is one of" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="100" x:Name="z4v7" FontSize="{Binding s}" Content="most" Foreground="{Binding fg}"/>
-                            <RadioButton Width="90" x:Name="z4v8" FontSize="{Binding s}" Content="the most" Foreground="{Binding fg}"/>
-                            <TextBlock TextWrapping="Wrap" Text="beautiful lakes in the world." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                        <WrapPanel Orientation="Horizontal">
+                            <TextBlock Width="150" TextWrapping="Wrap" Text="My house is" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="100" x:Name="z4v7" FontSize="{Binding s}" Content="more modern" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z4v8" FontSize="{Binding s}" Content="the most modern" Foreground="{Binding fg}"/>
+                            <TextBlock TextWrapping="Wrap" Text="than yours." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="100" TextWrapping="Wrap" Text="These flowers are" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="100" x:Name="z4v9" FontSize="{Binding s}" Content="more cheap" Foreground="{Binding fg}"/>
-                            <RadioButton Width="90" x:Name="z4v0" FontSize="{Binding s}" Content="cheaper" Foreground="{Binding fg}"/>
-                            <TextBlock TextWrapping="Wrap" Text="than those ones." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                        <WrapPanel Orientation="Horizontal" Margin="0,0,0,10">
+                            <TextBlock Width="150" TextWrapping="Wrap" Text="The weather today is" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="100" x:Name="z4v9" FontSize="{Binding s}" Content="better" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z4v0" FontSize="{Binding s}" Content="the best" Foreground="{Binding fg}"/>
+                            <TextBlock TextWrapping="Wrap" Text="than it was yesterday." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
                     </WrapPanel>
-
-
-
                 </StackPanel>
             </WrapPanel>
-        </ScrollViewer>-->
+        </ScrollViewer>
     </Grid>
 </Window>

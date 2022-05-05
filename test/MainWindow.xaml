@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:test"
         Icon="img/иконка.ico"
         mc:Ignorable="d"
-        Title="Testbook" WindowState="Maximized" ResizeMode="NoResize">
+        Title="Testbook" WindowStartupLocation="CenterScreen"
+WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" ResizeMode="NoResize">
 
     <Grid >
         <Grid.Background>
@@ -44,7 +45,7 @@
 
         <Image Source="img/te.png" Height="700" Margin="650,180,0,0"></Image>
         <Image Source="img/ddfdfdf 2.png" Height="130" Margin="1100,0,0,500"></Image>
-        <Image Source="img/голос.png" VerticalAlignment="Top" Width="50" Height="50" Margin="1074,258,0,0" MouseDown="Image_MouseDown" RenderTransformOrigin="0.321,0.252" >
+        <Image Source="img/голос.png" VerticalAlignment="Top" Width="50" Height="50" Margin="1074,270,0,0" MouseDown="Image_MouseDown" RenderTransformOrigin="0.321,0.252" >
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -55,7 +56,7 @@
             </Image.RenderTransform>
         </Image>
         <Image Source="img/ddfdfdf 3.png" Height="130" Margin="0,200,630,0"></Image>
-        <TextBlock Text="На главную" FontSize="20" MouseDown="TextBlock_MouseDown" RenderTransformOrigin="0.5,0.5" Margin="0,590,730,0" TextAlignment="Center" Width="80" TextWrapping="Wrap">
+        <TextBlock Text="На главную" FontSize="20" MouseDown="TextBlock_MouseDown" RenderTransformOrigin="0.5,0.5" Margin="0,602,730,0" TextAlignment="Center" Width="80" TextWrapping="Wrap">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

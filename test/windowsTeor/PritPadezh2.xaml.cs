@@ -91,11 +91,5 @@ namespace test.windowsTeor
             new PritPadezh(fon, s).Show();
             this.Close();
         }
-
-        private void home_Click(object sender, RoutedEventArgs e)
-        {
-            new PritPadezhTask(fon, s).Show();
-            this.Close();
-        }
     }
 }
