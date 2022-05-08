@@ -81,5 +81,26 @@ namespace test
             new Start().Show();
             this.Close();
         }
+
+        private void new_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Teacher th = new Teacher();
+            if (th.ShowDialog() == true)
+            {
+                if (th.Password == "12")
+                {
+                    new NewTest().Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Неверный пароль");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Авторизация не пройдена");
+            }
+        }
     }
 }

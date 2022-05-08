@@ -33,26 +33,26 @@
                     </WrapPanel>
                     <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <WrapPanel Orientation="Vertical">
-                            <Image Height="150" Width="150" Source="/img/3.png"></Image>
-                            <TextBox FontSize="{Binding s}" Width="150" Margin="10,0,10,0" x:Name="z1v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
+                            <Image Height="200" Width="200" Source="/img/3.png"></Image>
+                            <TextBox FontSize="{Binding s}" Width="200" Margin="10,0,10,0" x:Name="z1v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Vertical" Margin="20,0,20,0">
-                            <Image Height="150" Width="150" Source="/img/11.png"></Image>
-                            <TextBox FontSize="{Binding s}" Width="150" Margin="10,0,10,0" x:Name="z1v2" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
+                            <Image Height="200" Width="200" Source="/img/11.png"></Image>
+                            <TextBox FontSize="{Binding s}" Width="200" Margin="10,0,10,0" x:Name="z1v2" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Vertical">
-                            <Image Height="150" Width="150" Source="/img/16.png"></Image>
-                            <TextBox FontSize="{Binding s}" Width="150" Margin="10,0,10,0" x:Name="z1v3" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
+                            <Image Height="200" Width="200" Source="/img/16.png"></Image>
+                            <TextBox FontSize="{Binding s}" Width="200" Margin="10,0,10,0" x:Name="z1v3" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
                     </WrapPanel>
                     <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <WrapPanel Orientation="Vertical">
-                            <Image Height="150" Width="150" Source="/img/20.png"></Image>
-                            <TextBox FontSize="{Binding s}" Width="150" Margin="10,0,10,0" x:Name="z1v4" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
+                            <Image Height="200" Width="200" Source="/img/20.png"></Image>
+                            <TextBox FontSize="{Binding s}" Width="200" Margin="10,0,10,0" x:Name="z1v4" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Vertical" Margin="20,0,20,0">
-                            <Image Height="150" Width="150" Source="/img/31.png"></Image>
-                            <TextBox FontSize="{Binding s}" Width="150" Margin="10,0,10,0" x:Name="z1v5" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
+                            <Image Height="200" Width="200" Source="/img/31.png"></Image>
+                            <TextBox FontSize="{Binding s}" Width="200" Margin="10,0,10,0" x:Name="z1v5" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
                     </WrapPanel>
 
@@ -71,23 +71,23 @@
                     <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
                         <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" Text="ПРИМЕР: John was the First."></TextBlock>
                         <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <TextBlock Foreground="{Binding fg}" Width="100" FontSize="{Binding s}" Text="Lena was the"></TextBlock>
+                            <TextBlock Foreground="{Binding fg}" Width="200" FontSize="{Binding s}" Text="Lena was the"></TextBlock>
                             <TextBox FontSize="{Binding s}" Width="100" Margin="10,0,10,0" x:Name="z12v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <TextBlock Foreground="{Binding fg}" Width="100" FontSize="{Binding s}" Text="Peter was the"></TextBlock>
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,2,0,0">
+                            <TextBlock Foreground="{Binding fg}" Width="200" FontSize="{Binding s}" Text="Peter was the"></TextBlock>
                             <TextBox FontSize="{Binding s}" Width="100" Margin="10,0,10,0" x:Name="z13v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <TextBlock Foreground="{Binding fg}" Width="100" FontSize="{Binding s}" Text="Joe was the"></TextBlock>
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,2,0,0">
+                            <TextBlock Foreground="{Binding fg}" Width="200" FontSize="{Binding s}" Text="Joe was the"></TextBlock>
                             <TextBox FontSize="{Binding s}" Width="100" Margin="10,0,10,0" x:Name="z14v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <TextBlock Foreground="{Binding fg}" Width="100" FontSize="{Binding s}" Text="Jane was the"></TextBlock>
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,2,0,0">
+                            <TextBlock Foreground="{Binding fg}" Width="200" FontSize="{Binding s}" Text="Jane was the"></TextBlock>
                             <TextBox FontSize="{Binding s}" Width="100" Margin="10,0,10,0" x:Name="z15v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <TextBlock Foreground="{Binding fg}" Width="100" FontSize="{Binding s}" Text="Spike was the"></TextBlock>
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,2,0,0">
+                            <TextBlock Foreground="{Binding fg}" Width="200" FontSize="{Binding s}" Text="Spike was the"></TextBlock>
                             <TextBox FontSize="{Binding s}" Width="100" Margin="10,0,10,0" x:Name="z16v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                         </WrapPanel>
                     </WrapPanel>
@@ -104,24 +104,24 @@
                         </WrapPanel>
                     </WrapPanel>
                     <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                        <TextBlock Width="350" TextWrapping="Wrap" Text="It happened in the middle of the" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                        <TextBlock Width="500" TextWrapping="Wrap" Text="It happened in the middle of the" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         <RadioButton Width="220" x:Name="z3v1" FontSize="{Binding s}" Content="twentyth" Foreground="{Binding fg}"/>
                         <RadioButton x:Name="z3v2" FontSize="{Binding s}" Content="twentieth" Foreground="{Binding fg}"/>
                         <TextBlock Width="350" TextWrapping="Wrap" Margin="20,0,0,0" Text="century." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                     </WrapPanel>
                     <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                        <TextBlock Width="280" TextWrapping="Wrap" Text="I usually go to school by bus" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                        <TextBlock Width="500" TextWrapping="Wrap" Text="I usually go to school by bus" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         <RadioButton Width="220" x:Name="z3v3" FontSize="{Binding s}" Content="six" Foreground="{Binding fg}"/>
                         <RadioButton x:Name="z3v4" FontSize="{Binding s}" Content="sixth." Foreground="{Binding fg}"/>
                     </WrapPanel>
                     <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                        <TextBlock Width="280" TextWrapping="Wrap" Text="He is now ranked" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                        <TextBlock Width="500" TextWrapping="Wrap" Text="He is now ranked" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         <RadioButton Width="220" x:Name="z3v5" FontSize="{Binding s}" Content="hundred" Foreground="{Binding fg}"/>
                         <RadioButton x:Name="z3v6" FontSize="{Binding s}" Content="hundredth" Foreground="{Binding fg}"/>
                         <TextBlock Width="280" TextWrapping="Wrap" Text="in the world of tennis." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                     </WrapPanel>
                     <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                        <TextBlock Width="280" TextWrapping="Wrap" Text="The car changed the life of people in the" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                        <TextBlock Width="500" TextWrapping="Wrap" Text="The car changed the life of people in the" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         <RadioButton Width="220" x:Name="z3v7" FontSize="{Binding s}" Content="20th" Foreground="{Binding fg}"/>
                         <RadioButton x:Name="z3v8" FontSize="{Binding s}" Content="20s" Foreground="{Binding fg}"/>
                         <TextBlock Width="280" TextWrapping="Wrap" Text="century." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>

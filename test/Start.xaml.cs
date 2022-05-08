@@ -31,12 +31,6 @@ namespace test
                 PropertyChanged(this, new PropertyChangedEventArgs("s"));
         }
 
-        private void tem1_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            //new Lecsica(fon, s).ShowDialog();
-            //this.Close();
-        }
-
         private void tem2_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (fon != 0)
@@ -49,12 +43,6 @@ namespace test
                 new Predlog(fon, s).Show();
                 this.Close();
             }
-        }
-
-        private void tem3_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            //new Times(fon, s).Show();
-            //this.Close();
         }
 
         private void tem4_MouseDown(object sender, MouseButtonEventArgs e)

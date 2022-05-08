@@ -34,12 +34,12 @@
                     </WrapPanel>
                     <WrapPanel Orientation="Vertical">
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5" VerticalAlignment="Center">
-                            <RadioButton Width="50" x:Name="z2v1" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z2v1" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
                             <RadioButton Width="70" x:Name="z2v2" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
                             <TextBlock TextWrapping="Wrap" Text="cream isn't good." Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <RadioButton Width="50" x:Name="z2v3" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z2v3" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
                             <RadioButton Width="70" x:Name="z2v4" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
                             <TextBlock Width="300" TextWrapping="Wrap" Text="is my air-plane ticket." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>

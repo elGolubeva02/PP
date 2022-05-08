@@ -34,53 +34,53 @@
                     </WrapPanel>
                     <WrapPanel Orientation="Vertical">
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5" VerticalAlignment="Center">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="Class" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
-                            <RadioButton Width="50" x:Name="z2v1" FontSize="{Binding s}" Content="classs" Foreground="{Binding fg}"/>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="Class" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
+                            <RadioButton Width="150" x:Name="z2v1" FontSize="{Binding s}" Content="classs" Foreground="{Binding fg}"/>
                             <RadioButton x:Name="z2v2" FontSize="{Binding s}" Content="classes" Foreground="{Binding fg}"/>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="Man" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="50" x:Name="z2v3" FontSize="{Binding s}" Content="men" Foreground="{Binding fg}"/>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="Man" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="150" x:Name="z2v3" FontSize="{Binding s}" Content="men" Foreground="{Binding fg}"/>
                             <RadioButton x:Name="z2v4" FontSize="{Binding s}" Content="mans" Foreground="{Binding fg}"/>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="Day" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="50" x:Name="z2v5" FontSize="{Binding s}" Content="dayes" Foreground="{Binding fg}"/>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="Day" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="150" x:Name="z2v5" FontSize="{Binding s}" Content="dayes" Foreground="{Binding fg}"/>
                             <RadioButton x:Name="z2v6" FontSize="{Binding s}" Content="days" Foreground="{Binding fg}"/>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="Foot" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="50" x:Name="z2v7" FontSize="{Binding s}" Content="foots" Foreground="{Binding fg}"/>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="Foot" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="150" x:Name="z2v7" FontSize="{Binding s}" Content="foots" Foreground="{Binding fg}"/>
                             <RadioButton x:Name="z2v8" FontSize="{Binding s}" Content="feet" Foreground="{Binding fg}"/>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="Chair" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="50" x:Name="z2v9" FontSize="{Binding s}" Content="chairs" Foreground="{Binding fg}"/>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="Chair" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="150" x:Name="z2v9" FontSize="{Binding s}" Content="chairs" Foreground="{Binding fg}"/>
                             <RadioButton x:Name="z2v0" FontSize="{Binding s}" Content="chaires" Foreground="{Binding fg}"/>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="Bush" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="50" x:Name="z2v11" FontSize="{Binding s}" Content="bushs" Foreground="{Binding fg}"/>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="Bush" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="150" x:Name="z2v11" FontSize="{Binding s}" Content="bushs" Foreground="{Binding fg}"/>
                             <RadioButton x:Name="z2v12" FontSize="{Binding s}" Content="bushes" Foreground="{Binding fg}"/>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="Tooth" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="50" x:Name="z2v13" FontSize="{Binding s}" Content="tooths" Foreground="{Binding fg}"/>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="Tooth" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="150" x:Name="z2v13" FontSize="{Binding s}" Content="tooths" Foreground="{Binding fg}"/>
                             <RadioButton x:Name="z2v14" FontSize="{Binding s}" Content="teeth" Foreground="{Binding fg}"/>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="Baby" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="50" x:Name="z2v15" FontSize="{Binding s}" Content="babies" Foreground="{Binding fg}"/>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="Baby" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="150" x:Name="z2v15" FontSize="{Binding s}" Content="babies" Foreground="{Binding fg}"/>
                             <RadioButton x:Name="z2v16" FontSize="{Binding s}" Content="babyes" Foreground="{Binding fg}"/>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="Leaf" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="50" x:Name="z2v17" FontSize="{Binding s}" Content="leafs" Foreground="{Binding fg}"/>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="Leaf" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="150" x:Name="z2v17" FontSize="{Binding s}" Content="leafs" Foreground="{Binding fg}"/>
                             <RadioButton x:Name="z2v18" FontSize="{Binding s}" Content="leaves" Foreground="{Binding fg}"/>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="Woman" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
-                            <RadioButton Width="50" x:Name="z2v19" FontSize="{Binding s}" Content="womans" Foreground="{Binding fg}"/>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="Woman" Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="150" x:Name="z2v19" FontSize="{Binding s}" Content="womans" Foreground="{Binding fg}"/>
                             <RadioButton x:Name="z2v20" FontSize="{Binding s}" Content="women" Foreground="{Binding fg}"/>
                         </WrapPanel>
                     </WrapPanel>
@@ -133,7 +133,7 @@
                     </WrapPanel>
                     <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Foreground="{Binding fg}" Width="100" FontSize="{Binding s}" Text="a party"></TextBlock>
+                            <TextBlock Foreground="{Binding fg}" Width="200" FontSize="{Binding s}" Text="a party"></TextBlock>
                             <ComboBox x:Name="vib1" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="100" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">-s</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">-es</ComboBoxItem>
@@ -141,7 +141,7 @@
                             </ComboBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Foreground="{Binding fg}" Width="50" FontSize="{Binding s}" Text="a banana"></TextBlock>
+                            <TextBlock Foreground="{Binding fg}" Width="200" FontSize="{Binding s}" Text="a banana"></TextBlock>
                             <ComboBox x:Name="vib2" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">-s</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">-es</ComboBoxItem>
@@ -149,7 +149,7 @@
                             </ComboBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Foreground="{Binding fg}" Width="50" FontSize="{Binding s}" Text="a room"></TextBlock>
+                            <TextBlock Foreground="{Binding fg}" Width="200" FontSize="{Binding s}" Text="a room"></TextBlock>
                             <ComboBox x:Name="vib3" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">-s</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">-es</ComboBoxItem>
@@ -157,7 +157,7 @@
                             </ComboBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,10">
-                            <TextBlock Foreground="{Binding fg}" Width="50" FontSize="{Binding s}" Text="a day"></TextBlock>
+                            <TextBlock Foreground="{Binding fg}" Width="200" FontSize="{Binding s}" Text="a day"></TextBlock>
                             <ComboBox x:Name="vib4" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">-s</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">-es</ComboBoxItem>

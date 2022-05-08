@@ -22,7 +22,7 @@ WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" ResizeMode=
 
         <StackPanel>
             <TextBlock
-            x:Name="var1" FontSize="24" FontWeight="Bold" Foreground="White" Margin="430,320,0,0" MouseDown="MyWipedText9_MouseDown">
+            x:Name="var1" FontSize="24" FontWeight="Bold" Foreground="White" Margin="430,280,0,0" MouseDown="MyWipedText9_MouseDown">
             Вариант 1
             </TextBlock>
             <TextBlock
@@ -40,6 +40,10 @@ WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" ResizeMode=
             <TextBlock
             x:Name="var5" FontSize="24" FontWeight="Bold" Foreground="White" Margin="430,20,0,0" MouseDown="MyWipedText13_MouseDown">
             Вариант 5
+            </TextBlock>
+            <TextBlock
+            x:Name="new" FontSize="24" FontWeight="Bold" Foreground="White" Margin="430,20,0,0" MouseDown="new_MouseDown">
+            Новый тест
             </TextBlock>
         </StackPanel>
 
