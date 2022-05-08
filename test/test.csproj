@@ -223,9 +223,6 @@
     <Compile Include="windowsTeor\HaveTo2.xaml.cs">
       <DependentUpon>HaveTo2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="windowsTeor\Lecsica.xaml.cs">
-      <DependentUpon>Lecsica.xaml</DependentUpon>
-    </Compile>
     <Compile Include="windowsTeor\Mnozh.xaml.cs">
       <DependentUpon>Mnozh.xaml</DependentUpon>
     </Compile>
@@ -279,9 +276,6 @@
     </Compile>
     <Compile Include="windowsTeor\ThisThat2.xaml.cs">
       <DependentUpon>ThisThat2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="windowsTeor\Times.xaml.cs">
-      <DependentUpon>Times.xaml</DependentUpon>
     </Compile>
     <Compile Include="windowsTeor\ToBe.xaml.cs">
       <DependentUpon>ToBe.xaml</DependentUpon>
@@ -513,10 +507,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="windowsTeor\Lecsica.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="windowsTeor\Mnozh.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -586,10 +576,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windowsTeor\ThisThat2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="windowsTeor\Times.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

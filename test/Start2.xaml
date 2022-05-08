@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test"
         mc:Ignorable="d"
-        Title="Start2"  DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized">
+         Icon="img/иконка.ico"
+        Title="enGuide"  DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized">
     <Grid Background="{Binding bg}">
         <ScrollViewer>
             <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" >

@@ -5,20 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test.windowsTask"
         mc:Ignorable="d"
-        Title="ThisThatTask" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized">
+        Icon="/img/иконка.ico"
+        Title="enGuide" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized">
     <Grid Background="{Binding bg}">
         <ScrollViewer>
             <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
                 <StackPanel Margin="20,10,20,0">
-                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,15">
-                        <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">На главную</Button>
-                        <Button x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
-                        <Button x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
-                        <Button x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A-</Button>
-                        <Button x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A+</Button>
-                        <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">R</Button>
-                        <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">Вернуться к правилу</Button>
-                    </WrapPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,15" HorizontalAlignment="Center" Background="White" Height="70">
+                        <Border Margin="20,0,0,0"  BorderThickness="1,2,1,2" CornerRadius="10,3,10,3" Width="200" Height="40" Background="{Binding bg}" BorderBrush="{Binding bb}">
+                            <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding fg}">На главную</Button>
+                        </Border>
+                        <Button Height="40" Width="40" x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
+                        <Button Height="40" Width="40" x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
+                        <Button Height="40" Width="40" x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A-</Button>
+                        <Button Height="40" Width="40" x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A+</Button>
+                        <Button Height="40" Width="40" x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">R</Button>
+                        <Border Margin="50,0,0,0"  BorderThickness="1,2,1,2" CornerRadius="10,3,10,3" Width="300" Height="40" Background="{Binding bg}" BorderBrush="{Binding bb}">
+                            <Button  x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding fg}">Вернуться к правилу</Button>
+                        </Border>
+                    </StackPanel>
 
 
                     <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10,0,10">
@@ -35,28 +40,28 @@
                     <WrapPanel Orientation="Vertical">
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5" VerticalAlignment="Center">
                             <RadioButton Width="100" x:Name="z2v1" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
-                            <RadioButton Width="70" x:Name="z2v2" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
+                            <RadioButton Width="130" x:Name="z2v2" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
                             <TextBlock TextWrapping="Wrap" Text="cream isn't good." Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
                             <RadioButton Width="100" x:Name="z2v3" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
-                            <RadioButton Width="70" x:Name="z2v4" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
-                            <TextBlock Width="300" TextWrapping="Wrap" Text="is my air-plane ticket." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="130" x:Name="z2v4" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
+                            <TextBlock TextWrapping="Wrap" Text="is my air-plane ticket." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <RadioButton Width="50" x:Name="z2v5" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
-                            <RadioButton Width="70" x:Name="z2v6" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
-                            <TextBlock Width="300" TextWrapping="Wrap" Text="books belong to his children." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="100" x:Name="z2v5" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
+                            <RadioButton Width="130" x:Name="z2v6" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
+                            <TextBlock TextWrapping="Wrap" Text="books belong to his children." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <RadioButton Width="50" x:Name="z2v7" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
-                            <RadioButton Width="70" x:Name="z2v8" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
-                            <TextBlock Width="300" TextWrapping="Wrap" Text="river is the longest in the region." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="100" x:Name="z2v7" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
+                            <RadioButton Width="130" x:Name="z2v8" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
+                            <TextBlock TextWrapping="Wrap" Text="river is the longest in the region." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <RadioButton Width="50" x:Name="z2v9" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
-                            <RadioButton Width="70" x:Name="z2v0" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
-                            <TextBlock Width="300" TextWrapping="Wrap" Text="trainers were made in Italy." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
+                            <RadioButton Width="100" x:Name="z2v9" FontSize="{Binding s}" Content="this" Foreground="{Binding fg}"/>
+                            <RadioButton Width="130" x:Name="z2v0" FontSize="{Binding s}" Content="these" Foreground="{Binding fg}"/>
+                            <TextBlock TextWrapping="Wrap" Text="trainers were made in Italy." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
                     </WrapPanel>
 
@@ -73,19 +78,19 @@
                         </WrapPanel>
                     </WrapPanel>
                     <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
                             <TextBox FontSize="{Binding s}" Width="100" Margin="10,0,10,0" x:Name="z3v1" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                             <TextBlock Foreground="{Binding fg}" Margin="30,0,0,0" FontSize="{Binding s}" Text="tomatoes are not fresh."></TextBlock>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
                             <TextBox FontSize="{Binding s}" Width="100" Margin="10,0,10,0" x:Name="z3v2" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                             <TextBlock Foreground="{Binding fg}" Margin="30,0,0,0"  FontSize="{Binding s}" Text="bag is mine."></TextBlock>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
                             <TextBox FontSize="{Binding s}" Width="100" Margin="10,0,10,0" x:Name="z3v3" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                             <TextBlock Foreground="{Binding fg}" Margin="30,0,0,0" FontSize="{Binding s}" Text="letters are for Mike."></TextBlock>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
                             <TextBox FontSize="{Binding s}" Width="100" Margin="10,0,10,0" x:Name="z3v4" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"></TextBox>
                             <TextBlock Foreground="{Binding fg}" Margin="30,0,0,0" FontSize="{Binding s}" Text="is our bus."></TextBlock>
                         </WrapPanel>
@@ -108,7 +113,7 @@
                     </WrapPanel>
                     <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
                         <WrapPanel Orientation="Horizontal">
-                            <ComboBox x:Name="vib1" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="100" Margin="0,5,0,0">
+                            <ComboBox x:Name="vib1" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">this</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">that</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">these</ComboBoxItem>

@@ -4,7 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test.windowsRez"
-      Title="Результаты" Icon="/img/иконка.ico"
+     Icon="/img/иконка.ico"
+        Title="enGuide"
         DataContext = "{Binding RelativeSource={RelativeSource Mode=Self}}">
     <Grid>
         <WrapPanel Orientation="Vertical" Background="{Binding bg}" VerticalAlignment="Center" HorizontalAlignment="Center">

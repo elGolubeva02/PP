@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test.windowsCheck"
         mc:Ignorable="d"
-        Title="Right" Height="450" Width="800">
+       Icon="/img/иконка.ico"
+        Title="enGuide" Height="450" Width="800">
     <Grid>
         <ScrollViewer>
             <WrapPanel Orientation="Vertical" Background="{Binding bg}" HorizontalAlignment="Center" VerticalAlignment="Center">

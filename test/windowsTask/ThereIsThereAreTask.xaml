@@ -5,20 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test.windowsTask"
         mc:Ignorable="d"
-        Title="ThereIsThereAreTask" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized">
+        Icon="/img/иконка.ico"
+        Title="enGuide" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized">
     <Grid Background="{Binding bg}">
         <ScrollViewer>
             <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
                 <StackPanel Margin="20,10,20,0">
-                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,15">
-                        <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">На главную</Button>
-                        <Button x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
-                        <Button x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
-                        <Button x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A-</Button>
-                        <Button x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A+</Button>
-                        <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">R</Button>
-                        <Button Margin="50,0,0,0" x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">Вернуться к правилу</Button>
-                    </WrapPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,15" HorizontalAlignment="Center" Background="White" Height="70">
+                        <Border Margin="20,0,0,0"  BorderThickness="1,2,1,2" CornerRadius="10,3,10,3" Width="200" Height="40" Background="{Binding bg}" BorderBrush="{Binding bb}">
+                            <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding fg}">На главную</Button>
+                        </Border>
+                        <Button Height="40" Width="40" x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
+                        <Button Height="40" Width="40" x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
+                        <Button Height="40" Width="40" x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A-</Button>
+                        <Button Height="40" Width="40" x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">A+</Button>
+                        <Button Height="40" Width="40" x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="{Binding bg}" BorderBrush="{Binding fg}" Foreground="{Binding fg}">R</Button>
+                        <Border Margin="50,0,0,0"  BorderThickness="1,2,1,2" CornerRadius="10,3,10,3" Width="300" Height="40" Background="{Binding bg}" BorderBrush="{Binding bb}">
+                            <Button  x:Name="home" Click="home_Click" FontSize="{Binding s}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding fg}">Вернуться к правилу</Button>
+                        </Border>
+                    </StackPanel>
 
 
                     <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10,0,10">
@@ -34,33 +39,33 @@
                     </WrapPanel>
                     <WrapPanel Orientation="Vertical">
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5" VerticalAlignment="Center">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="There" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="There" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
                             <RadioButton Width="50" x:Name="z2v1" FontSize="{Binding s}" Content="is" Foreground="{Binding fg}"/>
-                            <RadioButton Width="50" x:Name="z2v2" FontSize="{Binding s}" Content="are" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z2v2" FontSize="{Binding s}" Content="are" Foreground="{Binding fg}"/>
                             <TextBlock TextWrapping="Wrap" Text="three windows in the flat." Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="There" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="There" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
                             <RadioButton Width="50" x:Name="z2v3" FontSize="{Binding s}" Content="is" Foreground="{Binding fg}"/>
-                            <RadioButton Width="50" x:Name="z2v4" FontSize="{Binding s}" Content="are" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z2v4" FontSize="{Binding s}" Content="are" Foreground="{Binding fg}"/>
                             <TextBlock TextWrapping="Wrap" Text="a kitchen in the flat." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="There" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="There" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
                             <RadioButton Width="50" x:Name="z2v5" FontSize="{Binding s}" Content="is" Foreground="{Binding fg}"/>
-                            <RadioButton Width="50" x:Name="z2v6" FontSize="{Binding s}" Content="are" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z2v6" FontSize="{Binding s}" Content="are" Foreground="{Binding fg}"/>
                             <TextBlock TextWrapping="Wrap" Text="some flowers in the vase." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="There" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="There" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
                             <RadioButton Width="50" x:Name="z2v7" FontSize="{Binding s}" Content="is" Foreground="{Binding fg}"/>
-                            <RadioButton Width="50" x:Name="z2v8" FontSize="{Binding s}" Content="are" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z2v8" FontSize="{Binding s}" Content="are" Foreground="{Binding fg}"/>
                             <TextBlock TextWrapping="Wrap" Text="shelves on the wall." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,5">
-                            <TextBlock Width="50" TextWrapping="Wrap" Text="There" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
+                            <TextBlock Width="100" TextWrapping="Wrap" Text="There" Foreground="{Binding fg}" FontSize="{Binding s}" ></TextBlock>
                             <RadioButton Width="50" x:Name="z2v9" FontSize="{Binding s}" Content="is" Foreground="{Binding fg}"/>
-                            <RadioButton Width="50" x:Name="z2v0" FontSize="{Binding s}" Content="are" Foreground="{Binding fg}"/>
+                            <RadioButton Width="100" x:Name="z2v0" FontSize="{Binding s}" Content="are" Foreground="{Binding fg}"/>
                             <TextBlock TextWrapping="Wrap" Text="a computer on the desk." Foreground="{Binding fg}" FontSize="{Binding s}"></TextBlock>
                         </WrapPanel>
                     </WrapPanel>
@@ -78,9 +83,9 @@
                     </WrapPanel>
                     <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Width="250" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Is there the sun in the sky?"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Width="450" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Is there the sun in the sky?"></TextBlock>
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" Text="Yes, "></TextBlock>
-                            <ComboBox x:Name="vib1" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="100" Margin="0,5,0,0">
+                            <ComboBox x:Name="vib1" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there is</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there isn't</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there are</ComboBoxItem>
@@ -88,9 +93,9 @@
                             </ComboBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Width="250" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Are there lots of birds near the house?"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Width="450" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Are there lots of birds near the house?"></TextBlock>
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" Text="No, "></TextBlock>
-                            <ComboBox x:Name="vib2" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="100" Margin="0,5,0,0">
+                            <ComboBox x:Name="vib2" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there is</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there isn't</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there are</ComboBoxItem>
@@ -98,9 +103,9 @@
                             </ComboBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Width="250" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Are there any cups on the table?"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Width="450" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Are there any cups on the table?"></TextBlock>
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" Text="No, "></TextBlock>
-                            <ComboBox x:Name="vib3" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="100" Margin="0,5,0,0">
+                            <ComboBox x:Name="vib3" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there is</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there isn't</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there are</ComboBoxItem>
@@ -108,9 +113,9 @@
                             </ComboBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Width="250" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Is there a tiger in the shop?"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Width="450" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Is there a tiger in the shop?"></TextBlock>
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" Text="Yes, "></TextBlock>
-                            <ComboBox x:Name="vib4" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="100" Margin="0,5,0,0">
+                            <ComboBox x:Name="vib4" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there is</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there isn't</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there are</ComboBoxItem>
@@ -118,9 +123,9 @@
                             </ComboBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Width="250" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Are there ten desks in the room?"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Width="450" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Are there ten desks in the room?"></TextBlock>
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" Text="Yes, "></TextBlock>
-                            <ComboBox x:Name="vib5" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="100" Margin="0,5,0,0">
+                            <ComboBox x:Name="vib5" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there is</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there isn't</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there are</ComboBoxItem>
@@ -128,9 +133,9 @@
                             </ComboBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Width="250" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Is there a sofa in the bedroom?"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Width="450" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Is there a sofa in the bedroom?"></TextBlock>
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" Text="No, "></TextBlock>
-                            <ComboBox x:Name="vib6" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="100" Margin="0,5,0,0">
+                            <ComboBox x:Name="vib6" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there is</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there isn't</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there are</ComboBoxItem>
@@ -138,9 +143,9 @@
                             </ComboBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal">
-                            <TextBlock Width="250" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Are there seven boys in the park?"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Width="450" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Are there seven boys in the park?"></TextBlock>
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" Text="Yes, "></TextBlock>
-                            <ComboBox x:Name="vib7" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="100" Margin="0,5,0,0">
+                            <ComboBox x:Name="vib7" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there is</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there isn't</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there are</ComboBoxItem>
@@ -148,9 +153,9 @@
                             </ComboBox>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal" Margin="0,0,0,10">
-                            <TextBlock Width="250" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Is there TV set in the kitchen?"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Width="450" Foreground="{Binding fg}" FontSize="{Binding s}" Text="Is there TV set in the kitchen?"></TextBlock>
                             <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" Text="No, "></TextBlock>
-                            <ComboBox x:Name="vib8" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="100" Margin="0,5,0,0">
+                            <ComboBox x:Name="vib8" FontSize="{Binding s}" Background="{Binding bg}" Foreground="{Binding fg}" Width="200" Margin="0,5,0,0">
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there is</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there isn't</ComboBoxItem>
                                 <ComboBoxItem  FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}">there are</ComboBoxItem>

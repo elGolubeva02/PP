@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test"
         mc:Ignorable="d"
-        Title="Teacher" Height="300" Width="300">
+         Icon="img/иконка.ico"
+        Title="enGuide" Height="300" Width="300">
     <Window.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="18"/>
@@ -23,7 +24,9 @@
         <TextBox x:Name="log" Width="200"></TextBox>
             <TextBlock Text="Пароль"></TextBlock>
             <TextBox x:Name="par" Width="200" Margin="0,0,0,7"></TextBox>
-            <Button Content="Войти" Click="Button_Click"></Button>
+            <Border BorderBrush="#FFFF8000"  BorderThickness="1,2,1,2" CornerRadius="10,3,10,3" Width="200" Height="40" Background="#FFFF8000">
+                <Button Content="Войти" Click="Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black"></Button>
+            </Border>
         </StackPanel>
         
     </Grid>

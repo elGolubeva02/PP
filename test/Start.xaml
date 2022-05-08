@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:test"
         Icon="img/иконка.ico"
         mc:Ignorable="d"
-        Title="Testbook" 
+        Title="enGuide"
         DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowStartupLocation="CenterScreen"
 WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" ResizeMode="NoResize">
     <Window.Resources>

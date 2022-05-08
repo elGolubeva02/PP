@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test.windowsCheck"
         mc:Ignorable="d"
-        Title="SAny" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}">
+        Icon="/img/иконка.ico"
+        Title="enGuide" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}">
     <Grid Background="{Binding bg}" >
         <ScrollViewer>
             <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">

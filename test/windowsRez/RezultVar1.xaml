@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test"
         mc:Ignorable="d"
-        Title="Результаты"
-        Icon="/img/иконка.ico"
+      Icon="/img/иконка.ico"
+        Title="enGuide"
         DataContext = "{Binding RelativeSource={RelativeSource Mode=Self}}">
     <Grid>
         <ScrollViewer>

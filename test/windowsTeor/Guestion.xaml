@@ -5,18 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test.windowsTeor"
         mc:Ignorable="d"
-        Title="Guestion" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized" ResizeMode="NoResize">
+       Icon="/img/иконка.ico"
+        Title="enGuide" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized" ResizeMode="NoResize">
     <Grid Background="#9CD7BB">
         <WrapPanel Orientation="Vertical"  HorizontalAlignment="Center">
             <StackPanel Margin="20,10,20,0">
-                <WrapPanel Orientation="Horizontal" Margin="0,0,0,35" HorizontalAlignment="Center" Background="White" >
-                    <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="White">На главную</Button>
-                    <Button x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
-                    <Button x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
-                    <Button x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="White">A-</Button>
-                    <Button x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="White">A+</Button>
-                    <Button x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="White">R</Button>
-                </WrapPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,35" HorizontalAlignment="Center" Background="White" Height="70">
+                    <Border Margin="20,0,0,0" BorderBrush="#FFFF8000"  BorderThickness="1,2,1,2" CornerRadius="10,3,10,3" Width="200" Height="40" Background="#FFFF8000">
+                        <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" >На главную</Button>
+                    </Border>
+
+                    <Button Height="40" Width="40" x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Foreground="#ffff00" BorderBrush="White" Margin="50,0,10,0">A</Button>
+                    <Button Height="40" Width="40" x:Name="newbg2" Click="newbg2_Click" FontSize="{Binding s}" Background="#99ccff" Foreground="#0f6cbf" BorderBrush="White">A</Button>
+                    <Button Height="40" Width="40" x:Name="newsz" Click="newsz_Click" FontSize="{Binding s}" Margin="10,0,10,0" Background="White">A-</Button>
+                    <Button Height="40" Width="40" x:Name="newsz2" Click="newsz2_Click" FontSize="{Binding s}" Margin="0,0,10,0" Background="White">A+</Button>
+                    <Button Margin="0,0,30,0" Height="40" Width="40" x:Name="oldbg" Click="oldbg_Click" FontSize="{Binding s}" Background="White">R</Button>
+                </StackPanel>
                 <StackPanel Orientation="Vertical" Background="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,70,0,0" Width="1200" Height="730">
                     <StackPanel.Effect>
                         <DropShadowEffect Opacity="0.6"/>
