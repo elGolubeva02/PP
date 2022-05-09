@@ -6,9 +6,18 @@
         xmlns:local="clr-namespace:test"
         mc:Ignorable="d" 
         Icon="img/иконка.ico"
-        Title="enGuide" WindowStartupLocation="CenterScreen"
+        Title="enGuYourTaskide" WindowStartupLocation="CenterScreen"
 WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" ResizeMode="NoResize">
-
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+    </Window.Resources>
     <Grid >
         <Grid.Background>
             <ImageBrush ImageSource="bg.png"/>
@@ -60,7 +69,7 @@ WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" ResizeMode=
             </Image.RenderTransform>
         </Image>
         <Image Source="img/ddfdfdf 3.png" Height="130" Margin="0,200,630,0"></Image>
-        <TextBlock Text="На главную" FontSize="20" MouseDown="TextBlock_MouseDown" RenderTransformOrigin="0.5,0.5" Margin="0,602,730,0" TextAlignment="Center" Width="80" TextWrapping="Wrap">
+        <TextBlock Text="На главную" FontSize="20" MouseDown="TextBlock_MouseDown" RenderTransformOrigin="0.5,0.5" Margin="0,602,730,0" TextAlignment="Center" Width="85" TextWrapping="Wrap">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

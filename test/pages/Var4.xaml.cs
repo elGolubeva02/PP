@@ -381,7 +381,7 @@ public string[] otv = new string[20];
             }
             catch (Exception em)
             {
-                MessageBox.Show(em.ToString());
+                MessageBox.Show(em.Message);
                 prov = 0;
             }
 
@@ -410,7 +410,14 @@ public string[] otv = new string[20];
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
+            if (fon == 0)
+            {
+                new Start().Show();
+            }
+            else
+            {
+                new Start2(fon, s).Show();
+            }
             foreach (Window window in App.Current.Windows)
             {
                 if (window.Title == "YourTask")

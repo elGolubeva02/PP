@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -63,8 +64,16 @@ namespace test.windowsTask
 
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
-            this.Close();
+            if(f==0)
+            {
+                new Start().Show();
+                this.Close();
+            }
+            else
+            {
+                new Start2(f,s).Show();
+                this.Close();
+            }            
         }
 
         private void newbg_Click(object sender, RoutedEventArgs e)
@@ -116,8 +125,16 @@ namespace test.windowsTask
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new SravPrev(f, s).Show();
-            this.Close();
+            if (f == 0)
+            {
+                new SravPrev(f, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new SravPrev2(f, s).Show();
+                this.Close();
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -143,13 +160,20 @@ namespace test.windowsTask
         {
             try
             {
-                if (z12v1.Text == "more polite than" && z13v1.Text == "faster than" && z14v1.Text == "easier than" && z15v1.Text == "taller than" && z16v1.Text == "more beautiful than")
+                if ((Regex.IsMatch(z12v1.Text, @"^[a-zA-Z. ]+$") || z12v1.Text == "") && (Regex.IsMatch(z13v1.Text, @"^[a-zA-Z. ]+$") || z13v1.Text == "") && (Regex.IsMatch(z14v1.Text, @"^[a-zA-Z. ]+$") || z14v1.Text == "") && (Regex.IsMatch(z15v1.Text, @"^[a-zA-Z. ]+$") || z15v1.Text == "") && (Regex.IsMatch(z16v1.Text, @"^[a-zA-Z. ]+$") || z16v1.Text == ""))
                 {
-                    new Right(f, s).ShowDialog();
+                    if (z12v1.Text == "more polite than" && z13v1.Text == "faster than" && z14v1.Text == "easier than" && z15v1.Text == "taller than" && z16v1.Text == "more beautiful than")
+                    {
+                        new Right(f, s).ShowDialog();
+                    }
+                    else
+                    {
+                        new Srav(1, f, s).ShowDialog();
+                    }
                 }
                 else
                 {
-                    new Srav(1, f, s).ShowDialog();
+                    throw new Exception("Неверный формат данных.");
                 }
             }
             catch (Exception ex)
@@ -162,13 +186,20 @@ namespace test.windowsTask
         {
             try
             {
-                if (z3v1.Text == "the highest" && z3v2.Text == "the biggest" && z3v3.Text == "the best" && z3v4.Text == "the most interesting" && z3v5.Text == "the happiest")
+                if ((Regex.IsMatch(z3v1.Text, @"^[a-zA-Z. ]+$") || z3v1.Text == "") && (Regex.IsMatch(z3v2.Text, @"^[a-zA-Z. ]+$") || z3v2.Text == "") && (Regex.IsMatch(z3v3.Text, @"^[a-zA-Z. ]+$") || z3v3.Text == "") && (Regex.IsMatch(z3v4.Text, @"^[a-zA-Z. ]+$") || z3v4.Text == "") && (Regex.IsMatch(z3v5.Text, @"^[a-zA-Z. ]+$") || z3v5.Text == ""))
                 {
-                    new Right(f, s).ShowDialog();
+                    if (z3v1.Text == "the highest" && z3v2.Text == "the biggest" && z3v3.Text == "the best" && z3v4.Text == "the most interesting" && z3v5.Text == "the happiest")
+                    {
+                        new Right(f, s).ShowDialog();
+                    }
+                    else
+                    {
+                        new Srav(2, f, s).ShowDialog();
+                    }
                 }
                 else
                 {
-                    new Srav(2, f, s).ShowDialog();
+                    throw new Exception("Неверный формат данных.");
                 }
             }
             catch (Exception ex)

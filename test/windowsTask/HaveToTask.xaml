@@ -11,7 +11,7 @@
         <ScrollViewer>
             <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
                 <StackPanel Margin="20,10,20,0">
-                    <StackPanel Orientation="Horizontal" Margin="0,0,0,15" HorizontalAlignment="Center" Background="White" Height="70">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,15" HorizontalAlignment="Center" Background="{Binding bg}" Height="70">
                         <Border Margin="20,0,0,0"  BorderThickness="1,2,1,2" CornerRadius="10,3,10,3" Width="200" Height="40" Background="{Binding bg}" BorderBrush="{Binding bb}">
                             <Button x:Name="Chack" Click="Chack_Click" FontSize="{Binding s}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding fg}">На главную</Button>
                         </Border>

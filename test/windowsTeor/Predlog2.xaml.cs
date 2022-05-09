@@ -99,7 +99,7 @@ namespace test.windowsTeor
 
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
+            new Start2(fon, s).Show();
             this.Close();
         }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -207,11 +208,46 @@ namespace test.pages
                     otv[8] = z6v2.Content.ToString();
                 }
 
-                otv[9] = z7v1.Text;
-                otv[10] = z7v2.Text;
-                otv[11] = z7v3.Text;
-                otv[12] = z7v4.Text;
-                otv[13] = z7v5.Text;
+                if(Regex.IsMatch(z7v1.Text, @"^[a-zA-Z]+$") || z7v1.Text == "")
+                {
+                    otv[9] = z7v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 7.");
+                }
+                if (Regex.IsMatch(z7v2.Text, @"^[a-zA-Z]+$") || z7v2.Text == "")
+                {
+                    otv[10] = z7v2.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 7.");
+                }
+                if (Regex.IsMatch(z7v3.Text, @"^[a-zA-Z]+$") || z7v3.Text == "")
+                {
+                    otv[11] = z7v3.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 7.");
+                }
+                if (Regex.IsMatch(z7v4.Text, @"^[a-zA-Z]+$") || z7v4.Text == "")
+                {
+                    otv[12] = z7v4.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 7.");
+                }
+                if (Regex.IsMatch(z7v5.Text, @"^[a-zA-Z]+$") || z7v5.Text == "")
+                {
+                    otv[13] = z7v5.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 7.");
+                }
 
                 if (z8v1.IsChecked == true)
                 {
@@ -254,14 +290,36 @@ namespace test.pages
                     otv[18] = z12v2.Content.ToString();
                 }
 
-                otv[19] = z13v1.Text;
-                otv[20] = z14v1.Text;
-                otv[21] = z15v1.Text;
+                if(Regex.IsMatch(z13v1.Text, @"^[a-zA-Z.]+$") || z13v1.Text == "")
+                {
+                    otv[19] = z13v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 13.");
+                }
+                if (Regex.IsMatch(z14v1.Text, @"^[a-zA-Z.]+$") || z14v1.Text=="")
+                {
+                    otv[20] = z14v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 14.");
+                }
+                if (Regex.IsMatch(z15v1.Text, @"^[a-zA-Z.]+$") || z15v1.Text == "")
+                {
+                    otv[21] = z15v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 15.");
+                }
+               
                 prov = 1;
             }
             catch (Exception em)
             {
-                MessageBox.Show(em.ToString());
+                MessageBox.Show(em.Message);
                 prov = 0;
             }
             if (prov == 1)
@@ -351,7 +409,14 @@ namespace test.pages
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
+            if (fon == 0)
+            {
+                new Start().Show();
+            }
+            else
+            {
+                new Start2(fon, s).Show();
+            }
             foreach (Window window in App.Current.Windows)
             {
                 if (window.Title == "YourTask")

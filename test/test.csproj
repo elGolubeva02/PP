@@ -64,9 +64,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="classes\ChangePages.cs" />
-    <Compile Include="Memo.xaml.cs">
-      <DependentUpon>Memo.xaml</DependentUpon>
-    </Compile>
     <Compile Include="NewTest.xaml.cs">
       <DependentUpon>NewTest.xaml</DependentUpon>
     </Compile>
@@ -295,10 +292,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Memo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="NewTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -715,6 +708,9 @@
     <Resource Include="img\зонт.png" />
     <Resource Include="img\мяч.png" />
     <Resource Include="img\чайный.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\jgf.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

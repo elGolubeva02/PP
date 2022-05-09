@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -63,8 +64,16 @@ namespace test.windowsTask
 
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
-            this.Close();
+            if (f == 0)
+            {
+                new Start().Show();
+                this.Close();
+            }
+            else
+            {
+                new Start2(f,s).Show();
+                this.Close();
+            }
         }
 
         private void newbg_Click(object sender, RoutedEventArgs e)
@@ -116,8 +125,16 @@ namespace test.windowsTask
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new PritMest(f, s).Show();
-            this.Close();
+            if (f == 0)
+            {
+                new PritMest(f, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new PritMest2(f, s).Show();
+                this.Close();
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -143,13 +160,20 @@ namespace test.windowsTask
         {
             try
             {
-                if (z3v1.Text == "Their" && z3v2.Text == "Our" && z3v3.Text == "His" && z3v4.Text == "Her" && z3v5.Text == "His")
+                if ((Regex.IsMatch(z3v1.Text, @"^[a-zA-Z. ]+$") || z3v1.Text == "") && (Regex.IsMatch(z3v2.Text, @"^[a-zA-Z. ]+$") || z3v2.Text == "") && (Regex.IsMatch(z3v3.Text, @"^[a-zA-Z. ]+$") || z3v3.Text == "") && (Regex.IsMatch(z3v4.Text, @"^[a-zA-Z. ]+$") || z3v4.Text == "") && (Regex.IsMatch(z3v5.Text, @"^[a-zA-Z. ]+$") || z3v5.Text == ""))
                 {
-                    new Right(f, s).ShowDialog();
+                    if (z3v1.Text == "Their" && z3v2.Text == "Our" && z3v3.Text == "His" && z3v4.Text == "Her" && z3v5.Text == "His")
+                    {
+                        new Right(f, s).ShowDialog();
+                    }
+                    else
+                    {
+                        new PMest(f, s).ShowDialog();
+                    }
                 }
                 else
                 {
-                    new PMest(f, s).ShowDialog();
+                    throw new Exception("Неверный формат данных.");
                 }
             }
             catch (Exception ex)

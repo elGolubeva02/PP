@@ -63,8 +63,16 @@ namespace test.windowsTask
 
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
-            this.Close();
+            if (f == 0)
+            {
+                new Start().Show();
+                this.Close();
+            }
+            else
+            {
+                new Start2(f,s).Show();
+                this.Close();
+            }
         }
 
         private void newbg_Click(object sender, RoutedEventArgs e)
@@ -116,8 +124,16 @@ namespace test.windowsTask
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new HaveTo(f, s).Show();
-            this.Close();
+            if (f == 0)
+            {
+                new HaveTo(f, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new HaveTo2(f, s).Show();
+                this.Close();
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

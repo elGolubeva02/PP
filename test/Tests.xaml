@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:test"
         mc:Ignorable="d"
          Icon="img/иконка.ico"
-        Title="enGuide" WindowState="Maximized">
+        Title="YourTask" WindowState="Maximized">
     <Grid>
         <Frame x:Name="MainFraim"></Frame>
     </Grid>

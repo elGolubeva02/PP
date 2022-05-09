@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -63,8 +64,16 @@ namespace test.windowsTask
 
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
-            this.Close();
+            if (f == 0)
+            {
+                new Start().Show();
+                this.Close();
+            }
+            else
+            {
+                new Start2(f,s).Show();
+                this.Close();
+            }
         }
 
         private void newbg_Click(object sender, RoutedEventArgs e)
@@ -116,17 +125,36 @@ namespace test.windowsTask
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new Chisl(f, s).Show();
-            this.Close();
+            if (f == 0)
+            {
+                new Chisl(f, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new Chisl2(f, s).Show();
+                this.Close();
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                if (z1v1.Text == "first" && z1v2.Text == "elevent" && z1v3.Text == "sixteenth" && z1v4.Text == "twentieth" && z1v5.Text == "thirty-first")
+                if ((Regex.IsMatch(z1v1.Text, @"^[a-zA-Z]+$") || z1v1.Text == "") && (Regex.IsMatch(z1v2.Text, @"^[a-zA-Z]+$") || z1v2.Text == "") && (Regex.IsMatch(z1v3.Text, @"^[a-zA-Z]+$") || z1v3.Text == "") && (Regex.IsMatch(z1v4.Text, @"^[a-zA-Z]+$") || z1v4.Text == "") && (Regex.IsMatch(z1v5.Text, @"^[a-zA-Z]+$") || z1v5.Text == ""))
                 {
-                    new CChisl(f, s).ShowDialog();
+                    if (z1v1.Text == "first" && z1v2.Text == "elevent" && z1v3.Text == "sixteenth" && z1v4.Text == "twentieth" && z1v5.Text == "thirty-first")
+                    {
+                        new Right(f, s).ShowDialog();
+                    }
+                    else
+                    {
+                        new CChisl(f, s).ShowDialog();
+                    }
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных.");
                 }
             }
             catch (Exception ex)
@@ -139,9 +167,20 @@ namespace test.windowsTask
         {
             try
             {
-                if (z12v1.Text == "second" && z13v1.Text == "fifth" && z14v1.Text == "sixth" && z15v1.Text == "third" && z16v1.Text == "fourth")
+                if ((Regex.IsMatch(z12v1.Text, @"^[a-zA-Z]+$") || z12v1.Text == "") && (Regex.IsMatch(z13v1.Text, @"^[a-zA-Z]+$") || z13v1.Text == "") && (Regex.IsMatch(z14v1.Text, @"^[a-zA-Z]+$") || z14v1.Text == "") && (Regex.IsMatch(z15v1.Text, @"^[a-zA-Z]+$") || z15v1.Text == "") && (Regex.IsMatch(z16v1.Text, @"^[a-zA-Z]+$") || z16v1.Text == ""))
                 {
-                    new CChisl(f, s).ShowDialog();
+                    if (z12v1.Text == "second" && z13v1.Text == "fifth" && z14v1.Text == "sixth" && z15v1.Text == "third" && z16v1.Text == "fourth")
+                    {
+                        new Right(f, s).ShowDialog();
+                    }
+                    else
+                    {
+                        new CChisl(f, s).ShowDialog();
+                    }
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных.");
                 }
             }
             catch (Exception ex)

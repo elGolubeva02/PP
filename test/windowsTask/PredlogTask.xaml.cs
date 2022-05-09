@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -63,8 +64,16 @@ namespace test.windowsTask
 
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
-            this.Close();
+            if (f == 0)
+            {
+                new Start().Show();
+                this.Close();
+            }
+            else
+            {
+                new Start2(f,s).Show();
+                this.Close();
+            }
         }
 
         private void newbg_Click(object sender, RoutedEventArgs e)
@@ -116,20 +125,39 @@ namespace test.windowsTask
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new Predlog(f,s).Show();
-            this.Close();
+            if (f == 0)
+            {
+                new Predlog(f, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new Predlog2(f, s).Show();
+                this.Close();
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                if(z1v1.Text != "in" || z1v2.Text != "in front of" || z1v3.Text != "opposite" || z1v4.Text != "on" || z1v5.Text != "behind" || z1v6.Text != "under")
+                if ((Regex.IsMatch(z1v1.Text, @"^[a-zA-Z. ]+$") || z1v1.Text == "") && (Regex.IsMatch(z1v2.Text, @"^[a-zA-Z. ]+$") || z1v2.Text == "") && (Regex.IsMatch(z1v3.Text, @"^[a-zA-Z. ]+$") || z1v3.Text == "") && (Regex.IsMatch(z1v4.Text, @"^[a-zA-Z. ]+$") || z1v4.Text == "") && (Regex.IsMatch(z1v5.Text, @"^[a-zA-Z. ]+$") || z1v5.Text == "") && (Regex.IsMatch(z1v6.Text, @"^[a-zA-Z. ]+$") || z1v6.Text == ""))
                 {
-                    new PredMest(1,f,s).ShowDialog();
+                    if (z1v1.Text != "in" || z1v2.Text != "in front of" || z1v3.Text != "opposite" || z1v4.Text != "on" || z1v5.Text != "behind" || z1v6.Text != "under")
+                    {
+                        new Right(f, s).ShowDialog();
+                    }
+                    else
+                    {
+                        new PredMest(1, f, s).ShowDialog();
+                    }
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных.");
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

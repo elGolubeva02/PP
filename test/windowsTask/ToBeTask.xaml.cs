@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -63,8 +64,16 @@ namespace test.windowsTask
 
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
-            this.Close();
+            if (f == 0)
+            {
+                new Start().Show();
+                this.Close();
+            }
+            else
+            {
+                new Start2(f,s).Show();
+                this.Close();
+            }
         }
 
         private void newbg_Click(object sender, RoutedEventArgs e)
@@ -116,21 +125,36 @@ namespace test.windowsTask
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new ToBe(f, s).Show();
-            this.Close();
+            if (f == 0)
+            {
+                new ToBe(f, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new ToBe2(f, s).Show();
+                this.Close();
+            }
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             try
             {
-                if (z3v1.Text == "am" && z3v2.Text == "is" && z3v3.Text == "are" && z3v4.Text == "is" && z3v5.Text == "are" && z3v6.Text == "am" && z3v7.Text == "are" && z3v8.Text == "is" && z3v9.Text == "is" && z3v10.Text == "is" && z3v11.Text == "is" && z3v12.Text == "are" && z3v13.Text == "am" && z3v14.Text == "is" && z3v15.Text == "is")
+                if ((Regex.IsMatch(z3v1.Text, @"^[a-zA-Z. ]+$") || z3v1.Text == "") && (Regex.IsMatch(z3v2.Text, @"^[a-zA-Z. ]+$") || z3v2.Text == "") && (Regex.IsMatch(z3v3.Text, @"^[a-zA-Z. ]+$") || z3v3.Text == "") && (Regex.IsMatch(z3v4.Text, @"^[a-zA-Z. ]+$") || z3v4.Text == "") && (Regex.IsMatch(z3v5.Text, @"^[a-zA-Z. ]+$") || z3v5.Text == "") && (Regex.IsMatch(z3v6.Text, @"^[a-zA-Z. ]+$") || z3v6.Text == "") && (Regex.IsMatch(z3v7.Text, @"^[a-zA-Z. ]+$") || z3v7.Text == "") && (Regex.IsMatch(z3v8.Text, @"^[a-zA-Z. ]+$") || z3v8.Text == "") && (Regex.IsMatch(z3v9.Text, @"^[a-zA-Z. ]+$") || z3v9.Text == "") && (Regex.IsMatch(z3v10.Text, @"^[a-zA-Z. ]+$") || z3v10.Text == "") && (Regex.IsMatch(z3v11.Text, @"^[a-zA-Z. ]+$") || z3v11.Text == "") && (Regex.IsMatch(z3v12.Text, @"^[a-zA-Z. ]+$") || z3v12.Text == "") && (Regex.IsMatch(z3v13.Text, @"^[a-zA-Z. ]+$") || z3v13.Text == "") && (Regex.IsMatch(z3v14.Text, @"^[a-zA-Z. ]+$") || z3v14.Text == "") && (Regex.IsMatch(z3v15.Text, @"^[a-zA-Z. ]+$") || z3v15.Text == ""))
                 {
-                    new Right(f, s).ShowDialog();
+                    if (z3v1.Text == "am" && z3v2.Text == "is" && z3v3.Text == "are" && z3v4.Text == "is" && z3v5.Text == "are" && z3v6.Text == "am" && z3v7.Text == "are" && z3v8.Text == "is" && z3v9.Text == "is" && z3v10.Text == "is" && z3v11.Text == "is" && z3v12.Text == "are" && z3v13.Text == "am" && z3v14.Text == "is" && z3v15.Text == "is")
+                    {
+                        new Right(f, s).ShowDialog();
+                    }
+                    else
+                    {
+                        new Be(f, s).ShowDialog();
+                    }
                 }
                 else
                 {
-                    new Be(f, s).ShowDialog();
+                    throw new Exception("Неверный формат данных.");
                 }
             }
             catch (Exception ex)

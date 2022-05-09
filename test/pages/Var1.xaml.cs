@@ -446,7 +446,14 @@ namespace test
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
+            if (fon == 0)
+            {
+                new Start().Show();
+            }
+            else
+            {
+                new Start2(fon, s).Show();
+            }
             foreach (Window window in App.Current.Windows)
             {
                 if (window.Title == "YourTask")

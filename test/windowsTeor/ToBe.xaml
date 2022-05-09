@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Icon="/img/иконка.ico"
         Title="enGuide" DataContext ="{Binding RelativeSource={RelativeSource Mode=Self}}" WindowState="Maximized" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+    </Window.Resources>
     <Grid Background="#9CD7BB">
         <WrapPanel Orientation="Vertical"  HorizontalAlignment="Center">
             <StackPanel Margin="20,10,20,0">

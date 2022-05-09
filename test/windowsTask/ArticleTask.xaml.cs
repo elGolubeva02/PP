@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -62,8 +63,16 @@ namespace test.windowsTask
 
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
-            this.Close();
+            if (f == 0)
+            {
+                new Start().Show();
+                this.Close();
+            }
+            else
+            {
+                new Start2(f, s).Show();
+                this.Close();
+            }
         }
 
         private void newbg_Click(object sender, RoutedEventArgs e)
@@ -115,8 +124,16 @@ namespace test.windowsTask
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new Article(f, s).Show();
-            this.Close();
+            if (f == 0)
+            {
+                new Article(f, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new Article2(f, s).Show();
+                this.Close();
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -125,11 +142,11 @@ namespace test.windowsTask
             {
                 if (z2v2.IsChecked == true && z2v3.IsChecked == true && z2v5.IsChecked == true && z2v8.IsChecked == true && z2v9.IsChecked == true && z2v12.IsChecked == true && z2v14.IsChecked == true)
                 {
-                   new Right(f, s).ShowDialog();
+                    new Right(f, s).ShowDialog();
                 }
                 else
                 {
-                   new AAn(f, s).ShowDialog();
+                    new AAn(f, s).ShowDialog();
                 }
             }
             catch (Exception ex)
@@ -162,13 +179,20 @@ namespace test.windowsTask
         {
             try
             {
-                if (z3v1.Text == "This is a radio." && z3v2.Text == "This is a sofa." && z3v3.Text == "This is a dask." && z3v4.Text == "This is a musical box." && z3v5.Text == "This is an aeroplane.")
+                if ((Regex.IsMatch(z3v1.Text, @"^[a-zA-Z. ]+$") || z3v1.Text == "") && (Regex.IsMatch(z3v2.Text, @"^[a-zA-Z. ]+$") || z3v2.Text == "") && (Regex.IsMatch(z3v3.Text, @"^[a-zA-Z. ]+$") || z3v3.Text == "") && (Regex.IsMatch(z3v4.Text, @"^[a-zA-Z. ]+$") || z3v4.Text == "") && (Regex.IsMatch(z3v5.Text, @"^[a-zA-Z. ]+$") || z3v5.Text == ""))
                 {
-                    new Right(f, s).ShowDialog();
+                    if (z3v1.Text == "This is a radio." && z3v2.Text == "This is a sofa." && z3v3.Text == "This is a dask." && z3v4.Text == "This is a musical box." && z3v5.Text == "This is an aeroplane.")
+                    {
+                        new Right(f, s).ShowDialog();
+                    }
+                    else
+                    {
+                        new AAn(f, s).ShowDialog();
+                    }
                 }
                 else
                 {
-                    new AAn(f, s).ShowDialog();
+                    throw new Exception("Неверный формат данных.");
                 }
             }
             catch (Exception ex)

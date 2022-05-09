@@ -16,13 +16,17 @@
         </Style>
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"/>
         </Style>
     </Window.Resources>
     <Grid x:Name="Griddd">
         <ScrollViewer>
             <WrapPanel Orientation="Vertical" Margin="20,10,0,10">
                 <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" >
-                    <Button x:Name="Save" Click="Save_Click" Margin="0,0,0,4">Сохранить тест</Button>
+                    <Border BorderBrush="#FFFF8000" Margin="0,0,0,4"  BorderThickness="1,2,1,2" CornerRadius="10,3,10,3" Width="200" Height="40" Background="#FFFF8000">
+                        <Button x:Name="Save" Click="Save_Click" Background="{x:Null}" BorderBrush="{x:Null}" >Сохранить тест</Button>
+                        </Border>
                 </WrapPanel>
 
                 <WrapPanel Orientation="Horizontal" >

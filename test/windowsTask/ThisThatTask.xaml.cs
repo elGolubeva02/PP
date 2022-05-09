@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -63,8 +64,16 @@ namespace test.windowsTask
 
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
-            this.Close();
+            if (f == 0)
+            {
+                new Start().Show();
+                this.Close();
+            }
+            else
+            {
+                new Start2(f, s).Show();
+                this.Close();
+            }
         }
 
         private void newbg_Click(object sender, RoutedEventArgs e)
@@ -116,8 +125,16 @@ namespace test.windowsTask
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new ThisThat(f, s).Show();
-            this.Close();
+            if (f == 0)
+            {
+                new ThisThat(f, s).Show();
+                this.Close();
+            }
+            else
+            {
+                new ThisThat2(f, s).Show();
+                this.Close();
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -144,19 +161,26 @@ namespace test.windowsTask
         {
             try
             {
-                if (z3v1.Text == "Those" && z3v2.Text == "That" && z3v3.Text == "Those" && z3v4.Text == "That" && z3v5.Text == "Those")
+                if ((Regex.IsMatch(z3v1.Text, @"^[a-zA-Z. ]+$") || z3v1.Text == "") && (Regex.IsMatch(z3v2.Text, @"^[a-zA-Z. ]+$") || z3v2.Text == "") && (Regex.IsMatch(z3v3.Text, @"^[a-zA-Z. ]+$") || z3v3.Text == "") && (Regex.IsMatch(z3v4.Text, @"^[a-zA-Z. ]+$") || z3v4.Text == "") && (Regex.IsMatch(z3v5.Text, @"^[a-zA-Z. ]+$") || z3v5.Text == ""))
                 {
-                    new Right(f, s).ShowDialog();
+                    if (z3v1.Text == "Those" && z3v2.Text == "That" && z3v3.Text == "Those" && z3v4.Text == "That" && z3v5.Text == "Those")
+                    {
+                        new Right(f, s).ShowDialog();
+                    }
+                    else
+                    {
+                        new TTTT(2, f, s).ShowDialog();
+                    }
                 }
                 else
                 {
-                    new TTTT(2, f, s).ShowDialog();
+                    throw new Exception("Неверный формат данных.");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+            } 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

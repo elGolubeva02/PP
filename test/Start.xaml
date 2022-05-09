@@ -11,7 +11,12 @@
 WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" ResizeMode="NoResize">
     <Window.Resources>
         <Style TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Bryndan Write"></Setter>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"/>
         </Style>
     </Window.Resources>
     <Grid>

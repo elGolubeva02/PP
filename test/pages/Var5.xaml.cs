@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -268,20 +269,87 @@ public string[] otv = new string[26];
                     throw new Exception("Неверный формат данных в задании 8.");
                 }
 
-                otv[17] = z8v1.Text;
-                otv[18] = z9v1.Text;
-                otv[19] = z10v1.Text;
-                otv[20] = z11v1.Text;
-                otv[21] = z12v1.Text;
-                otv[22] = z13v1.Text;
-                otv[23] = z14v1.Text;
-                otv[24] = z15v1.Text;
-                otv[25] = z16v1.Text;
+                if (Regex.IsMatch(z8v1.Text, @"^[a-zA-Z]+$") || z8v1.Text == "")
+                {
+                    otv[17] = z8v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 8.");
+                }
+                if (Regex.IsMatch(z9v1.Text, @"^[a-zA-Z]+$") || z9v1.Text == "")
+                {
+                    otv[18] = z9v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 9.");
+                }
+                if (Regex.IsMatch(z10v1.Text, @"^[a-zA-Z]+$") || z10v1.Text == "")
+                {
+                    otv[19] = z10v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 10.");
+                }
+
+
+
+                if (Regex.IsMatch(z11v1.Text, @"^[a-zA-Z]+$") || z11v1.Text == "")
+                {
+                    otv[20] = z11v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 11.");
+                }
+                if (Regex.IsMatch(z12v1.Text, @"^[a-zA-Z]+$") || z12v1.Text == "")
+                {
+                    otv[21] = z12v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 12.");
+                }
+                if (Regex.IsMatch(z13v1.Text, @"^[a-zA-Z]+$") || z13v1.Text == "")
+                {
+                    otv[22] = z13v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 13.");
+                }
+                if (Regex.IsMatch(z14v1.Text, @"^[a-zA-Z]+$") || z14v1.Text == "")
+                {
+                    otv[23] = z14v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 14.");
+                }
+                if (Regex.IsMatch(z15v1.Text, @"^[a-zA-Z ]+$") || z15v1.Text == "")
+                {
+                    otv[24] = z15v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 15.");
+                }
+                if (Regex.IsMatch(z16v1.Text, @"^[a-zA-Z]+$") || z16v1.Text == "")
+                {
+                    otv[25] = z16v1.Text;
+                }
+                else
+                {
+                    throw new Exception("Неверный формат данных в задании 16.");
+                }
+
                 prov = 1;
             }
             catch (Exception em)
             {
-                MessageBox.Show(em.ToString());
+                MessageBox.Show(em.Message);
                 prov = 0;
             }
 
@@ -369,7 +437,14 @@ public string[] otv = new string[26];
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
-            new Start().Show();
+            if (fon == 0)
+            {
+                new Start().Show();
+            }
+            else
+            {
+                new Start2(fon, s).Show();
+            }
             foreach (Window window in App.Current.Windows)
             {
                 if (window.Title == "YourTask")
