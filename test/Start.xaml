@@ -24,6 +24,7 @@ WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" ResizeMode=
             <ImageBrush ImageSource="преобразованный.png"/>
         </Grid.Background>
         <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
+            
             <StackPanel Margin="20,150,20,0" HorizontalAlignment="Center" Width="1000">
                 <WrapPanel Orientation="Horizontal" Margin="0,0,0,15" HorizontalAlignment="Right">
                     <Button x:Name="newbg" Click="newbg_Click" FontSize="{Binding s}" Background="Black" Margin="0,0,10,0" Foreground="#ffff00" BorderBrush="White">A</Button>
@@ -218,6 +219,7 @@ WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" ResizeMode=
                     </StackPanel>
                 </ScrollViewer>
             </StackPanel>
+            <Image Source="img/Выход.png" Width="50" Margin="1700,-1600,0,0" MouseDown="Image_MouseDown"></Image>
         </WrapPanel>
     </Grid>
 </Window>

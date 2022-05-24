@@ -145,11 +145,11 @@ namespace test.windowsTask
                 {
                     if (z1v1.Text != "in" || z1v2.Text != "in front of" || z1v3.Text != "opposite" || z1v4.Text != "on" || z1v5.Text != "behind" || z1v6.Text != "under")
                     {
-                        new Right(f, s).ShowDialog();
+                        new PredMest(1, f, s).ShowDialog();
                     }
                     else
                     {
-                        new PredMest(1, f, s).ShowDialog();
+                        new Right(f, s).ShowDialog();
                     }
                 }
                 else
@@ -171,6 +171,10 @@ namespace test.windowsTask
                 {
                     new PredMest(1,f,s).ShowDialog();
                 }
+                else
+                {
+                    new Right(f, s).ShowDialog();
+                }
             }
             catch (Exception ex)
             {
@@ -185,6 +189,10 @@ namespace test.windowsTask
                 if (z3v2.IsChecked == false || z3v3.IsChecked == false || z3v5.IsChecked == false || z3v8.IsChecked == false || z3v9.IsChecked == false)
                 {
                     new PredMest(1,f,s).ShowDialog();
+                }
+                else
+                {
+                    new Right(f, s).ShowDialog();
                 }
             }
             catch (Exception ex)
@@ -201,6 +209,10 @@ namespace test.windowsTask
                 {
                     new PredMest(1,f,s).ShowDialog();
                 }
+                else
+                {
+                    new Right(f, s).ShowDialog();
+                }
             }
             catch (Exception ex)
             {
@@ -216,6 +228,10 @@ namespace test.windowsTask
                 {
                     new PredMest(1,f,s).ShowDialog();
                 }
+                else
+                {
+                    new Right(f, s).ShowDialog();
+                }
             }
             catch (Exception ex) 
             { 
@@ -230,6 +246,10 @@ namespace test.windowsTask
                 if (vib21.SelectedIndex != 0 || vib22.SelectedIndex != 2 || vib222.SelectedIndex != 0 || vib23.SelectedIndex != 2 || (vib24.SelectedIndex != 2 && vib24.SelectedIndex != 1) || vib25.SelectedIndex != 1 || vib26.SelectedIndex != 0 || vib27.SelectedIndex != 0 || vib28.SelectedIndex != 1)
                 {
                     new PredMest(2,f,s).ShowDialog();
+                }
+                else
+                {
+                    new Right(f, s).ShowDialog();
                 }
             }
             catch (Exception ex)

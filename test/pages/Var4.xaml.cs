@@ -65,6 +65,7 @@ namespace test.pages
 public string[] otv = new string[20];
         private void Chack_Click(object sender, RoutedEventArgs e)
         {
+            player.Stop();
             int prov = 0;
             try
             {
@@ -410,6 +411,7 @@ public string[] otv = new string[20];
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
+            player.Stop();
             if (fon == 0)
             {
                 new Start().Show();
@@ -530,6 +532,7 @@ public string[] otv = new string[20];
 
         private void var_Click(object sender, RoutedEventArgs e)
         {
+            player.Stop();
             new MainWindow().Show();
             foreach (Window window in App.Current.Windows)
             {

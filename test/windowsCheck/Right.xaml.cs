@@ -23,5 +23,14 @@ namespace test.windowsCheck
         {
             InitializeComponent();
         }
+ private MediaPlayer player = new MediaPlayer();
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            string path = @".\voice";
+            string s = System.IO.Path.GetFullPath(path) + @"\right.mp3";
+            s = s.Replace(@"\bin\Debug", "");
+            player.Open(new Uri(s, UriKind.Relative));
+            player.Play();
+        }
     }
 }

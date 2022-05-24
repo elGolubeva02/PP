@@ -279,5 +279,10 @@ namespace test
             new MainWindow().Show();
             this.Close();
         }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

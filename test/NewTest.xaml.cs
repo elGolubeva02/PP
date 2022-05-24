@@ -106,5 +106,10 @@ namespace test
             List.Visibility = Visibility.Collapsed;
             List1.Visibility = Visibility.Collapsed;
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
