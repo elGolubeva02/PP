@@ -109,7 +109,12 @@ namespace test
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
+                new Start().Show();
+        }
 
+        private void TextBox_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            System.Diagnostics.Process.Start("osk.exe");
         }
     }
 }

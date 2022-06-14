@@ -41,8 +41,7 @@
                         <Border BorderBrush="Black"  BorderThickness="1" Padding="2,2,2,2" Margin="0,0,0,4">
                             <TextBlock TextWrapping="Wrap" FontStyle="Italic"  FontWeight="Bold" Text="Прослушай текст. Закончи предложения 1–4, выбрав из предложенных вариантов тот, который соответствует содержанию текста. Ты услышишь запись дважды."></TextBlock>
                         </Border>
-                        <TextBox TextWrapping="Wrap" Margin="0,0,0,4"></TextBox>
-
+                        <TextBox TextWrapping="Wrap" Margin="0,0,0,4" MouseDoubleClick="TextBox_MouseDown"></TextBox>
                         <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
                             <TextBlock Text="1" VerticalAlignment="Center" Margin="0,0,30,0"/>
                             <WrapPanel Orientation="Vertical">

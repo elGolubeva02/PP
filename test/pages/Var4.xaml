@@ -245,7 +245,7 @@
                         <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" TextWrapping="Wrap">
                        My name is Jack Brown. I am from  Great Britain. My birthday is on the 17th
                     </TextBlock>
-                        <TextBox FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"  Width="50" Margin="10,0,10,0" x:Name="z16v1"></TextBox>
+                        <TextBox MouseDoubleClick="z16v1_MouseDoubleClick" FontSize="{Binding s}" Foreground="{Binding fg}" Background="{Binding bg}" BorderBrush="{Binding fg}"  Width="50" Margin="10,0,10,0" x:Name="z16v1"></TextBox>
                         <TextBlock Foreground="{Binding fg}" FontSize="{Binding s}" TextWrapping="Wrap">
                         April. I am ten years old and I go
                     </TextBlock>

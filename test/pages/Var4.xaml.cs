@@ -167,7 +167,7 @@ public string[] otv = new string[20];
                 }
                 else
                 {
-                    throw new Exception("Неверный формат данных в задании 8.");
+                    throw new Exception("Неверный формат данных в задании 16.");
                 }
 
                 if (z16v2.Text == "1")
@@ -196,7 +196,7 @@ public string[] otv = new string[20];
                 }
                 else
                 {
-                    throw new Exception("Неверный формат данных в задании 8.");
+                    throw new Exception("Неверный формат данных в задании 16.");
                 }
 
                 if (z16v3.Text == "1")
@@ -225,7 +225,7 @@ public string[] otv = new string[20];
                 }
                 else
                 {
-                    throw new Exception("Неверный формат данных в задании 8.");
+                    throw new Exception("Неверный формат данных в задании 16.");
                 }
 
                 if (z16v4.Text == "1")
@@ -254,7 +254,7 @@ public string[] otv = new string[20];
                 }
                 else
                 {
-                    throw new Exception("Неверный формат данных в задании 8.");
+                    throw new Exception("Неверный формат данных в задании 16.");
                 }
 
                 if (z16v5.Text == "1")
@@ -283,7 +283,7 @@ public string[] otv = new string[20];
                 }
                 else
                 {
-                    throw new Exception("Неверный формат данных в задании 8.");
+                    throw new Exception("Неверный формат данных в задании 16.");
                 }
 
 
@@ -539,6 +539,11 @@ public string[] otv = new string[20];
                 if (window.Title == "YourTask")
                     window.Close();
             }
+        }
+
+        private void z16v1_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            System.Diagnostics.Process.Start("osk.exe");
         }
     }
 }
